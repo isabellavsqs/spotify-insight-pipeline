@@ -35,7 +35,7 @@ test_paid_prompt_versions_are_frozen (tests.test_prompts.PromptTest.test_paid_pr
 test_prompts_never_reference_golden_data (tests.test_prompts.PromptTest.test_prompts_never_reference_golden_data) ... ok
 
 ----------------------------------------------------------------------
-Ran 35 tests in 24.510s
+Ran 35 tests in 27.132s
 
 OK
 State already prepared for this exact input: cost_100/state.sqlite (use --force to rebuild)

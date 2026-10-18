@@ -4,7 +4,8 @@ python -m pipeline.category_metrics [--grading grading] [--input spotify_reviews
 
 Reads only the saved grading export and the source CSV (for timestamps and text). Writes category_metrics.json/.md.
 
-A category is the topic prefix of an issue ID; "billing/support" joins billing.* and support.*.
+A category is the topic of an issue ID (its prefix): the 8 contract topics, each kept separate. The decision candidates
+are the brief's options (access, usability, playback, billing/support), with billing and support evaluated separately.
 - complaint_count, severity_sum, priority_score: sums of the baseline ranking rows (ranking.csv) in the category.
 - mean_severity: severity_sum / complaint_count, six decimals, half-up (same rule as the contract).
 - cancellation_share: member records with intent "cancellation" / complaint_count.
@@ -21,7 +22,8 @@ from collections import Counter, defaultdict
 from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
-FOUR = ["usability", "playback", "billing/support", "access"]
+CANDIDATES = ["usability", "playback", "billing", "support", "access"]
+TOPICS = ["usability", "playback", "billing", "support", "access", "catalog", "downloads", "other"]
 FIRST = ["2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10"]
 LAST = ["2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11"]
 ADS_THEMES = {
@@ -42,8 +44,7 @@ def mean6(s, n):
 
 
 def category(issue_id):
-    topic = issue_id.split(".")[0]
-    return "billing/support" if topic in ("billing", "support") else topic
+    return issue_id.split(".")[0]
 
 
 def compute(grading, input_csv):
@@ -118,7 +119,7 @@ def compute(grading, input_csv):
 
 
 def rank_of(rows, key, name):
-    order = sorted(FOUR, key=lambda k: -rows[k][key] if not isinstance(rows[k][key], str) else -float(rows[k][key]))
+    order = sorted(CANDIDATES, key=lambda k: -rows[k][key] if not isinstance(rows[k][key], str) else -float(rows[k][key]))
     return order.index(name) + 1
 
 
@@ -129,22 +130,22 @@ def markdown(d):
            "| Category | complaint_count | severity_sum | mean_severity | priority_score | cancellations | cancellation share "
            "| per 1k first 6 mo | per 1k last 6 mo | trend (points) | trend (%) |",
            "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
-    for k in FOUR + sorted(set(rows) - set(FOUR)):
+    for k in TOPICS:
         r = rows[k]
         out.append(f"| {k} | {r['complaint_count']:,} | {r['severity_sum']:,} | {r['mean_severity']} | {r['priority_score']:,} "
                    f"| {r['cancellations']:,} | {r['cancellation_share']:.1%} | {r['per_1k_first_6_months']} "
                    f"| {r['per_1k_last_6_months']} | {r['trend_per_1k_points']:+} | {r['trend_per_1k_percent']:+.0%} |")
-    out += ["", "## Rank among the four candidate categories", "",
+    out += ["", "## Rank among the decision candidates (the brief's options, billing and support separate)", "",
             "| Category | complaint_count | priority_score | mean_severity | trend (points) | trend (%) | cancellation share |",
             "|---|---:|---:|---:|---:|---:|---:|"]
-    for k in FOUR:
+    for k in CANDIDATES:
         out.append(f"| {k} | " + " | ".join(str(rank_of(rows, m, k)) for m in
                    ("complaint_count", "priority_score", "mean_severity", "trend_per_1k_points", "trend_per_1k_percent",
                     "cancellation_share")) + " |")
     q = sorted(next(iter(rows.values()))["per_1k_by_quarter"])
     out += ["", "## Complaints per 1,000 reviews by quarter", "", "| Category | " + " | ".join(q) + " |",
             "|---|" + "---:|" * len(q)]
-    for k in FOUR:
+    for k in TOPICS:
         out.append(f"| {k} | " + " | ".join(str(rows[k]["per_1k_by_quarter"][x]) for x in q) + " |")
     out += ["", "## Usability issues: cancellations", "", "| Issue | Complaints | Cancellations | Share |", "|---|---:|---:|---:|"]
     for k, v in d["usability_issue_cancellations"].items():

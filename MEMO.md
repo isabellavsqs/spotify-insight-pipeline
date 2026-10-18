@@ -13,14 +13,23 @@
 |---|---:|---:|---:|---:|---:|
 | **usability** | **75,980** | 2.745 | **208,597** | 102.6 → 119.0 (+16.4) | 10.7% (8,095) |
 | playback | 39,726 | 3.477 | 138,111 | 81.0 → 44.0 (−37.0) | 8.3% (3,291) |
-| billing/support | 40,072 | 3.000 | 120,225 | 20.8 → 105.1 (+84.3) | 18.6% (7,443) |
+| billing | 39,490 | 3.000 | 118,466 | 19.9 → 104.4 (+84.5) | 18.7% (7,375) |
+| support | 582 | 3.022 | 1,759 | 0.9 → 0.7 (−0.2) | 11.7% (68) |
 | access | 10,503 | 3.964 | 41,634 | 12.5 → 18.2 (+5.7) | 6.4% (675) |
+| *catalog* | 15,034 | 2.892 | 43,484 | 17.3 → 24.6 (+7.3) | 7.0% (1,056) |
+| *downloads* | 6,522 | 3.397 | 22,156 | 12.5 → 7.2 (−5.3) | 5.9% (382) |
+| *other* | 98,018 | 2.081 | 203,995 | 28.9 → 279.9 (+251.0) | 10.3% (10,145) |
 
 \*First six months (May–Oct 2022, 163,818 reviews) against the last six (Jun–Nov 2023, 307,894 reviews). The first and last months are partial.
 
-- **Most total pain.** Usability ranks first on complaint count and on the contract's priority score: 51% above playback and 74% above billing/support.
-- **It is growing, not fading.** Usability complaints rose by 16.4 per 1,000 reviews, second only to billing/support. Playback fell by 37.0 per 1,000 and is already improving.
-- **It carries the most cancellation reviews.** Usability has more cancellation reviews (8,095) than any other category, and the second-highest cancellation share.
+**About the categories:**
+- **Candidates:** the brief's options are access, usability, playback and billing/support. Billing and support are evaluated here as two separate categories.
+- **Catalog and downloads** (in italics) are not options in the brief, and they rank far below usability.
+- **"Other"** is mostly generic dislike with no specific problem to fix.
+
+- **Most total pain.** Usability ranks first on complaint count and on the contract's priority score: 51% above playback and 76% above billing.
+- **It is growing, not fading.** Usability complaints rose by 16.4 per 1,000 reviews, second only to billing. Playback fell by 37.0 per 1,000 and is already improving.
+- **It carries the most cancellation reviews.** Usability has more cancellation reviews (8,095) than any other specific category; only the generic "other" bucket has more. Its cancellation share (10.7%) is third, behind billing (18.7%) and support (11.7%, from only 68 reviews).
 - **Mean severity is lowest, but that doesn't outweigh the volume.** Usability complaints are mostly moderate (severity 2–3) because ads degrade listening rather than block it. The priority score already weighs intensity against volume, and the volume is 1.9× the next category.
 
 ## Where to start (issue-level, from the ranking)
@@ -43,8 +52,10 @@
 ## Alternatives considered
 
 - **Playback** is second on priority score (138,111) and has severe failures, such as crashes at mean 3.781218 [C039]. But its complaint rate halved over the period.
-- **Billing/support** is the fastest-growing category with the highest cancellation share. It ranks third on priority score, its surge is concentrated in October–November 2023, and support itself is only 582 reviews. Its largest issue, basic features locked behind Premium (15,676 [C009]), is part of the same free-tier experience and should be planned together with the ad work.
-- **Access** has the most severe complaints (mean 3.96), but the smallest volume (3.7% of complaints).
+- **Billing** is the fastest-growing category with the highest cancellation share. It ranks third on priority score, and its surge is concentrated in October–November 2023. Its largest issue, basic features locked behind Premium (15,676 [C009]), is part of the same free-tier experience and should be planned together with the ad work.
+- **Support** is the smallest category (582 complaints, priority score 1,759), too small to justify a quarter of effort on its own.
+- **Access** has the most severe complaints (mean 3.96), but a small volume (3.7% of complaints).
+- **Catalog and downloads**, outside the brief's options, have priority scores of 43,484 and 22,156, a fraction of usability's.
 
 ## Limits
 

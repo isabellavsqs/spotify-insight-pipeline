@@ -32,7 +32,7 @@
  "code_sha256": {
   "pipeline/__init__.py": "037629d3a36845d04036b0d731bf462ab7dfee2f7f1ab3f66e56ab8fcff8e5ed",
   "pipeline/__main__.py": "a1c8c25213b9854880225ab1a894069d2c6af28afc08e5015b82109c45be700d",
-  "pipeline/category_metrics.py": "57439d9e804a514204ad555a169979e01e08d1fcea70327425ac419ce108926e",
+  "pipeline/category_metrics.py": "303debb84a2a17595e6a4e8efd818910923864d8c7bdbf78b6c76c28942504f4",
   "pipeline/claude_batch.py": "cd89fb008706c44c2e23bb7e8c4d2c1af74abcf79c47d12999598039d03e8ca1",
   "pipeline/config.py": "b5450349131e7412dae270a4e0601e83e3b9cf3d2431131ec62d807f22305a16",
   "pipeline/corpus_stats.py": "97a510e56c34fcbfaf1a07f2f3c5896abb9a2e74c7e449f787b8538a32e80dce",
@@ -41,7 +41,7 @@
   "pipeline/estimate.py": "b9604d910a0ba55f04049aff7a8a45b05dc7fae2ef631df4fb11e7bc9b31df8d",
   "pipeline/evals_report.py": "0f67ace18f428baabe27d86e43acf86e58197133d349ea1ba17fa0c15229724e",
   "pipeline/export.py": "67c4666641d480d9b6abd731d0c1a0b1c344f0e10498c49ab74ae938f3a5014b",
-  "pipeline/final_artifacts.py": "fa983a3e08d92470531e44cc1127d2a3094928f52fc4f9fe12d365beb84f16ab",
+  "pipeline/final_artifacts.py": "e4aaefa0734da7867b0565d9ca9df47775fc93b2424636916db421d06f145b1a",
   "pipeline/golden_eval.py": "75002fa0cb37721de3431f99dc86b9aa5c151d2f7ecdbe01ce1061c1bfc6283f",
   "pipeline/group.py": "43ab717bd98167fb89b52f8f4d2c24af532b4f5fce8b1ede2a0383da076a8f68",
   "pipeline/issues.py": "9e29d4a994603d38631903fb33d4f28c0fce480b5fba1671ce05258f731ab6ee",
@@ -62,7 +62,7 @@
   "pipeline/textproc.py": "5cba58bc1ac67882365ecd6c9e602860f7ec1d8ebeea10fc114b76d8009b419f",
   "pipeline/verify.py": "ee0d9f01691b0e83e29257de0889718c0e298b410100862712205287faf788bb"
  },
- "code_sha256_combined": "1fa29c3149b8ef5b59858b0a5a22fc4bf8d0cc150cc7e383b70e2a1726b15df8",
+ "code_sha256_combined": "3b4f76c9500d3835bd883ef5f7232e76c774fb09a0d659782ccd8a03ea1599f9",
  "run_records": [
   {
    "run_id": "spotify_reviews_18months-20261013T063005Z",

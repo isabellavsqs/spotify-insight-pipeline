@@ -99,7 +99,7 @@ def build(grading=config.GRADING, out=config.REPORTS / "final", source=config.RO
         evidence[iid] = {"title": n.get("title"), "description": n.get("description"), "coherence": n.get("coherence"),
                          "representative_review_ids": reps,
                          "representative_quotes": [completed[rid]["evidence_quote"] for rid in reps]}
-        agg.append({**row, "category": "billing/support" if iid.split(".")[0] in ("billing", "support") else iid.split(".")[0],
+        agg.append({**row, "category": iid.split(".")[0],
                     "title": n.get("title", ""), "cancellations": cancel[iid],
                     "cancellation_share": f"{cancel[iid] / row['complaint_count']:.4f}"})
     (out / "issue_evidence.json").write_text(json.dumps({"pack_id": packs["group_pack"]["pack_id"], "pack_rebuilt_identically": pack_matches,

@@ -2,7 +2,7 @@
 
 **Question:** at the end of this review window, where should Spotify's next quarter of product effort go: access, usability, playback or billing/support?
 
-**Answer: usability**, starting with the free-tier ad experience. See [MEMO.md](MEMO.md) (decision memo) and [FINAL_REPORT.md](FINAL_REPORT.md) (full analysis).
+**Answer: usability**, starting with the free-tier ad experience. All 8 topics are reported separately, with billing and support as two categories ([category metrics](reports/final/category_metrics.md)). See [MEMO.md](MEMO.md) (decision memo) and [FINAL_REPORT.md](FINAL_REPORT.md) (full analysis).
 
 This repository holds a saved, rerunnable program. It classifies every review in `spotify_reviews_18months.csv` under the common labels of [GRADING_CONTRACT.md](GRADING_CONTRACT.md), then ranks the complaints, names the issues and writes a recommendation memo. Every call, cost and handoff is saved, and a grader can inspect and recalculate everything **without an API key**.
 
