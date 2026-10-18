@@ -1,0 +1,47 @@
+test_dry_run_counts_cached_texts (tests.test_cli.CliTest.test_dry_run_counts_cached_texts) ... ok
+test_every_source_file_compiles (tests.test_cli.CliTest.test_every_source_file_compiles) ... ok
+test_offline_commands_run (tests.test_cli.CliTest.test_offline_commands_run) ... ok
+test_b_request_with_severity_is_flagged (tests.test_pipeline.ChangesBCDTest.test_b_request_with_severity_is_flagged) ... ok
+test_c_out_of_range_quote_never_discards_labels (tests.test_pipeline.ChangesBCDTest.test_c_out_of_range_quote_never_discards_labels) ... ok
+test_d_issue_taxonomy_v2 (tests.test_pipeline.ChangesBCDTest.test_d_issue_taxonomy_v2) ... ok
+test_budget_cap_blocks_before_any_call (tests.test_pipeline.PipelineTest.test_budget_cap_blocks_before_any_call) ... ok
+test_end_to_end_with_faults_resume_and_checker (tests.test_pipeline.PipelineTest.test_end_to_end_with_faults_resume_and_checker) ... ok
+test_project_cap_shared_across_runs (tests.test_pipeline.PipelineTest.test_project_cap_shared_across_runs) ... ok
+test_matches_checker_arithmetic (tests.test_pipeline.RankTest.test_matches_checker_arithmetic) ... ok
+test_bad_key_stops_run_and_never_quarantines (tests.test_pipeline.RobustnessTest.test_bad_key_stops_run_and_never_quarantines) ... ok
+test_claude_custom_ids_fit_api_limit_for_long_run_ids (tests.test_pipeline.RobustnessTest.test_claude_custom_ids_fit_api_limit_for_long_run_ids) ... ok
+test_crash_after_enrichment_never_writes_resume_evidence (tests.test_pipeline.RobustnessTest.test_crash_after_enrichment_never_writes_resume_evidence) ... ok
+test_only_allowlisted_models_can_reserve_spend (tests.test_pipeline.RobustnessTest.test_only_allowlisted_models_can_reserve_spend) ... ok
+test_rate_limits_retry_without_counting_against_reviews (tests.test_pipeline.RobustnessTest.test_rate_limits_retry_without_counting_against_reviews) ... ok
+test_stale_reservations_are_counted_as_spent (tests.test_pipeline.RobustnessTest.test_stale_reservations_are_counted_as_spent) ... ok
+test_random_sample_is_reserved_before_flags (tests.test_pipeline.SampleTest.test_random_sample_is_reserved_before_flags) ... ok
+test_reused_result_from_outside_a_subset_does_not_fail (tests.test_pipeline.SubsetProvenanceTest.test_reused_result_from_outside_a_subset_does_not_fail) ... ok
+test_claude_rows_validated_never_guessed (tests.test_pipeline.ValidationTest.test_claude_rows_validated_never_guessed) ... ok
+test_claude_thinking_cannot_starve_answers (tests.test_pipeline.ValidationTest.test_claude_thinking_cannot_starve_answers) ... ok
+test_jev_batched_answers_validated_per_review (tests.test_pipeline.ValidationTest.test_jev_batched_answers_validated_per_review) ... ok
+test_memo_limits_may_name_missing_data (tests.test_pipeline.ValidationTest.test_memo_limits_may_name_missing_data) ... ok
+test_quote_is_exact_substring (tests.test_pipeline.ValidationTest.test_quote_is_exact_substring) ... ok
+test_counts_dedupe_and_quarantine (tests.test_prepare.PrepareTest.test_counts_dedupe_and_quarantine) ... ok
+test_hashes_match_checker_and_original_is_first (tests.test_prepare.PrepareTest.test_hashes_match_checker_and_original_is_first) ... ok
+test_rerun_is_idempotent (tests.test_prepare.PrepareTest.test_rerun_is_idempotent) ... ok
+test_claude_examples_match_schema_and_labeling (tests.test_prompts.PromptTest.test_claude_examples_match_schema_and_labeling) ... ok
+test_contract_definitions_quoted_verbatim (tests.test_prompts.PromptTest.test_contract_definitions_quoted_verbatim) ... ok
+test_deterministic_quote (tests.test_prompts.PromptTest.test_deterministic_quote) ... ok
+test_every_role_has_separate_instructions_input_output (tests.test_prompts.PromptTest.test_every_role_has_separate_instructions_input_output) ... ok
+test_issue_rules_are_deterministic_and_topic_scoped (tests.test_prompts.PromptTest.test_issue_rules_are_deterministic_and_topic_scoped) ... ok
+test_jev_batched_body (tests.test_prompts.PromptTest.test_jev_batched_body) ... ok
+test_lexicon_sentiment_on_labeling_examples (tests.test_prompts.PromptTest.test_lexicon_sentiment_on_labeling_examples) ... ok
+test_paid_prompt_versions_are_frozen (tests.test_prompts.PromptTest.test_paid_prompt_versions_are_frozen) ... ok
+test_prompts_never_reference_golden_data (tests.test_prompts.PromptTest.test_prompts_never_reference_golden_data) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 24.510s
+
+OK
+State already prepared for this exact input: cost_100/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: cost_100/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: synthetic/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: synthetic/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: synthetic/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: synthetic/state.sqlite (use --force to rebuild)
+State already prepared for this exact input: synthetic/state.sqlite (use --force to rebuild)

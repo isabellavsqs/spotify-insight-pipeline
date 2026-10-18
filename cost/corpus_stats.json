@@ -1,0 +1,24 @@
+{
+  "spotify_reviews_18months.csv": {
+    "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+    "rows": 660622,
+    "nonempty": 660609,
+    "empty_quarantined": 13,
+    "distinct_texts": 484189,
+    "jev_reviews_per_request": 20,
+    "jev_with_exact_text_reuse": {
+      "texts": 484189,
+      "requests": 24210,
+      "visible_tokens_heuristic": 96916428,
+      "questions": 1452567
+    },
+    "jev_without_reuse": {
+      "texts": 660609,
+      "requests": 33031,
+      "visible_tokens_heuristic": 128221492,
+      "questions": 1981827
+    },
+    "claude_input_tokens_per_request_of_50_heuristic": 2776.8,
+    "token_estimate_method": "heuristic (~4 ASCII chars/token, 1 token per non-ASCII char) over the exact request bodies; the calculator adds the Jev overhead model and calibrates with measured usage"
+  }
+}

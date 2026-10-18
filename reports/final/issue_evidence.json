@@ -1,0 +1,936 @@
+{
+ "pack_id": "707a801f822a3515c4fd4b700209c29ec5d8b61557b0950b82222b142ee37763",
+ "pack_rebuilt_identically": true,
+ "issues": {
+  "other.general_negative": {
+   "title": "Generic dislike with no specific problem",
+   "description": "Many reviews are short expressions of dislike, such as calling the app bad or the worst, without naming any concrete problem.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f44d3237-3d53-4610-be26-0b293f6c6cb0",
+    "2e55890c-337e-4b0c-aaf7-ebd14ea0e12d",
+    "c6df1d23-3069-4c14-8432-e8dc591ede88"
+   ],
+   "representative_quotes": [
+    "Very bad app",
+    "worst app",
+    "Hate this app 👎👎👎👎👎😠😠😠"
+   ]
+  },
+  "usability.ads": {
+   "title": "Too many interrupting ads on free tier",
+   "description": "Free-tier listeners complain of frequent, long or repetitive ads that interrupt listening, sometimes several in a row.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "1537f277-06b1-4451-ad09-f726a232225f",
+    "346a7dcc-749d-4224-bf9e-6305a5cd1750",
+    "12e66d41-79b0-4524-9fc1-91a614e94c06"
+   ],
+   "representative_quotes": [
+    "Too many ads",
+    "Its a good app but the constant ads have left me woth 9 ads in a row.",
+    "So mad rn cause I just watched an ad that said I get 30 minutes without ads."
+   ]
+  },
+  "billing.premium_only_feature": {
+   "title": "Basic features locked behind Premium",
+   "description": "Customers say core controls such as choosing songs, skipping, playing in order and seeking now require a Premium subscription.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "e8056529-f01e-4fac-9aad-3d0a54ce6132",
+    "da5a5e75-f2ac-451a-9c8c-bdfc67285a28",
+    "d01a0138-3d93-4e88-afc0-3d748bf2f8c1"
+   ],
+   "representative_quotes": [
+    "Everything is premium 😐😐",
+    "I hate the new update almost everything is in premium I cannot skip to the part of song which I like I need premium gor it I can't listen to the songs in order it's just frlor premium users I am not able to see the lyrics",
+    "Lol u can't even pick the song you like and if you want to fast-forward you have to buy premium."
+   ]
+  },
+  "billing.other": {
+   "title": "Frustration with paying for Premium or free limits",
+   "description": "Users object to needing to pay to listen, to free listening being cut short, and to the app being restricted to subscribers.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "d64f7204-a695-4491-86f7-d971f436d2ab",
+    "f3ddc3db-8ec0-440c-84bd-f76cc71d433c",
+    "42178d18-c37c-4b3b-b258-ebce113d2880"
+   ],
+   "representative_quotes": [
+    "After 2 or 4 songs you can't listen more for free.",
+    "U can't listen to music without paying",
+    "Worst app, since they restricted everything to get subscription from users."
+   ]
+  },
+  "other.update_made_worse": {
+   "title": "Recent update made the app worse",
+   "description": "Customers say a recent update degraded the app overall and some uninstalled, without pointing to one specific defect.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "39634f15-925a-4f92-b4fa-4fae32f436e8",
+    "3a8b74b6-759b-4615-8a01-380abb84444b",
+    "1582d9d8-374e-47ff-b752-a107f53a34ee"
+   ],
+   "representative_quotes": [
+    "Worst of the worst update ever",
+    "Disappointed with the new update....I have uninstalled Spotify now because of the new update...",
+    "The latest update has left me utterly frustrated and disappointed."
+   ]
+  },
+  "playback.other": {
+   "title": "Assorted playback misbehaviour after updates",
+   "description": "Listeners report miscellaneous playback problems such as being unable to reverse or replay songs, unplayable podcasts and sessions dropping, mostly following an update.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "7ef511be-2d57-4151-ac18-081b31cbde70",
+    "c43d77d7-53c9-4257-915d-8b03b34bffcd",
+    "819de6d9-dc8d-45b4-aeb7-6bb344dd1b95"
+   ],
+   "representative_quotes": [
+    "I can't reverse a song I'm listening to, and you can't individually listen to a song on repeat without it changing to another song.",
+    "Podcasts aren't working",
+    "I love the app but it keeps kicking me of the app even time 2 or 4 songs play and I don't know why or how to fix it😭😭😭"
+   ]
+  },
+  "access.login_failure": {
+   "title": "Unable to log in to the account",
+   "description": "Users cannot sign in through their usual method, including Facebook or phone number, and report login attempts failing outright.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "1de81dcd-a495-495a-9cfe-f614476a2bc0",
+    "557d8dfd-0964-4d22-9cc8-c0fa5377f56e",
+    "80789c56-62ed-4837-88d9-ea36f1709ee6"
+   ],
+   "representative_quotes": [
+    "I CANT LOGIN USIMG FACEBOOK ANYMORE",
+    "Can't login through the number fix this issue",
+    "This is becoming the worst app and I can't update the app and I am not able to sign in with my phone number as it is showing you can login with other number."
+   ]
+  },
+  "playback.stops_or_pauses": {
+   "title": "Music stops or pauses unexpectedly",
+   "description": "Playback cuts out or pauses on its own during listening, sometimes repeatedly, forcing users to restart the app to continue.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "72325550-fff4-4945-9607-29446ef6d58d",
+    "09b8f815-f854-42aa-afa0-c1cecc997ae4",
+    "f8962069-b87d-48d1-9549-5c82e5d533a0"
+   ],
+   "representative_quotes": [
+    "randomly stops playing despite good data connection..",
+    "Music stops playing every 5-10 minutes while im working out, have to leave the app open to keep it playing constantly.",
+    "Until latest update everything was great, songs just stop, won't play, gotta force quit the app and start again.."
+   ]
+  },
+  "playback.not_playing": {
+   "title": "Songs fail to play at all",
+   "description": "Tracks or the app refuse to start playing, including offline or on Wi-Fi, leaving users unable to listen to music they chose.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "43ec4e7e-93df-44d2-bc7c-6782f0872e78",
+    "e055643b-81cb-4341-bed5-72829c1c5b99",
+    "667cdad6-9a7d-4ee4-a0cd-c3dff3d3ce0c"
+   ],
+   "representative_quotes": [
+    "After some days we can't play our own songs neither we forward the song ,can't play next song.",
+    "Yay music except it keeps glitching put every so often and won't work at all.",
+    "This is suck I can't play I want to"
+   ]
+  },
+  "playback.crash_or_wont_open": {
+   "title": "App crashes, freezes or fails to open",
+   "description": "The app crashes, freezes on actions such as skipping, or will not open or load properly after updates.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "84750170-b4dd-4c2a-a038-739b27feb825",
+    "99594c94-3c43-425b-bd7d-7c845d60dd6e",
+    "5dd1f439-bc6d-445b-ba3c-b874598657ab"
+   ],
+   "representative_quotes": [
+    "Latest updates make it crash daily now.",
+    "The app is not opening anymore since the August fourth update",
+    "It freezes everytime I skip a song."
+   ]
+  },
+  "usability.other": {
+   "title": "Miscellaneous confusing or awkward usability",
+   "description": "Users find various parts of the app unintuitive, buggy or restrictive, such as songs refusing to change and drag or seek not working.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "d107df5b-00e1-4215-8e8e-4b14b2ae6749",
+    "859ce2c0-7f63-4d13-91f9-f81bda4f79ef",
+    "8ccf4099-2ec9-4593-bffa-119050bccc6f"
+   ],
+   "representative_quotes": [
+    "Don't waste your time on this.it has a weird bug where it won't let you change songs.",
+    "When you get to the gender section, it want work, keeps saying try again",
+    "I am not able to forward songs and drag is not working so if I want to only hear my fav part of song it is not possible"
+   ]
+  },
+  "usability.removed_features_update": {
+   "title": "Features removed or hidden by update",
+   "description": "After an update, users find previously available functions such as the queue, scroll bar, mini player, or played-status markers gone or harder to use.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "9dcb2c81-f569-4c2e-8efe-8d24dd37f532",
+    "99af5f0a-4d33-4716-ae9d-90f011e0760c",
+    "61d1c8c1-64b4-4d9c-b4ca-c8df367baaf4"
+   ],
+   "representative_quotes": [
+    "Love Spotify but since the last update am unable to view the song playing or pause, due to the mini controller now not visible the only way to stop the song in to force close the app.",
+    "New update has removed the scroll bar.",
+    "The new update for the home UI is absolutely horrible, we need to have the option to revert back to the older version, if not I'll probably switch to a different music streaming service."
+   ]
+  },
+  "usability.shuffle_order": {
+   "title": "Forced shuffle, no way to pick songs",
+   "description": "Users say the app plays songs out of order or randomly and cannot be turned off, so they cannot choose the specific song or order they want.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "04e431f1-e02e-4230-970b-c411fa372fe3",
+    "9be370e7-d2a7-4979-b4ad-942ff4e7100f",
+    "61a6cb85-6357-42ae-9e93-e304c59559a4"
+   ],
+   "representative_quotes": [
+    "No easy option to turn it off.",
+    "The Shuffle algorithm is HORRIBLE and there is no work around.",
+    "I hate you can't choose the song you want"
+   ]
+  },
+  "catalog.other": {
+   "title": "Songs and podcasts missing from catalog",
+   "description": "Customers report that the library lacks many songs or podcasts, or that some tracks have been removed.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f4908716-0555-4548-b163-323c886556a6",
+    "5726df4c-d06f-4b3a-94e1-f95a7d11a49e",
+    "0a093d8c-f12e-4fe5-b112-a18cf44a3ab4"
+   ],
+   "representative_quotes": [
+    "Why Spotify remove all best songs everytime please fix it most of the songs are deleted 😡",
+    "Has a lot of music but not all",
+    "Such a shame that a company like Spotify still do not have a way to sync the liked YT videos to the playlists."
+   ]
+  },
+  "usability.queue_playlist": {
+   "title": "Difficulty managing queues and playlists",
+   "description": "Users struggle to create a queue, view full playlists, or reorder and access their own playlists and library.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "87e4b9e0-bd85-4f4e-82a3-333bd27a4743",
+    "088b2ac7-0831-4584-a7ac-1a0a55a8e315",
+    "8891709b-0bc3-4cc1-8fb1-622fb47b418a"
+   ],
+   "representative_quotes": [
+    "New features are irritating we can't made queue",
+    "After a while I am finding it difficult to access the playlists I've created.",
+    "Why can I no longer order my Playlists on my laptop version???"
+   ]
+  },
+  "other.boycott_political": {
+   "title": "Boycott or political protest against Spotify",
+   "description": "Some reviews call for a boycott or ban of Spotify, often citing its Swedish origin or political and religious grievances.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "efc837ba-a9b5-4497-a740-f8414d03fc4f",
+    "58ff1a12-b81d-4365-92c3-7d80b90062c1",
+    "abfee1f3-af56-4452-958e-5849266fde1c"
+   ],
+   "representative_quotes": [
+    "Boycott",
+    "I boycott the Sweden apps",
+    "#boyocattSpotify #boyocattsweden And all products and all applications app this /"
+   ]
+  },
+  "catalog.lyrics": {
+   "title": "Lyrics missing, wrong or locked",
+   "description": "Lyrics fail to display for some songs or devices, or are shown only to Premium subscribers.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f70c07bf-7f97-4449-a138-886fa254167e",
+    "fe79a5e1-6a52-4ac7-83b8-fa5c051c20b1",
+    "047db197-68ba-40c0-93c6-deb113e8be31"
+   ],
+   "representative_quotes": [
+    "i have tried reinstalling for a few times but the lyrics for the songs still wont show of please fix this",
+    "Lyrics are not available",
+    "Now we have to get premium to see the lyrics now what to do."
+   ]
+  },
+  "billing.monetization_greed": {
+   "title": "Perception that Spotify is money-focused",
+   "description": "Customers feel the company is greedy, restricting free features to push Premium and prioritising revenue over users.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "de034e09-e913-41e1-babf-fec8a78aad26",
+    "d0b3d9e7-3cd2-4237-bbdd-e008720a2aa4",
+    "e008c6cb-2195-4d9e-a772-43b3d83797df"
+   ],
+   "representative_quotes": [
+    "Now everything thing is premium I'm going to switch with another music player, just hate this new update shame on you spotify.",
+    "These people are desperately looking for a money I guess, that's the reason now they restrict almost all the functions for non premium members, indirectly they are saying that this application is not for the non premium members.",
+    "Everything which was free to use now has become a way to ask us to buy the premium this is so sad not everyone can afford to pay, atleast providing features for the people who don't want to spend money should be available."
+   ]
+  },
+  "playback.bugs_glitches": {
+   "title": "General bugs and unstable behaviour",
+   "description": "Users describe the app as buggy and glitchy, with random restarts of playlists, unexplained songs running, and features misbehaving.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "7e23b4e6-e2f1-4d9d-bd74-6a909f77d767",
+    "fa1e667f-cadc-41e1-a852-395f84d715b3",
+    "9e8f39bb-a0d0-4704-9e16-5a49e5a95419"
+   ],
+   "representative_quotes": [
+    "It's buggy other apps have Internet connection yet something is always wrong with spotify features are also not running correctly I'm not going to bother writing it all but it can't only be me experiencing issues please fix this",
+    "Recently I'm having a problem where I'm listening to my playlist and randomly it just goes back to the first song in the playlist nad restarts again from the first and idk why it's happening",
+    "It's a good app for listening songs but now when I open the app all I see is 'the app isn't responding' all the time can you please fix the problem."
+   ]
+  },
+  "access.other": {
+   "title": "Other sign-in and account access problems",
+   "description": "Customers report difficulty accessing their accounts, such as the app not opening or sign-in failing after switching devices or email.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "c6fce64a-e6e2-417a-83bf-04243c638353",
+    "1cbf2f02-df68-42f5-8d0a-b851d2c0e00e",
+    "8bd16dcc-cb13-4e60-a3a4-4e8aca70ef96"
+   ],
+   "representative_quotes": [
+    "Worst app ever many bugs and issue while logging in and after also..",
+    "Llevo 8 años con Spotify, he pagado el estudiante premium, me lo he quitado y ahora no me deja iniciar sesión.😡",
+    "I have more accounts on this app and when I got a new phone it's not loging me in"
+   ]
+  },
+  "downloads.other": {
+   "title": "Downloads limited or unreliable",
+   "description": "Users find downloads locked behind Premium, storage location switching back to internal memory, and playlists dropping from downloads.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "6d246d4c-6698-491b-9c4a-ec54ad121f16",
+    "378b86b2-bfcd-404c-b485-7757b187cd6c",
+    "c3078fb8-4a0e-4083-9c36-fc51dfbbf504"
+   ],
+   "representative_quotes": [
+    "I like the app but ot so sad that you no longer download music on Spotify unless you have premium",
+    "تحفة ولكن لا يمكن تنزيل الاغاني إلا بالمال",
+    "Cool app, I have Premium but the one thing that annoys me is it keeps changing my storage location back to internal from SD card, and when I realize and try to move it, the move fails or Spotify kills itself so bad I have to do a full reinstall."
+   ]
+  },
+  "usability.ui_change": {
+   "title": "Disliked redesign and layout changes",
+   "description": "Customers dislike the new home screen, layout, and visual design, with some saying they would cancel their subscription over it.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "ade578ac-5dd4-4730-9a80-5640beca6ad7",
+    "86e1ba3f-dc03-49dc-91af-8867fe437ffc",
+    "b22a7a89-7e09-44ee-83f7-7f79ccf6c42f"
+   ],
+   "representative_quotes": [
+    "If you decide to go forward with the layout change I am canceling my subscription.",
+    "The app itself is fine but the new layout is abhorrent and actually made me consider flat out canceling my subscription because of how inconvenient, obnoxious, and ugly it is.",
+    "This new vertical design is garbage!"
+   ]
+  },
+  "playback.lag_or_skips": {
+   "title": "Lag, buffering and slowness",
+   "description": "Users describe the app as slow, laggy or buffering, with songs skipping or glitching, prompting some to switch to other services.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "ec46a220-d58e-4c5f-abdf-e4e8b6c6bab8",
+    "37c66c7e-38b2-4eca-bbd5-c8611096997b",
+    "4a73b431-c8fe-46c3-8666-54657c798e0a"
+   ],
+   "representative_quotes": [
+    "Alot of buffering where I'm at.",
+    "This app has now gotten so slow and useless that I have started streaming through the website instead.",
+    "It's good till it gets glitches."
+   ]
+  },
+  "billing.charges_refunds": {
+   "title": "Payment failures and unexpected charges",
+   "description": "Customers report payments not activating Premium, charges they did not expect, difficulty changing payment methods, and trouble cancelling subscriptions.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "05171711-893c-4647-b546-dfc33dd0aa6d",
+    "9ec30221-ca7b-4b1c-9546-bf70d23d90e5",
+    "2dc14727-3ee0-4277-a1f5-3ab266781f73"
+   ],
+   "representative_quotes": [
+    "i can't access my primium features after completing payment solve this ASAP.",
+    "Payment successfully done my premium subscription is not credit in my account I am helpless from the side of spotify I request you to please solve my problem",
+    "i want to cancel the auto subscription payment spotify on gcash but i can't cancel it."
+   ]
+  },
+  "usability.controls_widget": {
+   "title": "Player controls and widget not working",
+   "description": "Users find playback controls missing or unreliable, such as no previous-song button, a missing repeat option, or a widget that fails to show.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "52f4ba15-0f54-4d57-b01b-8a768aa042c7",
+    "e7884c3a-fe38-4d4a-8e7e-d5b7eeaabeae",
+    "3d55e143-e741-437e-a111-2def32eee4cc"
+   ],
+   "representative_quotes": [
+    "We don't even have an option to play previous songs🤬🤬",
+    "Can't able to jump to previous song..not at fare for the Un premium version..",
+    "You can't keep songs on repeat on console or computer."
+   ]
+  },
+  "downloads.offline_mode": {
+   "title": "Offline mode does not work properly",
+   "description": "Downloaded music fails to play offline, and the offline mode gets stuck loading or stops working.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "c9e7f393-a0c1-48fa-b1b5-6ad03525725d",
+    "d73bd644-ff0f-4193-91ba-6d82aafdc9a5",
+    "4b9eb941-a555-4bdb-bce9-63cb2c0c64ac"
+   ],
+   "representative_quotes": [
+    "The offline experience is a joke.",
+    "My music no longer plays offline fbs....",
+    "I can't listen to my downloaded library offline which is the whole reason I have paid to have it for 8 years."
+   ]
+  },
+  "playback.connection_error": {
+   "title": "Connection errors during playback",
+   "description": "The app wrongly reports being offline or fails to connect even with a strong signal or Wi-Fi, interrupting playback.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "eab3a836-f25d-41fb-a123-f01bed0e3ffd",
+    "a3b7c509-62c9-43cb-a613-312f97d99822",
+    "798f5d44-3c1d-44b9-944a-ba55747a3d0b"
+   ],
+   "representative_quotes": [
+    "it always says im offline even tho im not it says check my connection even tho my connection is fine please fix this",
+    "Would not connect to the internet.",
+    "It used to be a decent app, but here lately it says I'm offline a lot when I have strong phone signal and/or good WiFi signal."
+   ]
+  },
+  "catalog.missing_content": {
+   "title": "Songs and artists missing or removed",
+   "description": "Users find that specific songs, artists, or podcasts are unavailable, missing, or removed from the catalogue.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "d7e3a544-349d-4e77-a89e-f48b9ec78196",
+    "a81dfeca-20f8-426e-a6d2-e8f7fc267d13",
+    "d0abac56-1d99-4f71-92d5-361dd0b6cf22"
+   ],
+   "representative_quotes": [
+    "missing Joni Mitchell and a few others.",
+    "Ana Dami Falestiny song was removed for no reason.",
+    "Many songs from artist missing"
+   ]
+  },
+  "playback.plays_wrong_song": {
+   "title": "Plays a different song than chosen",
+   "description": "When users select a song or playlist, the app plays random or different tracks instead, forcing them to skip until they find the one they wanted.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "032b0467-c0e7-4c4d-92cb-d948daa5c5b3",
+    "6c249f91-2a2a-4a9a-80cd-67d2317579cf",
+    "55b47906-18cd-493b-bed8-3d7c457cec7d"
+   ],
+   "representative_quotes": [
+    "The new version doesn't even play the songs in your playlist, it plays random songs.",
+    "Instead it will play a random song similar to it and you have to skip until you find that song you want.",
+    "Spotify for phone sucks, whenever I try to play a song it always plays a random song that I don't even like."
+   ]
+  },
+  "usability.skip_limits": {
+   "title": "Skip limits block normal listening",
+   "description": "Free users hit caps on skipping and cannot replay or go back to previous songs, which restricts how they listen.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "39ff144b-793e-4814-ab5c-37aa79597e32",
+    "a75292bd-ec69-4266-887c-92f8b54624bc",
+    "0b8a2d00-7031-469c-9c2d-8fa38db52dc9"
+   ],
+   "representative_quotes": [
+    "I can't play any song i want anytime.",
+    "new update stupid why only 6 skips why can't I play what I want went from good to cash grab",
+    "Can't skip songs, can't choose songs."
+   ]
+  },
+  "other.uninstalling_switching": {
+   "title": "Users uninstalling and switching to rivals",
+   "description": "Some reviewers say they uninstalled Spotify and are moving to competing apps such as YouTube Music, Deezer or SoundCloud.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "8bcdc8b6-5b7b-417f-af82-d9cffd71a80f",
+    "3fccdea9-3c66-4d36-a561-a080ba2632c6",
+    "99991c81-7014-49b7-a2af-b240135806b7"
+   ],
+   "representative_quotes": [
+    "Please delete this app on playstore",
+    "Youtube Music is Better",
+    "Soundcloud much better than this"
+   ]
+  },
+  "billing.price": {
+   "title": "Premium seen as too expensive",
+   "description": "Customers feel the Premium subscription costs too much for the value, and some say they cannot afford it.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "00c7efc1-9766-4c5c-a2ed-6f73e14df3db",
+    "3b4b94f7-51ed-41ff-b545-e99a44e2f740",
+    "9a0eae7e-72e4-416f-ba10-a079ce0191b5"
+   ],
+   "representative_quotes": [
+    "This application is good but it was not worth for premier cost",
+    "Too expensive",
+    "Just wish i could afford premium"
+   ]
+  },
+  "other.bugs_not_working": {
+   "title": "App simply does not work",
+   "description": "Users say the app is broken or not working, with bugs in general and no specific defect identified.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f025b9c6-b377-4f04-85c6-02c557eb6db4",
+    "088966a7-31ea-4b8a-a236-15ac6bc3d300",
+    "899814ac-a64d-4d58-834c-2cbff8c0c3a5"
+   ],
+   "representative_quotes": [
+    "Bad app not working",
+    "It' doesn't work",
+    "not working shittiest app"
+   ]
+  },
+  "downloads.cannot_download": {
+   "title": "Cannot download songs",
+   "description": "Users are unable to download songs at all, including on free accounts, and some report it after paying for a plan.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "d1f290d2-7609-4b3a-a043-50f525638d66",
+    "fb47a226-7c72-4d68-90a3-984e978ac0b7",
+    "fcd1862b-0e4c-4ef2-85b7-b3fd5554469e"
+   ],
+   "representative_quotes": [
+    "Free song not download",
+    "Can't download songs",
+    "I can't download the music i like."
+   ]
+  },
+  "catalog.search": {
+   "title": "Search fails to find wanted content",
+   "description": "Searches return the wrong songs or no results, and podcasts or specific tracks do not appear when users look for them.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "05c4ab34-e21a-4669-8d8a-9f9736b53656",
+    "eaefd1e3-4eef-4c79-bcc9-8235d4a2e265",
+    "5294d953-0e26-4b59-bf2f-b992bc497f88"
+   ],
+   "representative_quotes": [
+    "I liked the app but whenever I search for podcasts they don't appear",
+    "Not able to search any songs 😕",
+    "You search for one song in other song"
+   ]
+  },
+  "playback.audio_quality": {
+   "title": "Poor sound quality and volume",
+   "description": "Users find the audio compressed or weak, with volume dropping or no sound from songs playing on the app.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "611d357a-0b74-4634-9545-0d12200eee1b",
+    "02bf69e9-8fa5-499b-b933-7c4e54606329",
+    "5d2f9172-e385-4406-b7f7-72f184c1123b"
+   ],
+   "representative_quotes": [
+    "On the app, the song is playing but no audio and the song timer doesn't move forward either.",
+    "This app streams audio at a compressed 320Kbps while Apple Music gives you lossless, high resolution audio that **exceeds** CD quality, costing just one dollar more than Spotify.",
+    "Music volume keeps on going down."
+   ]
+  },
+  "catalog.recommendations": {
+   "title": "Poor or repetitive recommendations",
+   "description": "Users find recommendations, radio and smart shuffle inaccurate, repetitive or unwanted, and cannot tell the algorithm what they dislike.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "5af7cf37-6728-48c0-b9ba-dc31e47fd266",
+    "850a44b6-a2d3-4768-8cde-de130e1aaf76",
+    "12ba678e-28a0-4ae8-89ee-268ad8de9a29"
+   ],
+   "representative_quotes": [
+    "It's 2023, and Spotify recommendations are still absolutely horrible.",
+    "pretty good but when the ai goes bad it goes real bad why oh why can't we tell the Algorithm what we don't want to hear?",
+    "But I wonder why we couldn't delete or do something about the recommendation, bcs some recommendations are unwanted and I couldn't do anything abt it."
+   ]
+  },
+  "downloads.downloads_disappear": {
+   "title": "Downloaded music vanishes or re-downloads",
+   "description": "Previously downloaded songs and playlists disappear or must be downloaded again, sometimes after restarts or cache clearing.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "86501928-272c-4311-b19f-9bf5dfa3875d",
+    "3283f479-b70b-414c-8ff4-bc678746106f",
+    "cf69b967-d2a3-49ab-9b59-aecb23d7c905"
+   ],
+   "representative_quotes": [
+    "All my downloads vanished today even though I only cleared the cache and added my premium plan back before it expired.",
+    "The latest version running on Android 13 keep reverting the storage for downloaded song to internal storage every time the phone is restarted and re-download the songs.",
+    "My 1,500+ downloaded songs, gone."
+   ]
+  },
+  "billing.ads_for_paying_users": {
+   "title": "Ads still shown to Premium users",
+   "description": "Subscribers say they still hear ads, particularly on podcasts, even after paying for Premium.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "ed9e61f5-63da-4363-a9b7-dc329a658e12",
+    "f6bd95a4-6eb3-4758-98c5-77c20bb849e4",
+    "dc4bf5e2-cbcc-4dcb-b208-309bd7b08fbe"
+   ],
+   "representative_quotes": [
+    "I don't get how I pay for family premium and still get ads on podcasts...",
+    "Great for music however paying for premium still includes podcast ads",
+    "This would be a great service except for that premium does NOT provide an ad-free listening experience for podcasts."
+   ]
+  },
+  "access.logged_out": {
+   "title": "Unexpectedly logged out of account",
+   "description": "Users are signed out without action and then cannot log back in, sometimes losing their saved playlists.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "41499d8e-ebd3-4cc4-8656-769008e26483",
+    "f406510d-fbb3-4ab5-8cc0-d7d4a0272e62",
+    "71728e99-f0d9-46a5-ad85-05172b38a599"
+   ],
+   "representative_quotes": [
+    "Everything is ok but like few mins ago i was listening to music as usual and then all of a sudden i got logged out of my acc without touching my phone i can't remember what gmail i used or what is the password I don't want to make a new acc and search for songs again!!",
+    "Signed out by accident and now I can't log back in nor create a new account and all my 2700 favourites list is gone!",
+    "Keeps logging me out"
+   ]
+  },
+  "billing.promotion_trial": {
+   "title": "Trial, student and family plan problems",
+   "description": "Users struggle with trial periods, student or family plan eligibility, and being pushed to pricier individual plans.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "2e9bca77-1f09-4c20-a568-992970bf7f13",
+    "032f760e-e265-4cfe-a329-1bea0daee130",
+    "57696432-b189-467c-8bd7-62bdc1fd72d9"
+   ],
+   "representative_quotes": [
+    "After that they force you to use the Premium Individual service for almost double the price.",
+    "Bad apps, i cant pay my student plans!!!!",
+    "Now it's finally the time to switch services as this recent update was such a drawback and as a highschooler, I can't even use the student plan to afford premium services."
+   ]
+  },
+  "other.premium_paywall": {
+   "title": "General objection to the Premium paywall",
+   "description": "Customers broadly resent Premium gating, calling the company corrupt and saying it has messed up the free experience.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "2faa4fc0-7952-4df7-bbba-b6b68bcb7b17",
+    "b056ebb1-4a77-41c4-b898-9040ddf6ac7e",
+    "dbf411ba-d38d-44ee-8e11-6df59799ded7"
+   ],
+   "representative_quotes": [
+    "I hate this app so much, it never made me delete my Spotify before but now I have too 🙄 a way to lose customers 😤 I'm never paying for premium again",
+    "They have just messed up everything for premium",
+    "I don't know if any of the apps that have used such cheap tactics."
+   ]
+  },
+  "usability.podcast_ui": {
+   "title": "Podcast and video experience problems",
+   "description": "Users find podcast features lacking, such as a missing sleep timer, ads on podcasts, and video content that cannot be paused.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "2a99f113-0a13-48e2-8d38-eec34e6f2517",
+    "ea8355d9-77c4-4710-acc6-a0d5bff9ec13",
+    "7bed99b8-106f-4041-a639-eb9f9d2a2ed0"
+   ],
+   "representative_quotes": [
+    "Sleep timer gone for podcasts",
+    "Anúncios em podcast para usuário Premium foi a última coisa ruim e que me fez decidir.",
+    "Video is always playing and you can't pause it anywhere."
+   ]
+  },
+  "playback.battery_data_storage": {
+   "title": "Battery drain and data use",
+   "description": "Users report the app draining battery in the background and using excessive mobile data, even with a subscription.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "0768218c-b476-4931-b27a-0d87a634c9d4",
+    "b61bf592-3d15-4c27-b9da-22c8d5a4e98d",
+    "41fce6f3-9e8a-4050-9f18-6c7d6f612b59"
+   ],
+   "representative_quotes": [
+    "Battery drain.",
+    "It gets running in background itself so, battery drainage very fast.....",
+    "Uses too much data when on the move"
+   ]
+  },
+  "catalog.ads": {
+   "title": "Ads and free-tier experience in catalog",
+   "description": "Complaints about the free service mix ads with catalog gaps, such as songs missing due to licensing and an unsatisfying radio.",
+   "coherence": "mixed",
+   "representative_review_ids": [
+    "f81062c1-4cf2-4e4c-89bd-62bff492c493",
+    "0fd40bf4-b922-44a2-8db6-cc05b0a59869",
+    "436f4d5a-2fb0-4840-b749-add54c77c0aa"
+   ],
+   "representative_quotes": [
+    "many songs are not even there due to licence issues.",
+    "I'm a long time Spotify user but the poor implementation of radio is starting to grate me.",
+    "No song in Spotify Only ad"
+   ]
+  },
+  "usability.autoplay_cant_stop": {
+   "title": "Autoplay cannot be stopped",
+   "description": "Users say the app starts playing on its own, such as when connecting Bluetooth or opening, and that autoplay or repeat cannot be turned off.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "b97b1da6-e2bb-492f-8913-153c29500098",
+    "ea97a5fc-193a-4d46-938e-b3c2333a45ef",
+    "8d2c210a-5689-4b92-975b-ab4dae01b76b"
+   ],
+   "representative_quotes": [
+    "Stop auto-playing podcasts.",
+    "Why can't I turn off the autoplay \"feature\" when the app starts?!",
+    "This thing will literally play whatever I left off on everytime I connect to any of my Bluetooth devices and you can't turn off the settings off."
+   ]
+  },
+  "support.other": {
+   "title": "Frustration with customer support access",
+   "description": "Customers find it hard to reach a live person for help and feel the company is not responsive to their problems.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f4aab3d0-62d2-4a55-b38d-0ff6181a69c8",
+    "2a22873a-e9c5-42d6-8756-2aa8ae1ebf54",
+    "52e1559d-467b-4da1-9b0b-8ca94a2c407d"
+   ],
+   "representative_quotes": [
+    "It is frustrating trying to get ahold of a live person oftentimes multie times in one day and to no avail..",
+    "I have had issues with regarding getting in touch with the company.",
+    "Most horrible customer service in the world."
+   ]
+  },
+  "playback.device_bluetooth_car": {
+   "title": "Problems on Bluetooth, car and casting devices",
+   "description": "Playback breaks or drains devices when using Android Auto, Bluetooth, speakers, or watches, causing the app to fail through these connections.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "11ed1d0b-e1e7-41e4-8456-ec70a3dc8f64",
+    "b78e3417-09ed-47d3-88cb-2ebcb2818946",
+    "6e20a332-bb15-43b8-9a90-8d0d2b308c2c"
+   ],
+   "representative_quotes": [
+    "Runs horribly with Android Auto.",
+    "Why is casting music to my speaker so broken 🙃",
+    "I don't know if it's this app update or the Android auto app, but since updating both two days ago now the Spotify app fails when running through Android auto."
+   ]
+  },
+  "catalog.liked_library": {
+   "title": "Liked songs and saved playlists lost",
+   "description": "Users find their liked songs or saved playlists missing or empty, and random unwanted songs get mixed into their playlists.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "1959aba7-971f-427e-8cf1-00a425571f71",
+    "9675ce54-157b-46c8-84f1-5708d355a370",
+    "ebfc70e2-31b6-4f2a-b685-99fbce049690"
+   ],
+   "representative_quotes": [
+    "I want to report a problem about my Spotify account that i can't see my liked songs .",
+    "Last two weeks it hasn't open my liked songs it shows only black screen I tried to repair I can't...",
+    "Can't play my fav signs in my playlist now why the f###"
+   ]
+  },
+  "access.password_reset": {
+   "title": "Password and password-reset problems",
+   "description": "Users are told their password is wrong or cannot reset it, with no working forgot-password option available.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "d652ca7a-f863-4c97-a3c7-c62a0fd54b0f",
+    "23b7a4a3-a41a-410b-b9ed-150bda87d872",
+    "368a75a2-8382-42ac-9144-7df20c12e7c7"
+   ],
+   "representative_quotes": [
+    "Trying to open but it's not using my password",
+    "Don't have a forgot password system",
+    "Every time i open the app it logs me out and When i put my password in it says wrong password and when i change it it says you cznt use the same password other than that is is great"
+   ]
+  },
+  "other.money_value": {
+   "title": "Not worth the money",
+   "description": "Users say the app or subscription is not worth paying for and accuse the company of being money-hungry.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "9c350f80-c42a-4a6f-aa47-05d2da37e20f",
+    "1aba501c-d713-4d2e-8149-e2cd48841bcd",
+    "2b2900e4-2602-4c95-b29f-202c85f488f8"
+   ],
+   "representative_quotes": [
+    "Not worth it 😒",
+    "So money hungry",
+    "Just hungry for money"
+   ]
+  },
+  "usability.navigation": {
+   "title": "Confusing navigation and menus",
+   "description": "Users find the app hard to navigate, with menus, settings and icons confusing and songs not directly reachable.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f189495f-0b72-4b98-881e-8384f8ca2e9c",
+    "748a5642-3a36-4875-aacc-3955547dee05",
+    "549bb6c0-e7e1-4f7a-b178-787d1240c645"
+   ],
+   "representative_quotes": [
+    "Expected direct access to the song I had originally selected, it didn't happen, still trying to navigate my way through to be able to listen to it.",
+    "Why would you get rid of the heart for likes it's so confusing and stupid looking.",
+    "Menues, settings etc."
+   ]
+  },
+  "access.phone_email_verification": {
+   "title": "Phone or email verification failures",
+   "description": "Sign-in fails because the app rejects valid phone numbers or OTP codes, or says the number is wrong.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "430df384-61e6-44a0-b68c-251df29157f6",
+    "5cffd4af-b0b8-461a-8926-19f2a44a8dbf",
+    "51264fe7-3b47-4670-b0d6-7a28fc6023a9"
+   ],
+   "representative_quotes": [
+    "I m literally fed-up with this now my Spotify is showing that my phone number is wrong , and I hve my account with my phone number only 😭, and now they say I don't have a correct number , wth, I have u Spotify",
+    "I like this app but one thing is worst about it ( once I typed wrong OTP with my number ) then all time i face try again with different number .",
+    "I am not able to logging using my mobile number it shows check your phone number I have my own playlist this is very bad user experience"
+   ]
+  },
+  "access.signup": {
+   "title": "Unable to create an account",
+   "description": "New users cannot sign up for an account or Premium, with errors appearing during registration.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "14dc647f-e1cb-4c26-9342-4bd6bd84f869",
+    "d6bc99e5-0831-4c89-a31b-a326f36ff251",
+    "dd8e9b99-8d0e-43ea-a1eb-a10d23d014b1"
+   ],
+   "representative_quotes": [
+    "i cant sign up and open spotify i dont know why?",
+    "Every time I try to sign up, it keeps say something is wrong, I can't even create an account.",
+    "The main problem is that I can't create an account with mobile number......please return the old Spotify"
+   ]
+  },
+  "access.account_hacked_or_lost": {
+   "title": "Account hacked or lost",
+   "description": "Users report their accounts were hacked, taken over or lost, with loss of data and slow or unhelpful recovery.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "2333b39c-80e1-4fbd-ba4e-b44763982826",
+    "60876636-8ddb-437e-94d6-9ea9b4afb1d0",
+    "f163cf4f-6ac5-41b1-baa2-157c418e67dc"
+   ],
+   "representative_quotes": [
+    "my spotify account was hacked, irrecoverable and everything changed.",
+    "One time I got hacked and it took them a month to fix my account but everything they told me to do was useless, and so I changed my password and fixed it myself.",
+    "I've been hacked."
+   ]
+  },
+  "access.connection_offline": {
+   "title": "Access blocked by offline or connection errors",
+   "description": "Users cannot sign in or access their account because the app shows them as offline or logs them out when offline mode is set.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "8296426e-99df-4f12-97ca-cc9514a1f9df",
+    "fccd8706-857e-44fe-8876-977022486ffc",
+    "440559d1-c183-4622-b676-104cc3249f7d"
+   ],
+   "representative_quotes": [
+    "As I run the app in offline mode only, every time the app updates I can't log back in..",
+    "Wanted to try this app but when I tried signing up, it is saying I am offline.",
+    "While using app, it started to show the message of no internet connection, without having the problem of internet connection, all my apps were running smooth so I reinstalled the app but now while signing in it shows me something went wrong What should I do?"
+   ]
+  },
+  "other.ads": {
+   "title": "General complaints about ads",
+   "description": "Reviewers express broad dislike of the number of ads and say the app shows too many commercials and gathers data for advertisers.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "6ea37a63-b95d-485b-aac0-14d8d6c7a019",
+    "09d2139e-0087-4040-b560-f71967ccbbb2",
+    "268ad2f8-9640-4eec-af94-b6a25fddb39d"
+   ],
+   "representative_quotes": [
+    "Very bad many add come",
+    "Adds more than come so I am not satisfied",
+    "The app is gathering too much information and sending it to advertisers."
+   ]
+  },
+  "catalog.wrapped": {
+   "title": "Spotify Wrapped not appearing",
+   "description": "Users report that their annual Spotify Wrapped summary does not show up, and some say it is missing in their region.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "02b4f6f5-3c08-45ec-bbb6-5a2673c5c987",
+    "99bf7897-f615-4adf-ae7e-8463884e88c5",
+    "30744b29-cc36-4e3e-bcca-32297bae74ea"
+   ],
+   "representative_quotes": [
+    "Really annoying that my spotify wrapped won't show up and won't show me my slides its really pissing me off the app no matter what I try it won't work apparently I need to update tue app but it says there is no update available",
+    "I don't know my spotify wrapped 2022 is not opening.",
+    "My 2022 wrapped is not showing 🥲"
+   ]
+  },
+  "billing.subscription_activation": {
+   "title": "Premium not activating after payment",
+   "description": "Users pay for Premium but the app stays in free mode or cannot complete the upgrade, so the features never unlock.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "b985eb07-646f-42f7-bd5f-d79ad1056d1f",
+    "ae454246-d399-4295-9c7f-8ad9ed1e7e63",
+    "4da8a4cf-e0e3-49cb-bbb2-0b476d7ed649"
+   ],
+   "representative_quotes": [
+    "Been paying subscription via google play for months but appnis stuck in free mode, tells me i am subscribed but doesnt activate, cancelled app is a waste of time, login and subscriptions ar etotally foobar",
+    "Paidd for premium with mpesa function twice and didn't get premium features why?",
+    "Can't upgrade to premium,always can't connect"
+   ]
+  },
+  "catalog.content_controversy": {
+   "title": "Objections to content and host controversies",
+   "description": "Some users want certain hosts removed or object to specific content appearing on the home screen, citing controversial figures.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "f2b19f60-be72-46ae-886f-ea9c465a7ed7",
+    "16312f28-20f6-44df-b974-b81309195efc",
+    "97e0c911-7960-4803-b0f8-f0e760f0eaf7"
+   ],
+   "representative_quotes": [
+    "take Joe Rogan off or we won't come back",
+    "There is no way to keep this garbage from the home screen.",
+    "How about you stop censoring Joe Rogan."
+   ]
+  },
+  "support.unresponsive": {
+   "title": "Support does not respond",
+   "description": "Users say emails go unanswered and that chat or bot support never reaches a human to resolve their problem.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "1ffc7933-a2de-470e-97f4-a7526a25ba57",
+    "1e47617a-4e87-4a57-9fae-3bfc3b17ae0e",
+    "f88101f3-cffd-467f-9d25-7217281975f5"
+   ],
+   "representative_quotes": [
+    "I email them and get no response.",
+    "Can't contact you except botchat, no humans.",
+    "Spotify Support is NEVER answering regarding double withdrawals during almost two years."
+   ]
+  },
+  "support.unhelpful": {
+   "title": "Support replies do not resolve problems",
+   "description": "Users say support answers are useless, scripted or dismissive, and that their issues stay unsolved.",
+   "coherence": "coherent",
+   "representative_review_ids": [
+    "5ccb76a8-69e4-490f-a90e-4c49ac041956",
+    "4b2d7b77-936e-4f36-9775-d455bee9dd8e",
+    "56ca62b2-2448-418c-929f-adbae0126c12"
+   ],
+   "representative_quotes": [
+    "But not only was finding a way to report was difficult, Spotify sent a bot to talk to me when I sent a detailed explanation of the problem and wasted my time.",
+    "Hope you never have to use the customer service of these guys because its totally useless.",
+    "Very unhelpful and frustrating."
+   ]
+  }
+ }
+}

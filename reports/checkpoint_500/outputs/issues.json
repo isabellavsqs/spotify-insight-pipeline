@@ -1,0 +1,342 @@
+{
+  "other.general_negative": {
+    "issue_id": "other.general_negative",
+    "title": "Recent update made app worse",
+    "description": "Customers say a recent update removed features and made the app frustrating or useless, and some are uninstalling it.",
+    "representative_quote_ids": [
+      "q0001",
+      "q0002",
+      "q0003"
+    ],
+    "coherence": "mixed",
+    "note": "Broad dissatisfaction with the update plus restrictions and general complaints without a single specific problem."
+  },
+  "billing.other": {
+    "issue_id": "billing.other",
+    "title": "Core features locked behind premium",
+    "description": "Customers report they cannot use basic features like song choice or playback without paying, and subscription purchase or sign-up problems block access.",
+    "representative_quote_ids": [
+      "q0007",
+      "q0008",
+      "q0009"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes premium paywall complaints with subscription purchase and sign-up failures."
+  },
+  "usability.ads": {
+    "issue_id": "usability.ads",
+    "title": "Too many unskippable ads",
+    "description": "Customers say ads play very frequently, are long and cannot be skipped, interrupting listening and making the app unbearable.",
+    "representative_quote_ids": [
+      "q0013",
+      "q0015",
+      "q0017"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.other": {
+    "issue_id": "playback.other",
+    "title": "Songs will not play or cast",
+    "description": "Customers report selected songs fail to play, repeat or change, and playback through assistants or casting to other devices does not work.",
+    "representative_quote_ids": [
+      "q0019",
+      "q0021",
+      "q0022"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes songs not playing with casting and voice assistant integration failures."
+  },
+  "usability.other": {
+    "issue_id": "usability.other",
+    "title": "Basic player controls removed",
+    "description": "Customers say skips are limited and repeat or replay options were removed after an update, leaving the music player less usable.",
+    "representative_quote_ids": [
+      "q0025",
+      "q0027",
+      "q0028"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes removed skip and repeat controls with ad frustration and general complaints about lost features."
+  },
+  "playback.connection_error": {
+    "issue_id": "playback.connection_error",
+    "title": "Wrongly reports no internet connection",
+    "description": "Customers say the app shows a no internet connection message even when other apps and their network work normally.",
+    "representative_quote_ids": [
+      "q0031",
+      "q0032",
+      "q0033"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.stops_or_pauses": {
+    "issue_id": "playback.stops_or_pauses",
+    "title": "Music stops or pauses randomly",
+    "description": "Customers report playback cuts out or pauses on its own, sometimes mid-show, and the app may fail to load past the first screen.",
+    "representative_quote_ids": [
+      "q0037",
+      "q0038",
+      "q0039"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.queue_playlist": {
+    "issue_id": "usability.queue_playlist",
+    "title": "Cannot choose specific songs to play",
+    "description": "Customers say they cannot pick the song they want from a playlist or queue, and playlists are shuffled or replaced with other content.",
+    "representative_quote_ids": [
+      "q0043",
+      "q0045",
+      "q0046"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.other": {
+    "issue_id": "catalog.other",
+    "title": "Songs or content missing from catalog",
+    "description": "Customers say expected songs are absent, the library feels empty, and some content like yearly summaries will not open.",
+    "representative_quote_ids": [
+      "q0049",
+      "q0050",
+      "q0051"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes missing songs with a Wrapped feature failing to open, unwanted recommendations, and a chart-policy complaint."
+  },
+  "playback.crash_or_wont_open": {
+    "issue_id": "playback.crash_or_wont_open",
+    "title": "App crashes or will not open",
+    "description": "Customers report the app crashes during playback, shows a black screen, or gets stuck on the loading screen after an update.",
+    "representative_quote_ids": [
+      "q0055",
+      "q0056",
+      "q0057"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.charges_refunds": {
+    "issue_id": "billing.charges_refunds",
+    "title": "Feels like paying for basic features",
+    "description": "Customers feel the app now charges for basic listening actions and that premium is pushed to earn money.",
+    "representative_quote_ids": [
+      "q0061",
+      "q0063",
+      "q0065"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.ui_change": {
+    "issue_id": "usability.ui_change",
+    "title": "Dislike of new layout and changes",
+    "description": "Customers dislike the redesigned layout and an update that changed shuffle, skip, lyrics and queue behavior.",
+    "representative_quote_ids": [
+      "q0066",
+      "q0067",
+      "q0068"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes layout dislike with lyrics and queue missing and shuffle and skip limits."
+  },
+  "catalog.lyrics": {
+    "issue_id": "catalog.lyrics",
+    "title": "Song lyrics fail to load",
+    "description": "Customers say lyrics do not load or show for some songs, including ones in their playlists, even after refreshing the app.",
+    "representative_quote_ids": [
+      "q0072",
+      "q0074",
+      "q0075"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.other": {
+    "issue_id": "access.other",
+    "title": "Cannot log in or access account",
+    "description": "Customers say they cannot get into their account, see token errors, or lose offline listening after access problems.",
+    "representative_quote_ids": [
+      "q0078",
+      "q0079",
+      "q0080"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes login and token errors with ad complaints and internet connection messages."
+  },
+  "access.login_failure": {
+    "issue_id": "access.login_failure",
+    "title": "Login fails with connection error",
+    "description": "Customers cannot log in and the app says there is no internet connection, while other apps and their phone connectivity work.",
+    "representative_quote_ids": [
+      "q0082",
+      "q0083",
+      "q0084"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.lag_or_skips": {
+    "issue_id": "playback.lag_or_skips",
+    "title": "App is glitchy and laggy",
+    "description": "Customers describe the app as glitchy, barely working, and certain podcasts lagging, particularly for premium users.",
+    "representative_quote_ids": [
+      "q0085",
+      "q0086",
+      "q0087"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.premium_only_feature": {
+    "issue_id": "billing.premium_only_feature",
+    "title": "Skipping songs requires premium",
+    "description": "Customers say skipping or choosing specific songs requires premium, and subscription purchase shows a blank page.",
+    "representative_quote_ids": [
+      "q0088",
+      "q0089"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.offline_mode": {
+    "issue_id": "downloads.offline_mode",
+    "title": "Offline mode does not work",
+    "description": "Customers say offline playback fails or is useless, and moving storage location can delete downloaded content.",
+    "representative_quote_ids": [
+      "q0090",
+      "q0091"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes offline mode failure with storage move deleting downloads."
+  },
+  "downloads.other": {
+    "issue_id": "downloads.other",
+    "title": "Downloads stall in background",
+    "description": "Customers say downloads get stuck in the background and only resume when they open Spotify, or fail to start at all.",
+    "representative_quote_ids": [
+      "q0092",
+      "q0093"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.missing_content": {
+    "issue_id": "catalog.missing_content",
+    "title": "Some songs and features unavailable",
+    "description": "Customers say certain songs are unavailable and Canvas visuals disappeared after an update despite premium.",
+    "representative_quote_ids": [
+      "q0094",
+      "q0095"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes missing songs with Canvas visuals no longer appearing."
+  },
+  "catalog.recommendations": {
+    "issue_id": "catalog.recommendations",
+    "title": "Unwanted song recommendations persist",
+    "description": "Customers say the app keeps recommending songs in their playlists even after turning recommendations off.",
+    "representative_quote_ids": [
+      "q0096",
+      "q0097"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.navigation": {
+    "issue_id": "usability.navigation",
+    "title": "Hard to navigate to chosen songs",
+    "description": "Customers say tapping a liked song opens the wrong track or a demo, and the new menu only offers shuffle.",
+    "representative_quote_ids": [
+      "q0098",
+      "q0099"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes wrong-track navigation with the new menu offering only shuffle."
+  },
+  "usability.podcast_ui": {
+    "issue_id": "usability.podcast_ui",
+    "title": "Podcast controls and formats changed",
+    "description": "Customers say they cannot move between podcast episodes from the toolbar or switch between video and audio-only podcasts.",
+    "representative_quote_ids": [
+      "q0100",
+      "q0101"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes removed episode navigation with inability to switch video and audio podcast formats."
+  },
+  "usability.shuffle": {
+    "issue_id": "usability.shuffle",
+    "title": "Cannot turn off shuffle for free",
+    "description": "Customers say turning off shuffle requires premium and the old shuffle was replaced with worse song selection and no seeking.",
+    "representative_quote_ids": [
+      "q0102",
+      "q0103"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes shuffle turn-off premium requirement with removed seek and rewind controls."
+  },
+  "access.account_hacked_or_lost": {
+    "issue_id": "access.account_hacked_or_lost",
+    "title": "Account hacked and playlists lost",
+    "description": "A customer reports their account was hacked and playlists they had set up could not be recovered.",
+    "representative_quote_ids": [
+      "q0104"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.logged_out": {
+    "issue_id": "access.logged_out",
+    "title": "Premium account logged out unexpectedly",
+    "description": "A customer reports their premium account was logged out automatically and phone number login then fails.",
+    "representative_quote_ids": [
+      "q0105"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.password_reset": {
+    "issue_id": "access.password_reset",
+    "title": "Password not accepted",
+    "description": "A customer reports the app will not accept their password.",
+    "representative_quote_ids": [
+      "q0106"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.downloads_disappear": {
+    "issue_id": "downloads.downloads_disappear",
+    "title": "Downloaded music disappears",
+    "description": "A customer reports previously downloaded content is gone when they go offline after a few months.",
+    "representative_quote_ids": [
+      "q0107"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.cannot_download": {
+    "issue_id": "downloads.cannot_download",
+    "title": "Cannot download music for free",
+    "description": "A customer reports they cannot download music without a paid plan.",
+    "representative_quote_ids": [
+      "q0108"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "support.unhelpful": {
+    "issue_id": "support.unhelpful",
+    "title": "Support staff are rude",
+    "description": "A customer describes the app's support staff as rude.",
+    "representative_quote_ids": [
+      "q0109"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  }
+}

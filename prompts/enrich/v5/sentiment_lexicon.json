@@ -1,0 +1,30 @@
+{
+  "version": "sentiment-lexicon-v1",
+  "note": "Deterministic sentiment (labeling.md section 4). Word weights are summed with negation flipping (x -0.7 within 3 tokens after a negator) and an intensity boost (repeated '!!', or 2+ ALL-CAPS words). Bands map the score to the five allowed values; a neutral score defaults by intent (calm complaint -0.5, praise +0.5); the result is clamped to the intent's expected range.",
+  "positive": {
+    "love": 2, "loved": 2, "loving": 2, "amazing": 2, "awesome": 2, "best": 2, "excellent": 2, "perfect": 2, "fantastic": 2,
+    "wonderful": 2, "outstanding": 2, "brilliant": 2, "superb": 2, "incredible": 2, "great": 1.5, "favorite": 1.5,
+    "favourite": 1.5, "good": 1, "nice": 1, "enjoy": 1, "enjoyed": 1, "happy": 1, "helpful": 1, "beautiful": 1.5,
+    "recommend": 1, "smooth": 1, "easy": 0.75, "like": 0.5, "thanks": 0.5, "thank": 0.5, "cool": 0.75, "fine": 0.5,
+    "super": 1.5, "wow": 1.5, "satisfied": 1, "pleased": 1, "fun": 1, "useful": 1, "accha": 1, "badhiya": 1.5, "mast": 1
+  },
+  "negative": {
+    "worst": -2, "hate": -2, "terrible": -2, "horrible": -2, "awful": -2, "garbage": -2, "trash": -2, "pathetic": -2,
+    "disgusting": -2, "rubbish": -2, "scam": -2, "sucks": -1.5, "useless": -1.5, "stupid": -1.5, "ridiculous": -1.5,
+    "frustrating": -1.5, "frustrated": -1.5, "worse": -1.5, "waste": -1.5, "greedy": -1.5, "bekar": -1.5, "bakwas": -1.5,
+    "bad": -1, "annoying": -1, "annoyed": -1, "disappointing": -1, "disappointed": -1, "poor": -1, "broken": -1,
+    "hated": -2, "angry": -1.5, "mad": -1, "unusable": -1.5, "irritating": -1, "sad": -0.75, "boring": -0.75,
+    "problem": -0.5, "problems": -0.5, "issue": -0.5, "issues": -0.5, "bug": -0.5, "bugs": -0.5, "crash": -0.5,
+    "crashes": -0.5, "crashing": -0.5, "glitch": -0.5, "lag": -0.5, "slow": -0.5, "fix": -0.5, "uninstall": -0.75,
+    "uninstalled": -0.75, "uninstalling": -0.75, "boycott": -0.5, "expensive": -0.5, "unfortunately": -0.5
+  },
+  "emoji": {
+    "❤": 1.5, "😍": 2, "🥰": 2, "😊": 1, "👍": 1, "🔥": 1, "💯": 1, "🙏": 0.5, "😁": 1, "🤩": 2, "💚": 1.5, "♥": 1.5,
+    "😡": -2, "🤬": -2, "😠": -1.5, "👎": -1.5, "😤": -1.5, "💩": -2, "😞": -1, "😢": -1, "😭": -1, "🙄": -1, "😒": -1
+  },
+  "negators": ["not", "no", "never", "dont", "don't", "doesnt", "doesn't", "isnt", "isn't", "wasnt", "wasn't", "cant", "can't",
+               "cannot", "wont", "won't", "nahi", "nhi"],
+  "bands": {"strong": 3.0, "mild": 0.75},
+  "intent_default_when_neutral": {"complaint": -0.5, "cancellation": -0.5, "praise": 0.5, "request": 0.0, "unclear": 0.0},
+  "intent_range": {"praise": [0.5, 1.0], "request": [-0.5, 0.5], "complaint": [-1.0, 0.5], "cancellation": [-1.0, -0.5], "unclear": [0.0, 0.0]}
+}

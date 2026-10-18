@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "enrich-v2/output",
+  "description": "Normalized result saved per distinct text after validating Jev's answers (each must be a listed option; quote index within the sentence count).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["topic", "intent", "severity", "sentiment", "quote_index", "evidence_quote", "needs_review", "issue", "entities"],
+  "properties": {
+    "topic": {"enum": ["access", "usability", "playback", "downloads", "catalog", "billing", "support", "other"]},
+    "intent": {"enum": ["cancellation", "complaint", "request", "praise", "unclear"]},
+    "severity": {"type": "integer", "minimum": 1, "maximum": 5},
+    "sentiment": {"enum": [-1.0, -0.5, 0.0, 0.5, 1.0]},
+    "quote_index": {"type": "integer", "minimum": 1},
+    "evidence_quote": {"type": "string", "minLength": 1, "description": "Exact substring of the review text"},
+    "needs_review": {"type": "boolean"},
+    "issue": {"type": "string", "pattern": "^(none|[a-z]+\\.[a-z_]+)$"},
+    "entities": {"type": "array", "items": {"type": "string"}}
+  }
+}

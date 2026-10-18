@@ -1,0 +1,117 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "actual": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+      "check": "file_sha256 matches manifest.json",
+      "expected": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+      "ok": true
+    },
+    {
+      "actual": 15466,
+      "check": "file bytes match manifest.json",
+      "expected": 15466,
+      "ok": true
+    },
+    {
+      "actual": 100,
+      "check": "parsed rows == profile records",
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "duplicate review IDs",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "empty texts == quarantined",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 100,
+      "check": "nonempty + quarantined == records",
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "meta": {
+    "input_bytes": 15466,
+    "input_file": "cost_100.csv",
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "model_calls": 0,
+    "prepared_at_utc": "2026-10-12T21:47:05Z",
+    "seconds": {
+      "hash_and_profile": 0.0,
+      "parse_dedupe_store": 0.04,
+      "total": 0.06
+    },
+    "state_db": "work/cost_100/state.sqlite"
+  },
+  "summary": {
+    "distinct_nonempty_texts": 100,
+    "distinct_text_chars": {
+      "max": 486,
+      "mean": 80.42,
+      "median": 46,
+      "p90": 186,
+      "p99": 486,
+      "total": 8042
+    },
+    "distinct_texts_40_chars_or_less": 48,
+    "distinct_texts_with_non_ascii": 11,
+    "empty_review_text": 0,
+    "multiline_review_rows": 0,
+    "nonempty": 100,
+    "physical_file_lines": 101,
+    "quarantined_ids": [],
+    "records": 100,
+    "rows_reusable_from_exact_duplicates": 0,
+    "texts_with_exact_duplicates": 0,
+    "top_duplicate_texts": [
+      {
+        "rows": 1,
+        "text": "Aakhir kar spotify ne bhi apni bhikaariyo vali aukaat dikha di \"Gadar karbe\" Chanda mangna got real Bhikaariyo ko training dena bhi shuru kardo haramiyo"
+      },
+      {
+        "rows": 1,
+        "text": "Best indeeeeeeeed"
+      },
+      {
+        "rows": 1,
+        "text": "Amazing,but you have to give us reggae music colections"
+      },
+      {
+        "rows": 1,
+        "text": "I love Spotify recommendations music type before more than now. It was more songs and updated to newest song."
+      },
+      {
+        "rows": 1,
+        "text": "Best app for listening music"
+      },
+      {
+        "rows": 1,
+        "text": "Spotify: music and pod system"
+      },
+      {
+        "rows": 1,
+        "text": "Vary bad experience.i am uninstalling this app they burn quran and i will bycot this app as it is launched by swedan 🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕"
+      },
+      {
+        "rows": 1,
+        "text": "Doesn't deserve even one star. Like what's the problem? We can't even go back few second to play music? WHAT IN THE WORLD IS THIS UPDATE? YOU PEOPLE NEED MORE MONEY?! gonna delete the app if they don't fix this"
+      },
+      {
+        "rows": 1,
+        "text": "Very kool"
+      },
+      {
+        "rows": 1,
+        "text": "Useless aap boycott sweden"
+      }
+    ]
+  }
+}

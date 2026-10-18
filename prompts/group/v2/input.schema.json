@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "group-v2/input",
+  "description": "Bounded evidence pack built by code from saved records and membership. It covers every issue in the baseline ranking. For each issue: the definition from prompts/issues/descriptions-v2.json, and up to 8 representative quotes. Quotes are distinct evidence quotes chosen deterministically by the lowest SHA-256('group-v2:' + review_id), which spreads them across the issue, and cut to 200 characters. Likes and severity are never used to choose them. The pack never contains the full CSV.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "issues"],
+  "properties": {
+    "pack_id": {"type": "string", "description": "SHA-256 of the canonical pack; saved and logged so the group call can be reproduced"},
+    "issues": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 80,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["issue_id", "topic", "definition", "complaint_count", "mean_severity", "top_entities", "quotes"],
+        "properties": {
+          "issue_id": {"type": "string", "pattern": "^[a-z]+\\.[a-z_]+$"},
+          "topic": {"enum": ["access", "usability", "playback", "downloads", "catalog", "billing", "support", "other"]},
+          "definition": {"type": "string"},
+          "complaint_count": {"type": "integer", "minimum": 1},
+          "mean_severity": {"type": "string", "pattern": "^[1-5]\\.[0-9]{6}$"},
+          "top_entities": {"type": "array", "maxItems": 5, "items": {"type": "string"}},
+          "quotes": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 8,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["quote_id", "severity", "text"],
+              "properties": {
+                "quote_id": {"type": "string", "pattern": "^q[0-9]{4}$"},
+                "severity": {"type": "integer", "minimum": 1, "maximum": 5},
+                "text": {"type": "string", "maxLength": 200}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

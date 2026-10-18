@@ -1,0 +1,85 @@
+{
+  "memo_markdown": "## Summary\nThe strongest signal is that a recent update made the app worse, with 65 complaints [C001] and a severity_sum of 137 [C002], the highest-ranked issue. Customers also report core features locked behind premium [C005] and unskippable ads [C009] as high-priority problems. Playback failures and removed player controls follow closely.\n\n## Top issues\n- **Recent update made app worse** (highest-ranked): customers say features were removed and some are uninstalling. 65 complaints [C001], severity_sum 137 [C002], mean_severity 2.107692 [C003], priority_score 137 [C004].\n- **Core features locked behind premium** (second): customers cannot use basic features without paying or hit subscription sign-up problems. 25 complaints [C005], severity_sum 77 [C006], mean_severity 3.080000 [C007], priority_score 77 [C008].\n- **Too many unskippable ads** (third): ads are frequent, long, and cannot be skipped. 23 complaints [C009], severity_sum 58 [C010], mean_severity 2.521739 [C011], priority_score 58 [C012].\n- **Songs will not play or cast** (fourth): selected songs fail to play and casting or assistant playback breaks. 15 complaints [C013], severity_sum 53 [C014], mean_severity 3.533333 [C015], priority_score 53 [C016].\n- **Basic player controls removed** (fifth): skip limits and repeat options were removed after an update. 16 complaints [C017], severity_sum 44 [C018], mean_severity 2.750000 [C019], priority_score 44 [C020].\n\n## Recommendations\n1. Review the most recent update's changes to the player, skip limits and repeat options, and roll back or restore removed features where feasible. Evidence: issue_ids other.general_negative and usability.other, supported by [C001] [C002] [C017] [C018].\n2. Audit the subscription purchase and sign-up flow, and check whether free-tier users are unintentionally blocked from basic playback. Evidence: issue_id billing.other, supported by [C005] [C006].\n3. Investigate playback failures on selected songs and casting or assistant integrations. Evidence: issue_ids playback.other and playback.connection_error, supported by [C013] [C014] [C021] [C022].\n4. Review ad frequency and skippability against the complaint pattern. Evidence: issue_id usability.ads, supported by [C009] [C010].\n\n## Limits\nThese are self-selected public reviews, so they may not represent all users. There is no revenue, plan tier or confirmed churn data, and cancellation intent is not proof of cancellation. Of 500 records [F01], 232 were complaint or cancellation records [F06] and 27 showed cancellation intent [F07]. Labels come from models; topic agreement was 0.73913 [F09], intent agreement 0.913043 [F10], and 5 disagreements were left for review [F13]. priority_score equals severity_sum by definition.",
+  "recommendations": [
+    {
+      "title": "Review recent update changes and restore removed features",
+      "issue_ids": [
+        "other.general_negative",
+        "usability.other"
+      ],
+      "rationale": "Complaints about the update and removed player controls are among the highest-ranked issues.",
+      "claim_ids": [
+        "C001",
+        "C002",
+        "C017",
+        "C018"
+      ]
+    },
+    {
+      "title": "Audit subscription purchase and sign-up flow",
+      "issue_ids": [
+        "billing.other"
+      ],
+      "rationale": "Customers report basic features blocked behind premium and sign-up problems.",
+      "claim_ids": [
+        "C005",
+        "C006"
+      ]
+    },
+    {
+      "title": "Investigate playback failures and casting integrations",
+      "issue_ids": [
+        "playback.other",
+        "playback.connection_error"
+      ],
+      "rationale": "Songs fail to play and casting or assistant playback breaks for many customers.",
+      "claim_ids": [
+        "C013",
+        "C014",
+        "C021",
+        "C022"
+      ]
+    },
+    {
+      "title": "Review ad frequency and skippability",
+      "issue_ids": [
+        "usability.ads"
+      ],
+      "rationale": "Unskippable and frequent ads are a high-priority complaint.",
+      "claim_ids": [
+        "C009",
+        "C010"
+      ]
+    }
+  ],
+  "cited_ids": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "F01",
+    "F06",
+    "F07",
+    "F09",
+    "F10",
+    "F13"
+  ]
+}

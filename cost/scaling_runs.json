@@ -1,0 +1,243 @@
+{
+  "_note": "Measured evidence for the 500 -> 10,000 -> full-run scaling steps, copied from the run log (work/store.sqlite runs and calls tables) and the global spend ledger (work/ledger.sqlite) on 2026-10-17. Costs are the recorded bills at the rates in effect (provider usage x rates.csv), not recomputed from editable rates. Token counts are provider-reported. The full-run call log is grading/calls.jsonl.gz.",
+  "steps": [
+    {
+      "step": "500 reviews (checkpoint_500.csv)",
+      "runs": [
+        {
+          "run_id": "checkpoint_500-20261013T011558Z",
+          "status": "connection lost after enrichment",
+          "wall_seconds": null
+        },
+        {
+          "run_id": "checkpoint_500-20261013T013419Z",
+          "status": "completed (resumed: 0 new Jev calls; in-flight batch collected)",
+          "wall_seconds": 222.023
+        },
+        {
+          "run_id": "checkpoint_500-20261013T014302Z",
+          "status": "completed (after fixes)",
+          "wall_seconds": 333.079
+        }
+      ],
+      "rows": 500,
+      "completed": 500,
+      "failed_records": 0,
+      "jev_requests": 24,
+      "jev_texts": 479,
+      "jev_billed_input_tokens": 169971,
+      "cost_usd": {
+        "enrich_jev": "0.007139",
+        "verify": "0.000467",
+        "fallback": "0.000616",
+        "group": "0.002550",
+        "memo": "0.003635",
+        "total": "0.014406"
+      },
+      "failed_calls": 2,
+      "failed_call_note": "Two memo attempts rejected by the validator (fixed: cited IDs derived from the text; 'revenue'/'churn' allowed in Limits).",
+      "decision": "Fixes before scaling: fallback no longer relabels checkpointed IDs on resume; verification reserves its random sample before flagged cases; memo validator corrected. Jev measured 354.8 billed tokens per review against 360 estimated, so the cost model held."
+    },
+    {
+      "step": "10,000 reviews (analysis_10000.csv)",
+      "runs": [
+        {
+          "run_id": "analysis_10000-20261013T041316Z",
+          "status": "completed",
+          "wall_seconds": 1008.948
+        }
+      ],
+      "rows": 10000,
+      "completed": 10000,
+      "failed_records": 0,
+      "jev_requests": 399,
+      "jev_texts": 7969,
+      "jev_billed_input_tokens": 2832633,
+      "cost_usd": {
+        "enrich_jev": "0.118971",
+        "verify": "0.003328",
+        "fallback": "0.004203",
+        "group": "0.003873",
+        "memo": "0.001305",
+        "total": "0.131679"
+      },
+      "failed_calls": 0,
+      "stage_seconds": {
+        "enrich": 39.435,
+        "verify": 568.555,
+        "fallback": 374.477,
+        "group": 18.786,
+        "memo": 6.894
+      },
+      "projection_after_step": {
+        "base_project_total_usd": "7.88",
+        "conservative_project_total_usd": "8.46",
+        "jev_minutes": 40,
+        "note": "Remaining work $7.70 base (Jev $7.24 for 475,741 new texts, verify $0.19, fallback $0.25, group and memo $0.01); conservative adds 10% retries and the full verification cap."
+      },
+      "decision": "Issue taxonomy v2 adopted (deterministic; catch-all share 62% -> 39% on the same data). Projection within the $10 cap in both scenarios, so the full run was started with unchanged concurrency."
+    },
+    {
+      "step": "Full run (spotify_reviews_18months.csv, 660,622 rows)",
+      "command": "python -m pipeline run --input spotify_reviews_18months.csv --paid --budget 9.5 (first with --stop-after-calls 2000 for the interruption demo, then the same command to resume)",
+      "runs": [
+        {
+          "run_id": "spotify_reviews_18months-20261013T063005Z",
+          "status": "interrupted on purpose after 2,000 Jev requests",
+          "wall_seconds": 236.106,
+          "completed_ids_in_checkpoint": 196460,
+          "cost_usd": "0.597442"
+        },
+        {
+          "run_id": "spotify_reviews_18months-20261013T063450Z",
+          "status": "completed (resume: 0 enrichment calls for the 196,460 checkpointed IDs)",
+          "wall_seconds": 34863.406,
+          "cost_usd": "6.986772",
+          "stage_seconds": {
+            "enrich": 2212.447,
+            "verify": 718.861,
+            "fallback": 31742.88,
+            "rank": 48.732,
+            "group": 55.066,
+            "memo": 10.838,
+            "export": 49.542
+          }
+        },
+        {
+          "run_id": "spotify_reviews_18months-20261013T162659Z",
+          "status": "completed (group prompt v2 + memo rerun only; --budget 0.5)",
+          "wall_seconds": 386.349,
+          "cost_usd": "0.014219",
+          "note": "Group answer 1 rejected by the validator (a number in a title) and retried once; all other stages served from saved results."
+        }
+      ],
+      "rows": 660622,
+      "completed": 660609,
+      "quarantined_empty": 13,
+      "failed_records": 0,
+      "distinct_texts": 484189,
+      "result_cache_hits_texts": 8492,
+      "stages": [
+        {
+          "stage": "enrich",
+          "provider_model": "typesafe/jev-1.13.0",
+          "tier": "standard",
+          "requests": 23785,
+          "failed": 0,
+          "reviews_sent": 475697,
+          "input_tokens": 170265233,
+          "cached_input_tokens": 0,
+          "output_tokens": 90722315,
+          "thinking_tokens": 0,
+          "cost_usd": "7.151140"
+        },
+        {
+          "stage": "verify",
+          "provider_model": "anthropic/claude-haiku-5-5 (effort low, thinking off)",
+          "tier": "batch",
+          "requests": 478,
+          "failed": 0,
+          "reviews_sent": 23852,
+          "input_tokens": 2189129,
+          "cached_input_tokens": 832842,
+          "output_tokens": 481912,
+          "thinking_tokens": 0,
+          "cost_usd": "0.192478"
+        },
+        {
+          "stage": "fallback",
+          "provider_model": "anthropic/claude-haiku-5-5 (effort medium, adaptive thinking)",
+          "tier": "batch",
+          "requests": 97,
+          "failed": 0,
+          "reviews_sent": 4841,
+          "input_tokens": 481591,
+          "cached_input_tokens": 167712,
+          "output_tokens": 865311,
+          "thinking_tokens": 766159,
+          "cost_usd": "0.232882"
+        },
+        {
+          "stage": "group",
+          "provider_model": "anthropic/claude-haiku-5-5 (effort low, thinking off)",
+          "tier": "standard",
+          "requests": 3,
+          "failed": 1,
+          "reviews_sent": 0,
+          "input_tokens": 86025,
+          "cached_input_tokens": 0,
+          "output_tokens": 21546,
+          "thinking_tokens": 0,
+          "cost_usd": "0.019376"
+        },
+        {
+          "stage": "memo",
+          "provider_model": "anthropic/claude-haiku-5-5 (effort low, thinking off)",
+          "tier": "standard",
+          "requests": 2,
+          "failed": 0,
+          "reviews_sent": 0,
+          "input_tokens": 10423,
+          "cached_input_tokens": 0,
+          "output_tokens": 3031,
+          "thinking_tokens": 0,
+          "cost_usd": "0.002558"
+        }
+      ],
+      "total_cost_usd": "7.598434",
+      "wall_seconds_total": 35485.861,
+      "estimate_vs_actual": {
+        "pilot_100_estimate_reuse_base_usd": "7.90",
+        "pilot_100_estimate_reuse_conservative_usd": "9.19",
+        "after_10000_estimate_base_project_usd": "7.88",
+        "after_10000_estimate_conservative_project_usd": "8.46",
+        "actual_full_run_usd": "7.598434",
+        "actual_project_usd": "7.785411",
+        "elapsed_estimate_hours_base": 2.67,
+        "elapsed_estimate_hours_conservative": 12.67,
+        "elapsed_actual_hours": 9.86,
+        "elapsed_note": "Jev labeling took 40.4 minutes (2,423 s across both runs), as projected. The capped-fallback Claude batch waited 8.8 hours in the provider queue, which put the elapsed time between the base and conservative estimates."
+      }
+    }
+  ],
+  "project_spend": {
+    "source": "work/ledger.sqlite (all settled reservations + 2 open reservations from an aborted pilot counted at their worst case); includes the 2026-10-18 real-model injection test (run synthetic_injection-20261018T012349Z, <$0.01)",
+    "by_step_usd": {
+      "pilots (100 reviews, incl. archived attempts)": "0.037998",
+      "checkpoint_500": "0.014406",
+      "analysis_10000": "0.131679",
+      "golden_50 model run": "0.001128",
+      "full run": "7.598434",
+      "real-model injection test (synthetic, 2026-10-18)": "0.001766"
+    },
+    "total_usd": "7.785411",
+    "cap_usd": "10.00",
+    "remaining_usd": "2.214589",
+    "by_provider_usd": {
+      "typesafe_jev": "7.288786",
+      "anthropic": "0.496624"
+    },
+    "console_usd": {
+      "typesafe_jev": "7.29",
+      "anthropic": "0.49",
+      "receipts": [
+        "receipts/jev-cost.png",
+        "receipts/anthropic-cost.jpg"
+      ],
+      "note": "Screenshots taken 2026-10-17, before the injection test, matched the ledger to the cent: TypeSafe $7.29 and Anthropic $0.49. The 2026-10-18 injection test then added less than $0.01, moving Anthropic to $0.50.",
+      "ledger_at_screenshot_usd": {
+        "typesafe_jev": "7.288680",
+        "anthropic": "0.494966"
+      }
+    }
+  },
+  "controls": {
+    "budget": "Project cap $10 in the shared ledger; run caps --budget 9.5 (full run) and 0.5 (group/memo rerun). Each request reserves its worst-case cost before dispatch; work stops when spent + reserved + next reservation would exceed a cap.",
+    "concurrency": "1 worker. Jev: 20 reviews per request, up to 8 requests in flight, shared limiters of 10 requests/s and 80,000 tokens/s (provider limits 80/s and 100k tokens/s). Claude: Batch API jobs of at most 500 requests x 50 reviews.",
+    "fallback_limit": "At most 1% of distinct texts (4,841), chosen from verifier disagreements, never every failure.",
+    "verification": "2% stratified random sample (9,681 texts) reserved first, then flagged cases up to a 5% cap: 24,203 texts verified.",
+    "retries": "Jev: up to 3 attempts per text, failed requests split into smaller ones. 429/5xx/network errors retried with backoff and logged as 'transient', never counted as review failures. 401/403/404 stop the run without marking reviews failed.",
+    "recovery": "Interrupted after 2,000 Jev requests (196,460 completed IDs in grading/checkpoint_before.json); the resume made no enrichment call for those IDs and ended with 660,609 completed (grading/checkpoint_after.json). In-flight Claude batches are collected on restart, not resubmitted.",
+    "dashboard_reconciliation": "Reconciled on 2026-10-17 against the provider consoles (screenshots in receipts/), before the injection test: TypeSafe $7.29 and Anthropic $0.49, matching the ledger to the cent (the Anthropic figure includes <$0.01 counted at worst case for two uncollected pilot batches). The 2026-10-18 injection test then added <$0.01."
+  }
+}

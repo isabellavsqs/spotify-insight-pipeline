@@ -1,0 +1,59 @@
+{
+ "verified": 24203,
+ "random_sample": 9681,
+ "flagged_sample": 14522,
+ "random_sample_agreement": {
+  "topic_agree": 0.8475,
+  "intent_agree": 0.8834,
+  "severity_within_1": 0.9861,
+  "sentiment_within_0_5": 0.9304
+ },
+ "flagged_sample_agreement": {
+  "topic_agree": 0.7376,
+  "intent_agree": 0.7226,
+  "severity_within_1": 0.955,
+  "sentiment_within_0_5": 0.8921
+ },
+ "random_sample_topic_agreement_by_jev_topic": {
+  "other": {
+   "n": 4487,
+   "agreement": 0.914
+  },
+  "usability": {
+   "n": 2015,
+   "agreement": 0.785
+  },
+  "billing": {
+   "n": 935,
+   "agreement": 0.872
+  },
+  "playback": {
+   "n": 912,
+   "agreement": 0.718
+  },
+  "catalog": {
+   "n": 875,
+   "agreement": 0.783
+  },
+  "access": {
+   "n": 225,
+   "agreement": 0.88
+  },
+  "downloads": {
+   "n": 211,
+   "agreement": 0.744
+  },
+  "support": {
+   "n": 21,
+   "agreement": 0.571
+  }
+ },
+ "disagreements": 9844,
+ "fallback_adjudicated": 4914,
+ "fallback_outcome": {
+  "sided_with_verifier": 2260,
+  "sided_with_jev": 1580,
+  "third_answer": 1074
+ },
+ "left_for_review": 4930
+}

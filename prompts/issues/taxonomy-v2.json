@@ -1,0 +1,242 @@
+{
+  "version": "issue-taxonomy-v2",
+  "note": "Deterministic issue codes for complaint/cancellation records, assigned at the ranking step (not by a model, not part of any model prompt). Built from the catch-all buckets of the 10,000-review checkpoint (62% of complaints fell into '<topic>.other' under taxonomy-v1). Within the record's primary topic, rules are tried IN ORDER and the first whose case-insensitive regex matches the review text wins; no match gives '<topic>.other'. Changing this file changes only issue membership and ranking, never the stored labels.",
+  "rules": {
+    "access": [
+      [
+        "login_failure",
+        "(?:can'?t|cannot|unable to|not able to|won'?t let me|couldn'?t)\\s+(?:even\\s+)?(?:log|sign)\\s?in|not (?:logging|signing) in|log\\s?in (?:fail|error|problem|issue|not work)|login (?:not work|problem|error|issue)|\\blogin\\b|\\blog in\\b|\\bsign in\\b"
+      ],
+      [
+        "logged_out",
+        "logged (?:me )?out|logging (?:me )?out|signed (?:me )?out|keeps? (?:logging|signing) (?:me )?out"
+      ],
+      [
+        "phone_email_verification",
+        "phone number|\\botp\\b|verification|verify|confirmation (?:code|email)|(?:email|code|link) (?:not|never|didn'?t)"
+      ],
+      [
+        "account_hacked_or_lost",
+        "hack|stolen|someone (?:else )?(?:used|changed|logged)|lost (?:my )?account|account (?:was )?(?:deleted|disabled|suspended|banned|gone)|deleted my account"
+      ],
+      [
+        "password_reset",
+        "password|reset (?:link|email)"
+      ],
+      [
+        "signup",
+        "sign\\s?up|regist|create (?:an |a new )?account"
+      ],
+      [
+        "connection_offline",
+        "internet|connection|offline|network|no wifi|wi-?fi"
+      ]
+    ],
+    "usability": [
+      [
+        "ads",
+        "\\bads?\\b|\\badds?\\b|advert|commercial|iklan|إعلان|реклам|anuncio|publicidad"
+      ],
+      [
+        "skip_limits",
+        "(?:can'?t|cannot|unable to|no|limited|only \\d+) skips?|skips? (?:limit|are limited)|can'?t (?:even )?skip"
+      ],
+      [
+        "removed_features_update",
+        "basic features|(?:removed|took away|taken away|got rid of)|no longer (?:can|able|have|there)|(?:recent|latest|new|last) update|after (?:the )?(?:latest |recent |new |last )?update|update (?:ruined|removed|changed|made)"
+      ],
+      [
+        "shuffle_order",
+        "shuffl|random(?:ly)?|in order|choose (?:the |a |which |my )?songs?|pick (?:a |the |which )?songs?|play (?:a )?specific"
+      ],
+      [
+        "queue_playlist",
+        "queue|play\\s?lists?|library|liked songs"
+      ],
+      [
+        "ui_change",
+        "new (?:ui|design|layout|interface|look|home)|redesign|interface|layout|\\bui\\b|\\bux\\b|home ?(?:page|screen)|\\bfeed\\b|tiktok|font|ugly|design|colou?r|theme|dark mode"
+      ],
+      [
+        "autoplay_cant_stop",
+        "starts? (?:playing )?(?:automatically|by itself|on its own)|auto ?-?play|turn (?:it )?off|can'?t (?:stop|shut|close)|shut (?:it|the)"
+      ],
+      [
+        "controls_widget",
+        "widget|lock ?screen|buttons?|controls?|notification|repeat|rewind|seek|go back|previous song"
+      ],
+      [
+        "podcast_ui",
+        "podcasts?|audio ?books?|video|canvas"
+      ],
+      [
+        "navigation",
+        "navigat|confus|hard to (?:find|use)|menu|\\btabs?\\b|complicated"
+      ]
+    ],
+    "playback": [
+      [
+        "crash_or_wont_open",
+        "crash|won'?t (?:open|load|start)|not (?:opening|loading)|doesn'?t open|can'?t open|freez|black screen|stuck|flashing|logo|keeps? closing|clos(?:es|ing) (?:itself|automatically|by itself)"
+      ],
+      [
+        "plays_wrong_song",
+        "(?:plays?|playing) (?:a |some )?(?:different|random|other|another|wrong)|can'?t (?:even )?(?:play|listen to) (?:the |a |my |any )?(?:songs?|music|tracks?) (?:i want|of my choice)|not (?:play|playing) (?:the )?(?:songs?|what) i|instead of (?:the |my )?songs?|(?:song|music) (?:of my|i) cho"
+      ],
+      [
+        "stops_or_pauses",
+        "\\bstops?\\b|stopp|paus|cuts? (?:out|off)|interrupt"
+      ],
+      [
+        "not_playing",
+        "(?:can'?t|cannot|won'?t|doesn'?t|not|unable to) (?:even )?(?:play|playing|work|working)|no sound|nothing plays|songs? (?:won'?t|don'?t|doesn'?t) play|won'?t go to the next|nothing for|after i press play|doesn'?t want to"
+      ],
+      [
+        "lag_or_skips",
+        "\\blag|skip(?:s|ping)? (?:by itself|on (?:its|it'?s) own|randomly)|\\bslow|buffer|glitch"
+      ],
+      [
+        "bugs_glitches",
+        "bug|acting up|glitch|issue|problem|not smooth"
+      ],
+      [
+        "connection_error",
+        "connect|internet|wi-?fi|offline (?:error|message)|network|server"
+      ],
+      [
+        "audio_quality",
+        "\\bsound\\b|audio|quality|volume|equali[sz]er|\\bloud"
+      ],
+      [
+        "device_bluetooth_car",
+        "bluetooth|\\bcar\\b|android auto|speaker|headphone|earbud|\\bwatch\\b|chromecast|\\btv\\b|alexa|google (?:home|assistant)|\\bcast"
+      ],
+      [
+        "battery_data_storage",
+        "battery|storage|\\bdata\\b|memory|cache|space|drain"
+      ]
+    ],
+    "downloads": [
+      [
+        "downloads_disappear",
+        "disappear|deleted|\\bgone\\b|removed|vanish|re-?download|lost (?:my )?download"
+      ],
+      [
+        "cannot_download",
+        "(?:can'?t|cannot|won'?t|unable to|doesn'?t|not) (?:let me )?download|download\\w* (?:fail|stuck|error|pending|not work)"
+      ],
+      [
+        "offline_mode",
+        "offline|no internet|without internet|airplane|flight mode"
+      ]
+    ],
+    "catalog": [
+      [
+        "lyrics",
+        "lyric"
+      ],
+      [
+        "missing_content",
+        "missing|not available|unavailable|greyed|grayed|removed|no longer (?:available|there|on)|not on spotify|region|country|empty|(?:less|few|limited) songs|can'?t find"
+      ],
+      [
+        "ads",
+        "\\bads?\\b|\\badds?\\b|advert|commercial|iklan|إعلان|реклам|anuncio|publicidad"
+      ],
+      [
+        "search",
+        "search|can'?t find"
+      ],
+      [
+        "recommendations",
+        "recommend|discover weekly|daily mix|algorithm|suggest|\\bradio\\b|smart shuffle|\\bdj\\b|same songs"
+      ],
+      [
+        "liked_library",
+        "liked songs|my (?:library|playlists?)|playlists? (?:deleted|gone|missing)"
+      ],
+      [
+        "wrapped",
+        "wrapped"
+      ],
+      [
+        "content_controversy",
+        "rogan|royalt|artists? (?:pay|get paid)|\\bai (?:music|songs?)|explicit|misinformation"
+      ]
+    ],
+    "billing": [
+      [
+        "premium_only_feature",
+        "basic (?:features?|things?)|requires? premium|without premium|(?:have|need|forced|force|want) (?:you |us |me )?to (?:pay|buy|get|purchase) (?:for )?(?:the )?premium|premium (?:just |only |even )?(?:to|for) |only (?:with|for|in) premium|(?:pay|buy|subscribe) (?:to|for) (?:skip|choose|play|listen|lyrics|shuffle)|free (?:users?|version|plan|account|tier)|\\bskips?\\b|choose|pick|lyrics|everything (?:is )?(?:premium|paid|behind)|(?:included|locked|behind) (?:in |a )?(?:premium|paywall)|(?:so many|common|normal) (?:common )?(?:things|features|users)|need premium|premium even|(?:don'?t|dont) (?:buy|pay|have) (?:the )?premium|after you pay|no use (?:if|without)|\\bpaywall"
+      ],
+      [
+        "ads_for_paying_users",
+        "\\b(?:premium|paid|paying)\\b.{0,60}\\b(?:ads?|adds|adverts?|advertisements?)\\b|\\b(?:ads?|adds|adverts?|advertisements?)\\b.{0,60}\\b(?:premium|paid|paying)\\b"
+      ],
+      [
+        "charges_refunds",
+        "charg|refund|\\bbilled\\b|billing|payment|\\bcard\\b|scam|deduct|debited|transaction|money (?:taken|back)"
+      ],
+      [
+        "subscription_activation",
+        "not activ|still (?:shows?|says?|on) free|premium (?:isn'?t|not|doesn'?t) work|activat|didn'?t get premium|lost (?:my )?premium|premium (?:gone|disappeared|cancel)|eligib|renew|reflect|upgrade (?:fail|not)|can'?t (?:subscribe|upgrade)"
+      ],
+      [
+        "promotion_trial",
+        "trial|promo|\\boffer\\b|discount|student|family plan|\\bduo\\b|\\bdeal\\b"
+      ],
+      [
+        "monetization_greed",
+        "paisa|kamay|desperate|greed|money|profit|milk"
+      ],
+      [
+        "price",
+        "price|pricing|expensive|\\bcost|afford|increas|\\braise|\\bhike|cheap"
+      ]
+    ],
+    "support": [
+      [
+        "unresponsive",
+        "no (?:reply|response|answer)|never (?:answer|reply|respond)|can'?t (?:contact|reach)|no way to contact|\\bchat\\b"
+      ],
+      [
+        "unhelpful",
+        "unhelpful|useless|\\bbot\\b|didn'?t help|rude|copy paste"
+      ]
+    ],
+    "other": [
+      [
+        "boycott_political",
+        "b[oy]{1,2}c+[ao]+t|boycott|quran|swed[ae]n|islam|muslim|israel|palestin|politic|genocide|\\bwar\\b|\\bceo\\b|daniel ek|military|weapon|defen[cs]e|helsing|\\bban\\b"
+      ],
+      [
+        "ads",
+        "\\bads?\\b|\\badds?\\b|advert|commercial|iklan|إعلان|реклам|anuncio|publicidad"
+      ],
+      [
+        "premium_paywall",
+        "premium|\\bpay\\b|\\bpaid\\b|subscri"
+      ],
+      [
+        "bugs_not_working",
+        "not working|doesn'?t work|bug|glitch|crash|won'?t (?:play|open)"
+      ],
+      [
+        "update_made_worse",
+        "update|version|changed|\\bchange"
+      ],
+      [
+        "uninstalling_switching",
+        "uninstall|delet(?:e|ing) (?:this |the )?app|switch(?:ing|ed)? to|youtube music|apple music|amazon music|soundcloud|deezer|wynk|gaana|jiosaavn|resso"
+      ],
+      [
+        "money_value",
+        "waste of money|\\bmoney\\b|not worth|overpriced"
+      ],
+      [
+        "general_negative",
+        "."
+      ]
+    ]
+  }
+}

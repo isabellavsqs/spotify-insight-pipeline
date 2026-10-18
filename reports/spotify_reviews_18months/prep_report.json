@@ -1,0 +1,155 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "actual": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+      "check": "file_sha256 matches manifest.json",
+      "expected": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+      "ok": true
+    },
+    {
+      "actual": 97400616,
+      "check": "file bytes match manifest.json",
+      "expected": 97400616,
+      "ok": true
+    },
+    {
+      "actual": 660622,
+      "check": "parsed rows == profile records",
+      "expected": 660622,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "duplicate review IDs",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 13,
+      "check": "empty texts == quarantined",
+      "expected": 13,
+      "ok": true
+    },
+    {
+      "actual": 660622,
+      "check": "nonempty + quarantined == records",
+      "expected": 660622,
+      "ok": true
+    },
+    {
+      "actual": 660622,
+      "check": "full scope: records",
+      "expected": 660622,
+      "ok": true
+    },
+    {
+      "actual": 660609,
+      "check": "full scope: nonempty",
+      "expected": 660609,
+      "ok": true
+    },
+    {
+      "actual": 13,
+      "check": "full scope: empty_review_text",
+      "expected": 13,
+      "ok": true
+    },
+    {
+      "actual": 484189,
+      "check": "full scope: distinct_nonempty_texts",
+      "expected": 484189,
+      "ok": true
+    }
+  ],
+  "meta": {
+    "input_bytes": 97400616,
+    "input_file": "spotify_reviews_18months.csv",
+    "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+    "model_calls": 0,
+    "prepared_at_utc": "2026-10-12T21:46:41Z",
+    "seconds": {
+      "hash_and_profile": 9.37,
+      "parse_dedupe_store": 63.94,
+      "total": 75.73
+    },
+    "state_db": "work/spotify_reviews_18months/state.sqlite"
+  },
+  "summary": {
+    "distinct_nonempty_texts": 484189,
+    "distinct_text_chars": {
+      "max": 1693,
+      "mean": 98.57,
+      "median": 55,
+      "p90": 250,
+      "p99": 495,
+      "total": 47724767
+    },
+    "distinct_texts_40_chars_or_less": 194322,
+    "distinct_texts_with_non_ascii": 86333,
+    "empty_review_text": 13,
+    "multiline_review_rows": 68,
+    "nonempty": 660609,
+    "physical_file_lines": 660792,
+    "quarantined_ids": [
+      "1687e070-9c26-4657-9ecc-0141405bcd4b",
+      "1bbad718-5df1-4669-841d-d1d6a040945a",
+      "34bf6347-1625-46cd-b6fa-82913e2f665d",
+      "5d085a1f-1737-45a6-a3fb-5211b327ec27",
+      "7121867d-b162-4b15-a45f-6352dcff92c1",
+      "7c26b1a0-8e0b-426d-976c-15b526f94e30",
+      "a3b536ac-b508-4e02-8550-ff7ea0bf79c2",
+      "b9587209-7961-4fd2-903c-fcd0fa924721",
+      "be032618-08ae-4dde-b0b2-d2ddcd8ea5a6",
+      "e4a05a09-be34-40a3-9b4a-e3976dea1b82",
+      "f0df3892-1cfd-44f6-b3bb-a2eef7e69f6e",
+      "f5b40f1f-6621-456f-b1f2-0b3a9361c793",
+      "f7c94991-0fc2-49a5-b47e-510e97a1632c"
+    ],
+    "records": 660622,
+    "rows_reusable_from_exact_duplicates": 176420,
+    "texts_with_exact_duplicates": 15922,
+    "top_duplicate_texts": [
+      {
+        "rows": 12845,
+        "text": "Good"
+      },
+      {
+        "rows": 5551,
+        "text": "Nice"
+      },
+      {
+        "rows": 4096,
+        "text": "Excellent"
+      },
+      {
+        "rows": 3948,
+        "text": "Great"
+      },
+      {
+        "rows": 3359,
+        "text": "Awesome"
+      },
+      {
+        "rows": 3136,
+        "text": "Love it"
+      },
+      {
+        "rows": 2769,
+        "text": "Very good"
+      },
+      {
+        "rows": 2134,
+        "text": "Nice app"
+      },
+      {
+        "rows": 1973,
+        "text": "Amazing"
+      },
+      {
+        "rows": 1901,
+        "text": "Worst app"
+      }
+    ]
+  }
+}

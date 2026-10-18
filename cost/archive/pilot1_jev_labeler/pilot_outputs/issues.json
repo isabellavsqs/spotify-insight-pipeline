@@ -1,0 +1,197 @@
+{
+  "other.general_negative": {
+    "issue_id": "other.general_negative",
+    "title": "Generic negative reviews without specific problem",
+    "description": "Reviews are brief, broad complaints about the app, its support, or a recent update, with little detail on what specifically failed.",
+    "representative_quote_ids": [
+      "q0001",
+      "q0002",
+      "q0005"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes general dissatisfaction with update complaints, support rudeness, and boycott over an unrelated political issue."
+  },
+  "usability.other": {
+    "issue_id": "usability.other",
+    "title": "Removed basic player features after update",
+    "description": "Customers say a recent update removed basic controls like skipping, going back, and replaying, and that ads play heavily, making the app feel useless.",
+    "representative_quote_ids": [
+      "q0010",
+      "q0012",
+      "q0011"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.other": {
+    "issue_id": "playback.other",
+    "title": "Voice assistant and playback control failures",
+    "description": "Customers report the Google Assistant plays playlists without audio, basic features require payment, and music adjustment does not work properly.",
+    "representative_quote_ids": [
+      "q0013",
+      "q0015",
+      "q0014"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes voice assistant playback failure, paywalled basic features, and a music adjustment bug."
+  },
+  "usability.queue_playlist": {
+    "issue_id": "usability.queue_playlist",
+    "title": "Cannot control queue or playlist order",
+    "description": "Customers say playlists play songs randomly and they cannot skip, queue, or pick specific tracks as expected.",
+    "representative_quote_ids": [
+      "q0016",
+      "q0017",
+      "q0019"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.crash_or_wont_open": {
+    "issue_id": "playback.crash_or_wont_open",
+    "title": "App crashes or will not open",
+    "description": "After an update, customers say the app crashes, cannot be opened, or gets stuck on the loading logo screen.",
+    "representative_quote_ids": [
+      "q0020",
+      "q0021"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.ads": {
+    "issue_id": "usability.ads",
+    "title": "Too many loud ads",
+    "description": "Customers say the app shows too many ads, some of them loud, and they do not want to pay for premium to avoid them.",
+    "representative_quote_ids": [
+      "q0022",
+      "q0024",
+      "q0023"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.premium_only_feature": {
+    "issue_id": "billing.premium_only_feature",
+    "title": "Basic features now require premium",
+    "description": "Customers say features such as choosing specific songs or skipping are now locked behind a premium subscription, which they consider unfair.",
+    "representative_quote_ids": [
+      "q0026",
+      "q0025"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.other": {
+    "issue_id": "billing.other",
+    "title": "Asked to pay for basic music choices",
+    "description": "Customers ask why premium is needed just to choose or play the next song, and one reviewer insults the company's pricing.",
+    "representative_quote_ids": [
+      "q0027",
+      "q0028"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes a pricing question about basic song choice with an abusive insult unrelated to a specific problem."
+  },
+  "catalog.lyrics": {
+    "issue_id": "catalog.lyrics",
+    "title": "Lyrics missing or inconsistently shown",
+    "description": "Customers report that lyrics appear for some songs but not others, or do not show at all, making the feature confusing.",
+    "representative_quote_ids": [
+      "q0029",
+      "q0030"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.recommendations": {
+    "issue_id": "catalog.recommendations",
+    "title": "Unwanted recommendations clutter playlists",
+    "description": "Customers want playlists without recommendation prompts and feel recommendations have gotten worse than before.",
+    "representative_quote_ids": [
+      "q0031",
+      "q0032"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes complaints about unwanted recommendation prompts with a sense that recommendation quality declined."
+  },
+  "access.other": {
+    "issue_id": "access.other",
+    "title": "Cannot log in and too many ads",
+    "description": "One customer says the app will not let them into their account and also complains about excessive ads.",
+    "representative_quote_ids": [
+      "q0033"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes a login failure with a complaint about excessive ads."
+  },
+  "access.password_reset": {
+    "issue_id": "access.password_reset",
+    "title": "Password rejected at login",
+    "description": "A customer reports the app will not accept their password when signing in.",
+    "representative_quote_ids": [
+      "q0034"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.offline_mode": {
+    "issue_id": "downloads.offline_mode",
+    "title": "Offline mode does not work",
+    "description": "A customer reports that offline playback is not working.",
+    "representative_quote_ids": [
+      "q0035"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.other": {
+    "issue_id": "downloads.other",
+    "title": "Downloads stuck in background",
+    "description": "A customer says song downloads keep getting stuck in the background until they reopen Spotify.",
+    "representative_quote_ids": [
+      "q0036"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.connection_error": {
+    "issue_id": "playback.connection_error",
+    "title": "Cannot connect to internet over Wi-Fi",
+    "description": "A customer reports the app is unable to connect to the internet when using Wi-Fi.",
+    "representative_quote_ids": [
+      "q0037"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.charges_refunds": {
+    "issue_id": "billing.charges_refunds",
+    "title": "Update made everything premium-only",
+    "description": "A customer says a recent update put most features behind premium, making the app useless to them.",
+    "representative_quote_ids": [
+      "q0038"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.other": {
+    "issue_id": "catalog.other",
+    "title": "Song library missing tracks",
+    "description": "A customer says many songs they expect are not available in the app.",
+    "representative_quote_ids": [
+      "q0039"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.stops_or_pauses": {
+    "issue_id": "playback.stops_or_pauses",
+    "title": "Playback stops and does not resume correctly",
+    "description": "A customer says music keeps stopping partway and does not return to where it stopped, instead starting a new song.",
+    "representative_quote_ids": [
+      "q0040"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  }
+}

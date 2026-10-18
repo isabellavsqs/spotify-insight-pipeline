@@ -1,0 +1,255 @@
+{
+ "source": {
+  "grading": "grading",
+  "input": "spotify_reviews_18months.csv"
+ },
+ "windows": {
+  "first_6_months": [
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10"
+  ],
+  "last_6_months": [
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11"
+  ],
+  "reviews_first": 163818,
+  "reviews_last": 307894
+ },
+ "categories": {
+  "other": {
+   "complaint_count": 98018,
+   "severity_sum": 203995,
+   "mean_severity": "2.081199",
+   "priority_score": 203995,
+   "cancellations": 10145,
+   "cancellation_share": 0.1035,
+   "per_1k_first_6_months": 28.9,
+   "per_1k_last_6_months": 279.9,
+   "trend_per_1k_points": 251.0,
+   "trend_per_1k_percent": 8.672,
+   "per_1k_by_quarter": {
+    "2022Q2": 30.0,
+    "2022Q3": 29.4,
+    "2022Q4": 41.2,
+    "2023Q1": 31.4,
+    "2023Q2": 36.5,
+    "2023Q3": 330.9,
+    "2023Q4": 267.6
+   }
+  },
+  "usability": {
+   "complaint_count": 75980,
+   "severity_sum": 208597,
+   "mean_severity": "2.745420",
+   "priority_score": 208597,
+   "cancellations": 8095,
+   "cancellation_share": 0.1065,
+   "per_1k_first_6_months": 102.6,
+   "per_1k_last_6_months": 119.0,
+   "trend_per_1k_points": 16.4,
+   "trend_per_1k_percent": 0.16,
+   "per_1k_by_quarter": {
+    "2022Q2": 93.2,
+    "2022Q3": 103.8,
+    "2022Q4": 113.3,
+    "2023Q1": 122.8,
+    "2023Q2": 122.7,
+    "2023Q3": 93.4,
+    "2023Q4": 150.2
+   }
+  },
+  "billing/support": {
+   "complaint_count": 40072,
+   "severity_sum": 120225,
+   "mean_severity": "3.000225",
+   "priority_score": 120225,
+   "cancellations": 7443,
+   "cancellation_share": 0.1857,
+   "per_1k_first_6_months": 20.8,
+   "per_1k_last_6_months": 105.1,
+   "trend_per_1k_points": 84.3,
+   "trend_per_1k_percent": 4.048,
+   "per_1k_by_quarter": {
+    "2022Q2": 20.0,
+    "2022Q3": 21.5,
+    "2022Q4": 22.3,
+    "2023Q1": 20.6,
+    "2023Q2": 31.0,
+    "2023Q3": 40.9,
+    "2023Q4": 200.4
+   }
+  },
+  "playback": {
+   "complaint_count": 39726,
+   "severity_sum": 138111,
+   "mean_severity": "3.476590",
+   "priority_score": 138111,
+   "cancellations": 3291,
+   "cancellation_share": 0.0828,
+   "per_1k_first_6_months": 81.0,
+   "per_1k_last_6_months": 44.0,
+   "trend_per_1k_points": -37.0,
+   "trend_per_1k_percent": -0.457,
+   "per_1k_by_quarter": {
+    "2022Q2": 90.5,
+    "2022Q3": 83.4,
+    "2022Q4": 72.0,
+    "2023Q1": 67.0,
+    "2023Q2": 58.3,
+    "2023Q3": 39.8,
+    "2023Q4": 46.2
+   }
+  },
+  "access": {
+   "complaint_count": 10503,
+   "severity_sum": 41634,
+   "mean_severity": "3.964010",
+   "priority_score": 41634,
+   "cancellations": 675,
+   "cancellation_share": 0.0643,
+   "per_1k_first_6_months": 12.5,
+   "per_1k_last_6_months": 18.2,
+   "trend_per_1k_points": 5.7,
+   "trend_per_1k_percent": 0.453,
+   "per_1k_by_quarter": {
+    "2022Q2": 10.5,
+    "2022Q3": 13.7,
+    "2022Q4": 12.2,
+    "2023Q1": 16.0,
+    "2023Q2": 21.0,
+    "2023Q3": 19.8,
+    "2023Q4": 13.8
+   }
+  },
+  "catalog": {
+   "complaint_count": 15034,
+   "severity_sum": 43484,
+   "mean_severity": "2.892377",
+   "priority_score": 43484,
+   "cancellations": 1056,
+   "cancellation_share": 0.0702,
+   "per_1k_first_6_months": 17.3,
+   "per_1k_last_6_months": 24.6,
+   "trend_per_1k_points": 7.3,
+   "trend_per_1k_percent": 0.425,
+   "per_1k_by_quarter": {
+    "2022Q2": 15.9,
+    "2022Q3": 17.9,
+    "2022Q4": 21.5,
+    "2023Q1": 19.9,
+    "2023Q2": 33.1,
+    "2023Q3": 23.4,
+    "2023Q4": 23.9
+   }
+  },
+  "downloads": {
+   "complaint_count": 6522,
+   "severity_sum": 22156,
+   "mean_severity": "3.397117",
+   "priority_score": 22156,
+   "cancellations": 382,
+   "cancellation_share": 0.0586,
+   "per_1k_first_6_months": 12.5,
+   "per_1k_last_6_months": 7.2,
+   "trend_per_1k_points": -5.3,
+   "trend_per_1k_percent": -0.428,
+   "per_1k_by_quarter": {
+    "2022Q2": 13.1,
+    "2022Q3": 12.6,
+    "2022Q4": 11.2,
+    "2023Q1": 11.6,
+    "2023Q2": 12.9,
+    "2023Q3": 7.6,
+    "2023Q4": 5.6
+   }
+  }
+ },
+ "usability_issue_cancellations": {
+  "usability.ads": {
+   "complaints": 40864,
+   "cancellations": 3097,
+   "share": 0.0758
+  },
+  "usability.other": {
+   "complaints": 8014,
+   "cancellations": 792,
+   "share": 0.0988
+  },
+  "usability.removed_features_update": {
+   "complaints": 7430,
+   "cancellations": 1666,
+   "share": 0.2242
+  },
+  "usability.shuffle_order": {
+   "complaints": 6040,
+   "cancellations": 742,
+   "share": 0.1228
+  },
+  "usability.queue_playlist": {
+   "complaints": 4845,
+   "cancellations": 419,
+   "share": 0.0865
+  },
+  "usability.ui_change": {
+   "complaints": 3174,
+   "cancellations": 524,
+   "share": 0.1651
+  },
+  "usability.controls_widget": {
+   "complaints": 2347,
+   "cancellations": 317,
+   "share": 0.1351
+  },
+  "usability.skip_limits": {
+   "complaints": 1772,
+   "cancellations": 330,
+   "share": 0.1862
+  },
+  "usability.podcast_ui": {
+   "complaints": 598,
+   "cancellations": 49,
+   "share": 0.0819
+  },
+  "usability.autoplay_cant_stop": {
+   "complaints": 535,
+   "cancellations": 141,
+   "share": 0.2636
+  },
+  "usability.navigation": {
+   "complaints": 361,
+   "cancellations": 18,
+   "share": 0.0499
+  }
+ },
+ "ads_themes": {
+  "definition": "keyword families (approximate; overlapping)",
+  "patterns": {
+   "frequency": "too many ads|so many ads|lots of ads|a lot of ads|more ads than|ad after ad|back to back|constant(ly)? ad|ads? (after|every|each|between) (every |each |single )?(song|track|other|\\d|two|three)|every (song|\\d|two|three|few)",
+   "length": "long ads?|ads? (are|is) (so |too |very )?long|\\b(30|60)\\s?(s|sec|secs|second|seconds)\\b|minutes? (long )?(of )?ads?|ads? (of|for) \\d+ minutes?",
+   "unskippable": "(can'?t|cannot|can not|unable to|not able to) skip (the |an |these )?ads?|unskippable|un-skippable|skip (the )?ads?",
+   "mid_song_interruption": "(middle|mid)[- ]?(of )?(a |the |my )?(song|track)|interrupt",
+   "volume": "\\bloud(er)?\\b|volume",
+   "repetitive": "same ads?|repeat(ed|ing|s)? ads?|ads? (over and over|again and again)",
+   "inappropriate_content": "inappropriate|offensive|political ads?|gambling|explicit ads?|sexual"
+  },
+  "counts": {
+   "reviews": 40864,
+   "no_theme_matched": 29702,
+   "mid_song_interruption": 1111,
+   "length": 1594,
+   "unskippable": 223,
+   "frequency": 8608,
+   "volume": 360,
+   "repetitive": 258,
+   "inappropriate_content": 79
+  }
+ }
+}

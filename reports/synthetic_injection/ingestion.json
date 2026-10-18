@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "duplicate_review_ids": 0,
+    "empty_review_text": 0,
+    "missing_app_version": 6,
+    "records": 6
+  },
+  "file_sha256": "a86c5abb0534d0742767ac80010dcdca8869ed43ff635dfece7332cfc82e8aff",
+  "first_review": "2023-11-01 12:00:00",
+  "last_review": "2023-11-01 12:00:00",
+  "parsed_rows_sha256": "b8d09c354c77c81e43428d04f4b2c1edee723af05fef9b9bb07ee68788812339",
+  "reviews_by_month": {
+    "2023-11": 6
+  },
+  "reviews_by_rating": {
+    "3": 6
+  }
+}

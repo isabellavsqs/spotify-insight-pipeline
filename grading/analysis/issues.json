@@ -1,0 +1,746 @@
+{
+  "other.general_negative": {
+    "issue_id": "other.general_negative",
+    "title": "Generic dislike with no specific problem",
+    "description": "Many reviews are short expressions of dislike, such as calling the app bad or the worst, without naming any concrete problem.",
+    "representative_quote_ids": [
+      "q0001",
+      "q0004",
+      "q0002"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.ads": {
+    "issue_id": "usability.ads",
+    "title": "Too many interrupting ads on free tier",
+    "description": "Free-tier listeners complain of frequent, long or repetitive ads that interrupt listening, sometimes several in a row.",
+    "representative_quote_ids": [
+      "q0010",
+      "q0014",
+      "q0015"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.premium_only_feature": {
+    "issue_id": "billing.premium_only_feature",
+    "title": "Basic features locked behind Premium",
+    "description": "Customers say core controls such as choosing songs, skipping, playing in order and seeking now require a Premium subscription.",
+    "representative_quote_ids": [
+      "q0017",
+      "q0022",
+      "q0023"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.other": {
+    "issue_id": "billing.other",
+    "title": "Frustration with paying for Premium or free limits",
+    "description": "Users object to needing to pay to listen, to free listening being cut short, and to the app being restricted to subscribers.",
+    "representative_quote_ids": [
+      "q0025",
+      "q0028",
+      "q0029"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.update_made_worse": {
+    "issue_id": "other.update_made_worse",
+    "title": "Recent update made the app worse",
+    "description": "Customers say a recent update degraded the app overall and some uninstalled, without pointing to one specific defect.",
+    "representative_quote_ids": [
+      "q0033",
+      "q0036",
+      "q0040"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.other": {
+    "issue_id": "playback.other",
+    "title": "Assorted playback misbehaviour after updates",
+    "description": "Listeners report miscellaneous playback problems such as being unable to reverse or replay songs, unplayable podcasts and sessions dropping, mostly following an update.",
+    "representative_quote_ids": [
+      "q0041",
+      "q0044",
+      "q0045"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.login_failure": {
+    "issue_id": "access.login_failure",
+    "title": "Unable to log in to the account",
+    "description": "Users cannot sign in through their usual method, including Facebook or phone number, and report login attempts failing outright.",
+    "representative_quote_ids": [
+      "q0051",
+      "q0054",
+      "q0055"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.stops_or_pauses": {
+    "issue_id": "playback.stops_or_pauses",
+    "title": "Music stops or pauses unexpectedly",
+    "description": "Playback cuts out or pauses on its own during listening, sometimes repeatedly, forcing users to restart the app to continue.",
+    "representative_quote_ids": [
+      "q0058",
+      "q0060",
+      "q0064"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.not_playing": {
+    "issue_id": "playback.not_playing",
+    "title": "Songs fail to play at all",
+    "description": "Tracks or the app refuse to start playing, including offline or on Wi-Fi, leaving users unable to listen to music they chose.",
+    "representative_quote_ids": [
+      "q0065",
+      "q0067",
+      "q0072"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.crash_or_wont_open": {
+    "issue_id": "playback.crash_or_wont_open",
+    "title": "App crashes, freezes or fails to open",
+    "description": "The app crashes, freezes on actions such as skipping, or will not open or load properly after updates.",
+    "representative_quote_ids": [
+      "q0073",
+      "q0075",
+      "q0077"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.other": {
+    "issue_id": "usability.other",
+    "title": "Miscellaneous confusing or awkward usability",
+    "description": "Users find various parts of the app unintuitive, buggy or restrictive, such as songs refusing to change and drag or seek not working.",
+    "representative_quote_ids": [
+      "q0081",
+      "q0083",
+      "q0087"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.removed_features_update": {
+    "issue_id": "usability.removed_features_update",
+    "title": "Features removed or hidden by update",
+    "description": "After an update, users find previously available functions such as the queue, scroll bar, mini player, or played-status markers gone or harder to use.",
+    "representative_quote_ids": [
+      "q0092",
+      "q0093",
+      "q0095"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.shuffle_order": {
+    "issue_id": "usability.shuffle_order",
+    "title": "Forced shuffle, no way to pick songs",
+    "description": "Users say the app plays songs out of order or randomly and cannot be turned off, so they cannot choose the specific song or order they want.",
+    "representative_quote_ids": [
+      "q0100",
+      "q0102",
+      "q0103"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.other": {
+    "issue_id": "catalog.other",
+    "title": "Songs and podcasts missing from catalog",
+    "description": "Customers report that the library lacks many songs or podcasts, or that some tracks have been removed.",
+    "representative_quote_ids": [
+      "q0108",
+      "q0110",
+      "q0112"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.queue_playlist": {
+    "issue_id": "usability.queue_playlist",
+    "title": "Difficulty managing queues and playlists",
+    "description": "Users struggle to create a queue, view full playlists, or reorder and access their own playlists and library.",
+    "representative_quote_ids": [
+      "q0113",
+      "q0115",
+      "q0118"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.boycott_political": {
+    "issue_id": "other.boycott_political",
+    "title": "Boycott or political protest against Spotify",
+    "description": "Some reviews call for a boycott or ban of Spotify, often citing its Swedish origin or political and religious grievances.",
+    "representative_quote_ids": [
+      "q0122",
+      "q0124",
+      "q0125"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.lyrics": {
+    "issue_id": "catalog.lyrics",
+    "title": "Lyrics missing, wrong or locked",
+    "description": "Lyrics fail to display for some songs or devices, or are shown only to Premium subscribers.",
+    "representative_quote_ids": [
+      "q0132",
+      "q0134",
+      "q0135"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.monetization_greed": {
+    "issue_id": "billing.monetization_greed",
+    "title": "Perception that Spotify is money-focused",
+    "description": "Customers feel the company is greedy, restricting free features to push Premium and prioritising revenue over users.",
+    "representative_quote_ids": [
+      "q0140",
+      "q0143",
+      "q0144"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.bugs_glitches": {
+    "issue_id": "playback.bugs_glitches",
+    "title": "General bugs and unstable behaviour",
+    "description": "Users describe the app as buggy and glitchy, with random restarts of playlists, unexplained songs running, and features misbehaving.",
+    "representative_quote_ids": [
+      "q0145",
+      "q0146",
+      "q0151"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.other": {
+    "issue_id": "access.other",
+    "title": "Other sign-in and account access problems",
+    "description": "Customers report difficulty accessing their accounts, such as the app not opening or sign-in failing after switching devices or email.",
+    "representative_quote_ids": [
+      "q0155",
+      "q0157",
+      "q0159"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.other": {
+    "issue_id": "downloads.other",
+    "title": "Downloads limited or unreliable",
+    "description": "Users find downloads locked behind Premium, storage location switching back to internal memory, and playlists dropping from downloads.",
+    "representative_quote_ids": [
+      "q0163",
+      "q0166",
+      "q0167"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.ui_change": {
+    "issue_id": "usability.ui_change",
+    "title": "Disliked redesign and layout changes",
+    "description": "Customers dislike the new home screen, layout, and visual design, with some saying they would cancel their subscription over it.",
+    "representative_quote_ids": [
+      "q0169",
+      "q0171",
+      "q0173"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.lag_or_skips": {
+    "issue_id": "playback.lag_or_skips",
+    "title": "Lag, buffering and slowness",
+    "description": "Users describe the app as slow, laggy or buffering, with songs skipping or glitching, prompting some to switch to other services.",
+    "representative_quote_ids": [
+      "q0180",
+      "q0182",
+      "q0183"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.charges_refunds": {
+    "issue_id": "billing.charges_refunds",
+    "title": "Payment failures and unexpected charges",
+    "description": "Customers report payments not activating Premium, charges they did not expect, difficulty changing payment methods, and trouble cancelling subscriptions.",
+    "representative_quote_ids": [
+      "q0185",
+      "q0187",
+      "q0189"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.controls_widget": {
+    "issue_id": "usability.controls_widget",
+    "title": "Player controls and widget not working",
+    "description": "Users find playback controls missing or unreliable, such as no previous-song button, a missing repeat option, or a widget that fails to show.",
+    "representative_quote_ids": [
+      "q0193",
+      "q0196",
+      "q0198"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.offline_mode": {
+    "issue_id": "downloads.offline_mode",
+    "title": "Offline mode does not work properly",
+    "description": "Downloaded music fails to play offline, and the offline mode gets stuck loading or stops working.",
+    "representative_quote_ids": [
+      "q0201",
+      "q0202",
+      "q0205"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.connection_error": {
+    "issue_id": "playback.connection_error",
+    "title": "Connection errors during playback",
+    "description": "The app wrongly reports being offline or fails to connect even with a strong signal or Wi-Fi, interrupting playback.",
+    "representative_quote_ids": [
+      "q0213",
+      "q0214",
+      "q0215"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.missing_content": {
+    "issue_id": "catalog.missing_content",
+    "title": "Songs and artists missing or removed",
+    "description": "Users find that specific songs, artists, or podcasts are unavailable, missing, or removed from the catalogue.",
+    "representative_quote_ids": [
+      "q0217",
+      "q0218",
+      "q0222"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.plays_wrong_song": {
+    "issue_id": "playback.plays_wrong_song",
+    "title": "Plays a different song than chosen",
+    "description": "When users select a song or playlist, the app plays random or different tracks instead, forcing them to skip until they find the one they wanted.",
+    "representative_quote_ids": [
+      "q0225",
+      "q0226",
+      "q0230"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.skip_limits": {
+    "issue_id": "usability.skip_limits",
+    "title": "Skip limits block normal listening",
+    "description": "Free users hit caps on skipping and cannot replay or go back to previous songs, which restricts how they listen.",
+    "representative_quote_ids": [
+      "q0233",
+      "q0236",
+      "q0239"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.uninstalling_switching": {
+    "issue_id": "other.uninstalling_switching",
+    "title": "Users uninstalling and switching to rivals",
+    "description": "Some reviewers say they uninstalled Spotify and are moving to competing apps such as YouTube Music, Deezer or SoundCloud.",
+    "representative_quote_ids": [
+      "q0243",
+      "q0245",
+      "q0248"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.price": {
+    "issue_id": "billing.price",
+    "title": "Premium seen as too expensive",
+    "description": "Customers feel the Premium subscription costs too much for the value, and some say they cannot afford it.",
+    "representative_quote_ids": [
+      "q0250",
+      "q0253",
+      "q0256"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.bugs_not_working": {
+    "issue_id": "other.bugs_not_working",
+    "title": "App simply does not work",
+    "description": "Users say the app is broken or not working, with bugs in general and no specific defect identified.",
+    "representative_quote_ids": [
+      "q0257",
+      "q0261",
+      "q0264"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.cannot_download": {
+    "issue_id": "downloads.cannot_download",
+    "title": "Cannot download songs",
+    "description": "Users are unable to download songs at all, including on free accounts, and some report it after paying for a plan.",
+    "representative_quote_ids": [
+      "q0265",
+      "q0269",
+      "q0272"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.search": {
+    "issue_id": "catalog.search",
+    "title": "Search fails to find wanted content",
+    "description": "Searches return the wrong songs or no results, and podcasts or specific tracks do not appear when users look for them.",
+    "representative_quote_ids": [
+      "q0274",
+      "q0276",
+      "q0280"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.audio_quality": {
+    "issue_id": "playback.audio_quality",
+    "title": "Poor sound quality and volume",
+    "description": "Users find the audio compressed or weak, with volume dropping or no sound from songs playing on the app.",
+    "representative_quote_ids": [
+      "q0282",
+      "q0286",
+      "q0287"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.recommendations": {
+    "issue_id": "catalog.recommendations",
+    "title": "Poor or repetitive recommendations",
+    "description": "Users find recommendations, radio and smart shuffle inaccurate, repetitive or unwanted, and cannot tell the algorithm what they dislike.",
+    "representative_quote_ids": [
+      "q0289",
+      "q0290",
+      "q0291"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.downloads_disappear": {
+    "issue_id": "downloads.downloads_disappear",
+    "title": "Downloaded music vanishes or re-downloads",
+    "description": "Previously downloaded songs and playlists disappear or must be downloaded again, sometimes after restarts or cache clearing.",
+    "representative_quote_ids": [
+      "q0297",
+      "q0298",
+      "q0304"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.ads_for_paying_users": {
+    "issue_id": "billing.ads_for_paying_users",
+    "title": "Ads still shown to Premium users",
+    "description": "Subscribers say they still hear ads, particularly on podcasts, even after paying for Premium.",
+    "representative_quote_ids": [
+      "q0306",
+      "q0307",
+      "q0310"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.logged_out": {
+    "issue_id": "access.logged_out",
+    "title": "Unexpectedly logged out of account",
+    "description": "Users are signed out without action and then cannot log back in, sometimes losing their saved playlists.",
+    "representative_quote_ids": [
+      "q0313",
+      "q0315",
+      "q0316"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.promotion_trial": {
+    "issue_id": "billing.promotion_trial",
+    "title": "Trial, student and family plan problems",
+    "description": "Users struggle with trial periods, student or family plan eligibility, and being pushed to pricier individual plans.",
+    "representative_quote_ids": [
+      "q0321",
+      "q0323",
+      "q0328"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.premium_paywall": {
+    "issue_id": "other.premium_paywall",
+    "title": "General objection to the Premium paywall",
+    "description": "Customers broadly resent Premium gating, calling the company corrupt and saying it has messed up the free experience.",
+    "representative_quote_ids": [
+      "q0333",
+      "q0335",
+      "q0336"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.podcast_ui": {
+    "issue_id": "usability.podcast_ui",
+    "title": "Podcast and video experience problems",
+    "description": "Users find podcast features lacking, such as a missing sleep timer, ads on podcasts, and video content that cannot be paused.",
+    "representative_quote_ids": [
+      "q0338",
+      "q0339",
+      "q0343"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.battery_data_storage": {
+    "issue_id": "playback.battery_data_storage",
+    "title": "Battery drain and data use",
+    "description": "Users report the app draining battery in the background and using excessive mobile data, even with a subscription.",
+    "representative_quote_ids": [
+      "q0345",
+      "q0347",
+      "q0351"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.ads": {
+    "issue_id": "catalog.ads",
+    "title": "Ads and free-tier experience in catalog",
+    "description": "Complaints about the free service mix ads with catalog gaps, such as songs missing due to licensing and an unsatisfying radio.",
+    "representative_quote_ids": [
+      "q0356",
+      "q0357",
+      "q0359"
+    ],
+    "coherence": "mixed",
+    "note": "Mixes ad complaints, licensing-related missing songs, weak radio, and a wrapped-related grievance."
+  },
+  "usability.autoplay_cant_stop": {
+    "issue_id": "usability.autoplay_cant_stop",
+    "title": "Autoplay cannot be stopped",
+    "description": "Users say the app starts playing on its own, such as when connecting Bluetooth or opening, and that autoplay or repeat cannot be turned off.",
+    "representative_quote_ids": [
+      "q0361",
+      "q0362",
+      "q0365"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "support.other": {
+    "issue_id": "support.other",
+    "title": "Frustration with customer support access",
+    "description": "Customers find it hard to reach a live person for help and feel the company is not responsive to their problems.",
+    "representative_quote_ids": [
+      "q0371",
+      "q0373",
+      "q0376"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.device_bluetooth_car": {
+    "issue_id": "playback.device_bluetooth_car",
+    "title": "Problems on Bluetooth, car and casting devices",
+    "description": "Playback breaks or drains devices when using Android Auto, Bluetooth, speakers, or watches, causing the app to fail through these connections.",
+    "representative_quote_ids": [
+      "q0377",
+      "q0378",
+      "q0384"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.liked_library": {
+    "issue_id": "catalog.liked_library",
+    "title": "Liked songs and saved playlists lost",
+    "description": "Users find their liked songs or saved playlists missing or empty, and random unwanted songs get mixed into their playlists.",
+    "representative_quote_ids": [
+      "q0388",
+      "q0391",
+      "q0392"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.password_reset": {
+    "issue_id": "access.password_reset",
+    "title": "Password and password-reset problems",
+    "description": "Users are told their password is wrong or cannot reset it, with no working forgot-password option available.",
+    "representative_quote_ids": [
+      "q0393",
+      "q0397",
+      "q0400"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.money_value": {
+    "issue_id": "other.money_value",
+    "title": "Not worth the money",
+    "description": "Users say the app or subscription is not worth paying for and accuse the company of being money-hungry.",
+    "representative_quote_ids": [
+      "q0402",
+      "q0403",
+      "q0407"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.navigation": {
+    "issue_id": "usability.navigation",
+    "title": "Confusing navigation and menus",
+    "description": "Users find the app hard to navigate, with menus, settings and icons confusing and songs not directly reachable.",
+    "representative_quote_ids": [
+      "q0409",
+      "q0410",
+      "q0413"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.phone_email_verification": {
+    "issue_id": "access.phone_email_verification",
+    "title": "Phone or email verification failures",
+    "description": "Sign-in fails because the app rejects valid phone numbers or OTP codes, or says the number is wrong.",
+    "representative_quote_ids": [
+      "q0418",
+      "q0419",
+      "q0422"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.signup": {
+    "issue_id": "access.signup",
+    "title": "Unable to create an account",
+    "description": "New users cannot sign up for an account or Premium, with errors appearing during registration.",
+    "representative_quote_ids": [
+      "q0426",
+      "q0430",
+      "q0432"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.account_hacked_or_lost": {
+    "issue_id": "access.account_hacked_or_lost",
+    "title": "Account hacked or lost",
+    "description": "Users report their accounts were hacked, taken over or lost, with loss of data and slow or unhelpful recovery.",
+    "representative_quote_ids": [
+      "q0433",
+      "q0436",
+      "q0439"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.connection_offline": {
+    "issue_id": "access.connection_offline",
+    "title": "Access blocked by offline or connection errors",
+    "description": "Users cannot sign in or access their account because the app shows them as offline or logs them out when offline mode is set.",
+    "representative_quote_ids": [
+      "q0441",
+      "q0443",
+      "q0445"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "other.ads": {
+    "issue_id": "other.ads",
+    "title": "General complaints about ads",
+    "description": "Reviewers express broad dislike of the number of ads and say the app shows too many commercials and gathers data for advertisers.",
+    "representative_quote_ids": [
+      "q0451",
+      "q0453",
+      "q0450"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.wrapped": {
+    "issue_id": "catalog.wrapped",
+    "title": "Spotify Wrapped not appearing",
+    "description": "Users report that their annual Spotify Wrapped summary does not show up, and some say it is missing in their region.",
+    "representative_quote_ids": [
+      "q0458",
+      "q0461",
+      "q0463"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "billing.subscription_activation": {
+    "issue_id": "billing.subscription_activation",
+    "title": "Premium not activating after payment",
+    "description": "Users pay for Premium but the app stays in free mode or cannot complete the upgrade, so the features never unlock.",
+    "representative_quote_ids": [
+      "q0467",
+      "q0469",
+      "q0470"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "catalog.content_controversy": {
+    "issue_id": "catalog.content_controversy",
+    "title": "Objections to content and host controversies",
+    "description": "Some users want certain hosts removed or object to specific content appearing on the home screen, citing controversial figures.",
+    "representative_quote_ids": [
+      "q0474",
+      "q0477",
+      "q0479"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "support.unresponsive": {
+    "issue_id": "support.unresponsive",
+    "title": "Support does not respond",
+    "description": "Users say emails go unanswered and that chat or bot support never reaches a human to resolve their problem.",
+    "representative_quote_ids": [
+      "q0481",
+      "q0483",
+      "q0482"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "support.unhelpful": {
+    "issue_id": "support.unhelpful",
+    "title": "Support replies do not resolve problems",
+    "description": "Users say support answers are useless, scripted or dismissive, and that their issues stay unsolved.",
+    "representative_quote_ids": [
+      "q0489",
+      "q0491",
+      "q0494"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  }
+}

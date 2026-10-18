@@ -1,0 +1,3 @@
+# Store every file byte-for-byte: checksums (manifest.json, run_manifest.json) and the byte-identical
+# ranking check depend on exact bytes, so no line-ending conversion on any platform.
+* -text

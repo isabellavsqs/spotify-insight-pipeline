@@ -1,0 +1,52 @@
+{
+  "billing.charges_refunds": {
+    "issue_id": "billing.charges_refunds",
+    "title": "Unexpected charges and unresolved refunds",
+    "description": "Customers report being charged more than expected, including duplicate charges, and say refunds are not provided when they should be.",
+    "representative_quote_ids": [
+      "q0001"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "access.login_failure": {
+    "issue_id": "access.login_failure",
+    "title": "Cannot log in to the account",
+    "description": "Customers are unable to sign in, typically because the app rejects their password even when they believe it is correct.",
+    "representative_quote_ids": [
+      "q0002"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "playback.crash_or_wont_open": {
+    "issue_id": "playback.crash_or_wont_open",
+    "title": "App crashes or will not open",
+    "description": "Customers say the app crashes repeatedly or fails to open at all, making it impossible to use.",
+    "representative_quote_ids": [
+      "q0003"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "downloads.downloads_disappear": {
+    "issue_id": "downloads.downloads_disappear",
+    "title": "Downloaded songs vanish after updates",
+    "description": "Customers find that music they downloaded for offline listening disappears, often after an app update, and must be downloaded again.",
+    "representative_quote_ids": [
+      "q0004"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  },
+  "usability.ads": {
+    "issue_id": "usability.ads",
+    "title": "Ads interrupt listening too often",
+    "description": "Free-tier customers say ads play too frequently, such as after every song, which interrupts their listening experience.",
+    "representative_quote_ids": [
+      "q0005"
+    ],
+    "coherence": "coherent",
+    "note": ""
+  }
+}

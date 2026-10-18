@@ -1,0 +1,2125 @@
+{
+ "synthetic": true,
+ "excluded_from_business_results": true,
+ "method": "Copies of 600 random-sample rows where the submitted label and the verifier agreed. In 300 copies one field is deliberately wrong (topic shifted, intent shifted, or severity moved by 2); 300 are left unchanged. The production comparison code verify.compare() is re-run against the saved verifier answers.",
+ "planted": 300,
+ "detected": 295,
+ "by_field": {
+  "topic": {
+   "n": 100,
+   "detected": 100
+  },
+  "intent": {
+   "n": 100,
+   "detected": 100
+  },
+  "severity": {
+   "n": 100,
+   "detected": 95
+  }
+ },
+ "unchanged_copies": 300,
+ "false_alarms": 0,
+ "cases": [
+  {
+   "review_id": "172a8ad6-3c36-410b-b035-abf1df918ebe",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "ca9a5228-c060-4eff-944f-85cd23ba3be5",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "eaf44db1-d6e5-4847-ad9a-caa9d07b5b1e",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "cb1f6ca4-8dfa-4006-a24a-55e1b26c1ba2",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "08b37834-cd4f-4031-a220-b3f05d488d0f",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "dc41e676-4a13-463d-b8a4-30d154a0aedd",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "18370b9d-0311-4389-8b45-507c995232eb",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "dc469c1a-178d-484f-9d89-96bd26be826a",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "7318d612-5d68-485b-8efc-f7b3e5fc3e94",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "6fcdf454-50bc-4951-9550-6b8b89022730",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "ffa9ecf4-656e-4759-9622-2cf23f038267",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "2a88f0fa-94a3-44c6-ace8-0e6da8ad27b1",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "b4f52ca2-5468-4a96-bf91-1a938c703abb",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "3c51da31-351b-4f12-b532-840d55e453e5",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "b6b861b0-9097-4bb9-a5c3-d73395860582",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "ffdfb956-79fb-4488-8ebe-ea2dc80525c1",
+   "planted_field": "topic",
+   "original": "downloads",
+   "planted": "catalog",
+   "detected": true
+  },
+  {
+   "review_id": "893a2bbe-674f-43fa-af66-b004b8dc7b1f",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "2d38c802-d3b5-4d7a-ab0e-810b296c64d9",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "1af779e8-4494-4b82-851b-29bf38cfcc58",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "e866bc18-c405-4641-86f0-c299aca72000",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "4acff093-e74e-4d1e-bbfa-3c0fef8e05ed",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "d0c63c4b-5893-46fa-9cd1-4a54b063c833",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "7e0f5566-f38e-4bcf-b050-4cfb0f1ea8c7",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "9d2560c0-cd52-4c75-a1ee-b8b07ecb4917",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "a727a3ca-7bb7-4257-b996-897a611c8020",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "9d1392c3-7c5a-48e8-821d-786fcd7c446d",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "cfb2f472-48ed-4c73-820e-00215b4d944a",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "f59993a9-6ea4-4c20-bd83-802509c5dff5",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "93678c75-99c8-4e76-a253-7f67fe9417ff",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "5156b6dc-e7a4-4d40-ac36-f4b21dae363b",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "d8c750a3-f059-4661-baa0-fba008830ff7",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "204c9160-2bbc-4200-b3c0-1829fc136b07",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "4b3aa67d-31e3-4243-9ec6-da073539f8c8",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "e87c624b-e2eb-4f0a-8f8c-4153f6974c75",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "80c4b522-3c6d-4606-bb96-ca3b13d0336b",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "36219efb-56fa-42c6-8ccf-48803654c89d",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "d067ceb4-fd0d-4a8f-a54e-e5361f3bdbf3",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "02cc2794-bd21-43ea-96c5-7d93cf5e4b26",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "35009a43-0ff5-4b6b-8132-101f08ba2a42",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "920666a4-d196-41c4-b4cd-32bdca3304d6",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "d85f2521-0ead-44be-8f24-8372892ae701",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "6649b840-aec4-41e1-aa1a-cdd298100bcf",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "939a7575-6f00-4365-8f9f-53efac0774a5",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "ecc2aebb-a78f-4c2f-9b35-6a45e9293cc3",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "9a1803b1-93f7-496a-8409-d98385be9abb",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "2c150cb9-96d7-43d0-8b01-1fec9d552888",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "2b631f4b-8652-4fca-bb21-539f9f1bae50",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "83412db6-3e5b-4ac3-9ad8-84168811d8a0",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "0d350f51-5f8d-4189-92c6-20f67230000a",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "fdb26808-f584-48cb-8bce-b6671118a671",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "1c921fcf-acb5-45a4-a984-2744d7127095",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": true
+  },
+  {
+   "review_id": "46fb90f3-e5c8-49f0-9dc8-1a33fe30a2f4",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "43d93f02-a6b1-4ba0-ad1b-f865c47c797f",
+   "planted_field": "intent",
+   "original": "request",
+   "planted": "praise",
+   "detected": true
+  },
+  {
+   "review_id": "de8f70bf-68b7-41e0-b6ea-cd3cb2c4175e",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "53417bb6-0502-4d6f-9ea6-6ca4c40b19ec",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "a236862d-3618-4585-9513-128a3fd97332",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "c1f12b67-bda1-409a-9147-637d41dbb6a2",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "effb308f-c0bf-41ca-b730-bde90b45cfc7",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "fc9ab108-eb91-4edb-ab6f-9a12c55ed766",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "f06a5637-81df-40b4-a053-6c1a389c0bc8",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "3808b657-597b-4164-bc64-13b9169f9566",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "1944a40a-5f0e-4201-b0c2-162a67b83ce2",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "13cb32e5-90a0-40b8-96e5-f3c56b16259d",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "dc819c8a-19f3-46f1-a419-c3c244803106",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "66766ba9-981b-4691-9706-a86857118c7a",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "d3b43ca9-e6d9-4ff2-97ab-d93a04d98374",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "b56c1145-2bb4-4c7d-b33a-4cea1ce0c432",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "1a99534d-ed0a-4b72-afb7-8f2c99595225",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "6c11d9b7-c52b-4577-a73d-d5cc46a0b9ea",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "cf6d40fa-c4c8-455f-a082-76c25e918735",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "3b2a6a22-6550-40da-a6c4-e447bf51ae42",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "5a77799d-8c80-4c43-86e9-138dc44160d6",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "855c2043-c6ce-4658-8323-2691ce18ea6a",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "b8a2d46c-c28e-4780-9682-92be6d27dc86",
+   "planted_field": "intent",
+   "original": "cancellation",
+   "planted": "complaint",
+   "detected": true
+  },
+  {
+   "review_id": "9336fa03-5871-4828-8d7c-ad2cbd529a84",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "326ad047-d562-42ae-b1fb-d8111bf9aaf2",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "57bb7646-afcb-4e63-b1bc-4d970bc7b753",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "c140aedd-11f9-4100-b442-b0602d82e4c0",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "3d75b80f-820c-4eaa-bb8c-ee944919f042",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "99b4ce7e-7933-47ad-bbea-684a1e3df768",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "3ac87ab2-a2c0-4d16-ae94-f0b07cdf9925",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "3ff30689-7a87-47fe-8d12-bb3501ea116c",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "4ad848d1-85c1-4efb-b010-f3fd3ef82996",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "9b272077-bc94-416c-9052-dee806ed8b14",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "34a5b8b7-ae73-48de-a4af-9e2d6f77bdb7",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "c495d0c4-52ba-4546-add8-af90ecb35aa1",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "2814cce8-8b76-4a32-9c63-2b206d31501b",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "ccaed6d0-8b2a-41cb-b787-a9d9e3989b82",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "2ffffb9d-9943-4b6b-bac3-97e6157fe852",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "df328086-fb46-46d5-9070-d60903b54864",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "9e6c1f35-e47c-4e7d-9554-a179ea34ae03",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "07558c91-08c3-4a30-85c4-911cae0c97f1",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "fe47f4b3-f488-4eed-a678-af5233a3d58b",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "8487fdb4-49a0-40b8-82c1-5ef1a89480c4",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "5148f498-63eb-4492-a270-5032bdb79c69",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "0f040d94-f765-4da8-a4d2-8afe7ec6d81b",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "98345863-807f-4aac-90b2-6818ff9a6f76",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "300e4b00-28e4-46b4-ae7c-2a5e4ef30bb9",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "a499b0bd-7f4d-44b4-960b-b856e57f3f64",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "63c0480e-2235-4251-a001-085ed70f1990",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "1c425223-8378-4ef0-954a-18a63eb1cc43",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "4e97d186-ffe8-415a-9d42-d6eef919ddf1",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "e97065e6-9528-4266-8131-913352dfe41b",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "e0f29d71-7a4d-4f6e-9ed5-0372d58a08c5",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "108ada6d-9988-4c58-abcf-9d83aecf0711",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": true
+  },
+  {
+   "review_id": "0acf04d1-a305-41be-aeec-39d25a64674b",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "19b72c73-83d6-4bc4-846e-012f0d6916ad",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "96d315b3-fe46-47c9-9b9c-f09fb2652820",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "824559f7-ac62-404b-bf5c-567840ef5bfa",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "747b11f8-9dd0-482b-9a5e-8051178ffbaa",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "319bfda3-4542-4a5c-aae0-4dc0c419c20f",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "613432f5-13a7-4998-8be5-91e4b3e164a9",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "b5716e11-de1e-401f-85dc-ebe396de6141",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "92d0eda7-7795-481c-99d1-f02a8d229ba2",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "24104513-d8be-4445-867d-4adb78f37623",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "46a8f043-fa3a-4eb6-b038-f73d6243d20d",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "a59571eb-c7f0-4339-bad8-1f397d2fe882",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "6278447c-5f49-4a44-b6c8-3b58f76d6ca4",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "c5458738-1623-424e-b1ca-6dfce35a78be",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "be502de2-2600-4e53-99b2-f718ab16d67d",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "ac9b17c4-20b4-48e2-b099-e252dfaeea58",
+   "planted_field": "topic",
+   "original": "access",
+   "planted": "usability",
+   "detected": true
+  },
+  {
+   "review_id": "70401662-7de7-44ff-8823-638e31848ed2",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "87c7bcc9-f5bd-4fda-8972-88a41e1b4e6d",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "faf22533-4053-465c-85f5-f2f436e3457f",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "1a00c134-f88b-47ba-b196-5bfc4956c1b3",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "39cfcdb8-4b65-4667-96c8-30500627b16b",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "ee2fbe26-8078-43a8-884b-342089ac5ee1",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "2206c3f8-13d6-4533-934c-74466bfcaacb",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "166a8589-08f2-4e58-a747-8d6510026da9",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "e130854c-b35a-46ad-80fe-3d4a3fef9f3e",
+   "planted_field": "topic",
+   "original": "downloads",
+   "planted": "catalog",
+   "detected": true
+  },
+  {
+   "review_id": "3689002d-f42b-464d-9cd6-2c30c893b183",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "9fb7b2e2-4cbd-4a0a-8027-97dbb386d55e",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "4cff4a6b-8615-469d-9216-23db7c6dfcc8",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "d2adcf45-ce0e-4832-9d62-0007f04861de",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "866cc99a-35bc-4a11-91dc-8c5a5540a913",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "0235267c-941f-4d3a-a99f-37c14fc7b171",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "7670994b-c1cd-4a85-adec-d8665cd30954",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "1c0dde6a-5744-443c-b4b1-377bcb9a6140",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "5011647b-aeaa-4fe6-b859-69491b021c87",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "abc91f5b-8d13-4996-9564-7c6dfba11b77",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "663cb03b-9c99-4258-8d97-2b821543f423",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "5c225e24-e12b-4da2-9ef2-51370a7e5b6b",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "26b45734-1d07-417a-9c95-538ba551dcf6",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "59d0a538-d2f8-4b88-b225-e9837ab63b84",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": true
+  },
+  {
+   "review_id": "df380939-24a1-4634-8eea-9b6c516e6632",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "82152974-9b78-4ad2-9922-91a6462b89ba",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "3994ba4d-e049-40a0-8e61-bb62b8028436",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "74aa13ce-9644-4df5-b712-9a579a198308",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "07ec8ec4-d8e4-4cd4-97e9-3aefe72c198e",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "343261b3-1bd5-4491-9fef-01393e888727",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "a0e2a36d-ff9d-4b71-b76d-423284f4de6d",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "47c9eb6a-9e66-423d-b0a2-9f41ff7af186",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "714e8a31-763d-4774-996f-df158e8bab35",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "748a7c83-8f53-4c86-b34f-bae003da7f8c",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "2595c7d3-9468-4cb8-aec3-a7671002a80c",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "8490a710-7892-4c66-b3ce-d5a27a7fd0c4",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": false
+  },
+  {
+   "review_id": "8313d056-bcb5-494c-9ec4-1aacbe621d8b",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "ac517ffa-9f5c-497f-9c2e-1163f68cb762",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "1d236f00-5490-4a04-84c8-a605c796a5f7",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "2164fe89-8961-43b9-aecf-9487c8e74c00",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "8fa6b513-80df-4e5b-9027-8d53551724db",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "25d8815e-de7b-49f7-adfd-40a289d6396b",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "5c5318a8-5588-42be-8e78-540de5da8d2f",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "c738afc7-aaf1-4bde-9a64-2a32582a19fd",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "742e8723-1c20-4610-add6-bf243e1a25ae",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "a831d1e6-65da-4378-be7b-bf23cb781208",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "fc8f4a6a-a0bf-4034-9aa3-225184352774",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "6134db7c-04c6-4af8-a2a7-8303d89fae11",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "70e654e0-5557-4e07-8492-871f1610cac0",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "f78114d6-1226-43f7-929f-ca00bb793c08",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "ddc5e434-6cef-42d6-976a-98c58cf7672a",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": false
+  },
+  {
+   "review_id": "af14a719-b3ea-43e5-9861-084da4914e06",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "265b2959-4de4-4520-9ce8-c82de0471a82",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "90f187b7-5874-4c84-b8bc-6d00fb29978c",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "614f4b6c-a11c-4f4f-861d-c4b0bdc7e5c4",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "2146b07f-0efc-495b-9947-7dc50d82d325",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "3ce04915-d0af-4acd-8e01-57aa7be426eb",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "748a42c9-8f14-43ff-a2bb-c9e0e8cd3dbf",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "461b5e26-ba42-4ca1-b80c-cc852afcf9f9",
+   "planted_field": "intent",
+   "original": "cancellation",
+   "planted": "complaint",
+   "detected": true
+  },
+  {
+   "review_id": "5ec3110a-c3b1-4b74-874d-6b3c15294221",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "d579e8c5-b2dd-475e-9b31-742790e0e0f1",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "7adc5c04-5a2f-4f43-85ae-5b212835de81",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "ac681ce3-a338-4127-a6cd-f31707f749e9",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "9b0b332b-8831-4ae5-a628-f0952896a2ee",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "60ca372c-cdd9-4d05-8aa3-64469e268e5c",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "5431ea05-5477-4ca7-ae9c-9bebf7312192",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "9f391006-40eb-4d9c-b5a5-dcd5518ff67a",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "4fffda37-c5a4-4a5a-8414-232e199e26db",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "7bc08c07-18a6-49b9-a9c3-07c07a656c2d",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "0bc2af4b-20f0-45f1-981e-c0485f143aa6",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "a9e90255-0af4-4a55-bab8-1c993bcb1af6",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "722ce9d9-44f1-4234-8e3c-300dc8dfd3f8",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "f623b9d0-064e-4307-bbde-09616e28863a",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "a69faeba-bde1-4a45-95dc-b14a367c3df2",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "b2754b5c-4f87-44f2-8dd2-0523fbebbd81",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "122e1e78-99d2-495a-b7dc-ce276675b683",
+   "planted_field": "topic",
+   "original": "access",
+   "planted": "usability",
+   "detected": true
+  },
+  {
+   "review_id": "82dcbb0b-6baf-4fd0-a46e-6d3575e1f5d5",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "7e597238-876d-41d9-b651-98d1d72de7f4",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "0e06cda7-746d-4b40-a08a-ec83fff564ee",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "b477ee56-1c0e-4305-b22e-1b34435836d1",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "d637f548-4d79-4c11-9e15-5c640f78e67e",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "0bc2927a-9d08-42fd-9b63-d752f0e29605",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "4f49638b-6aee-4dfe-a37c-47b66f9d7470",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "28fab4e7-1d7a-4600-80eb-d9f328c39127",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": false
+  },
+  {
+   "review_id": "ba09518c-62fc-42e4-ac0c-99487a8fface",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "7d93a5f1-6531-454c-a757-a369461c2688",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "82e49431-bd72-43ae-807b-e99f448f74eb",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "090bd0bb-076a-40dc-ba4b-2e8e3b74c0e5",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "bd07fb10-6b4e-46cd-ba81-db5483b4fd2f",
+   "planted_field": "intent",
+   "original": "cancellation",
+   "planted": "complaint",
+   "detected": true
+  },
+  {
+   "review_id": "adf6a78c-a3bc-419b-acf8-853c137b9420",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "5501cc0e-99ae-4e4c-a79e-6982711c348a",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "4e672cab-982c-4054-8fc8-bed63bfda0ec",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "035cac61-275f-4e95-aa46-1dadde1088b4",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "277b943c-f4a1-4de7-9ed4-83ff89a64070",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "68e11f65-d107-49da-97cd-79528782b747",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "d3e6b9c6-dbfc-4c82-92d1-aaed5905fd86",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "1a5523cb-8b72-4893-9f56-0fdd04d2e9a7",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "7df94c62-cca5-44c3-bd6d-d59d972ed1ad",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "2dc7e5bf-5da1-4e22-b9ca-392af579779e",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": false
+  },
+  {
+   "review_id": "a7ad1b29-218e-459b-a152-96d8154e7f27",
+   "planted_field": "topic",
+   "original": "playback",
+   "planted": "downloads",
+   "detected": true
+  },
+  {
+   "review_id": "d093f7fa-6f54-4298-8c23-3e8ee2691d40",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "e656689e-0538-429e-9ad9-59b75f72e642",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "74a7f303-bc37-47a6-be33-ab57ded6fe6c",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "812ccb2b-456d-4af7-84bc-304ec06d0322",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "01d30ae8-36a3-4f79-8c0e-2e8f85dd2cc1",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "33373b19-eacd-4ba6-93de-f73052ebdab4",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "23beb30f-9274-4bf5-a228-2846f219ae29",
+   "planted_field": "intent",
+   "original": "request",
+   "planted": "praise",
+   "detected": true
+  },
+  {
+   "review_id": "1a172e28-74e9-4891-b3e8-f6a58c5fcd0e",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "67247ab0-ea89-4762-8925-6e45f45a9da0",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "aa801bb6-7597-46b3-aab1-dcc67168d24a",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "c420e79c-5555-4d07-87a9-68d3a64453ba",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "969e911d-8ad2-4394-988c-12fea73fd584",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "12ea40c1-a7b5-424a-a2f0-2d2fa8f2060e",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "219bdc88-e6c9-40a3-be9a-13d848f61337",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "54bee455-f91a-43b1-a2ee-83d22c1f789e",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "34c20da1-5316-46d0-a807-0496751cbaf1",
+   "planted_field": "intent",
+   "original": "unclear",
+   "planted": "cancellation",
+   "detected": true
+  },
+  {
+   "review_id": "cb5b323e-d669-46f8-a68c-5dc976f04dc2",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "345fbaa1-1957-47e9-a023-4cf96f081a9c",
+   "planted_field": "topic",
+   "original": "access",
+   "planted": "usability",
+   "detected": true
+  },
+  {
+   "review_id": "c033221a-d5de-426d-8d5a-12f1835d5234",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "194e2ea9-0bec-4dbb-958c-f86af67d1ff6",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "52807ada-d74e-4c38-9e0d-6ea8a9505a97",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "378182e1-c699-4b01-ba84-a25c7bbe198a",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "8934cc9a-ee41-4264-8ec0-eb7e1e06e31f",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "7d702b21-6a81-406c-bb0d-61df7d9e57ff",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "cc2a7201-1b43-4267-b006-9396e1bd9b1d",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "a2dea6e5-35fa-4f0a-a04d-af00da2d1ee2",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "bbe8a374-d3da-431b-bbbc-faf8de556896",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "beda1b93-92d9-4b49-93e2-a66818b93356",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "565e9ac7-f0fa-4361-a6cc-13643fed084b",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "09a15ed7-c484-4a10-9b48-da2b70ad9922",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "87299dd8-339d-4eb3-b205-7954cbd465ad",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "1d773fb3-5ec3-4384-bd1b-84cc9099c5e0",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "eb54c738-25c9-4464-a69f-b5dfaab0ba2d",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "a0dfda7b-3f83-4683-b751-946f991c8132",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "78b28c72-e803-4a98-a3e7-cd929746c76f",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "6d475d76-0478-4162-802b-6e5afec59153",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "a106b3ab-f45c-49ee-bf4e-0dd2dd2c228e",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "ac48ca54-e8f3-41ea-ab27-2fb71fac9371",
+   "planted_field": "severity",
+   "original": 5,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "0a8288d0-8e19-4573-8463-4d169740d406",
+   "planted_field": "topic",
+   "original": "catalog",
+   "planted": "billing",
+   "detected": true
+  },
+  {
+   "review_id": "8d31b7ad-f32b-4ce0-bb61-e5956388608c",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "a3027123-4868-4bb1-bdbb-ebe318a8da77",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": true
+  },
+  {
+   "review_id": "f806f1b0-fec7-490b-8117-6891ed17fa7d",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "9ced7606-b11c-41ad-b321-d561e02c7bf4",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "e048613b-1bc2-4b73-addd-6767b9531b85",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "4eba74b1-833a-43c2-a5cc-66cab7a01743",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "9676e2a0-a6eb-4eba-9986-045d6265a0ed",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "3e1bcc5c-a5ae-421d-8d14-cef23485b627",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "84b16953-ce50-4cc4-b231-39cf1d9d91f0",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "c42a0b31-0708-4048-9527-cc9ba8982929",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "47806eb1-adf9-4fd9-ada9-bedde27a7038",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": false
+  },
+  {
+   "review_id": "6e2537fc-76ca-4f76-a8f3-6da3ece4994e",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "b5f353fc-030a-46af-8b0d-b2cecdd84326",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "de9bf7c3-53c8-4454-a12f-66a70b90b7d6",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  },
+  {
+   "review_id": "dc243f21-a2b0-4230-8930-ce6c10bd2599",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "edbfb001-d4d9-4a67-b062-e1ec1875a764",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "410a3ae7-0177-4e17-b5ca-49c6f7397bfe",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "8ee5eb5d-3356-4381-af87-47d73d95c653",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "6e0001d5-09d3-4d9e-be75-9647acd144b2",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "43f9a03f-e00f-4989-9812-ba1ad8f44139",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "5b91542a-7cd2-4299-8ab0-b9ebdb1129d6",
+   "planted_field": "topic",
+   "original": "downloads",
+   "planted": "catalog",
+   "detected": true
+  },
+  {
+   "review_id": "10f9ce1c-6c47-48a7-b150-e944f90fc733",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "d5bc266b-b34c-4ed7-9c5c-42e3a19603bf",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "d124af9c-ced0-4df1-8024-8fe3974254b1",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "6cf3e33e-91bd-41bb-a307-da333372708d",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "51b3e203-c0ad-4167-919d-f8c20fd0bb54",
+   "planted_field": "severity",
+   "original": 1,
+   "planted": 3,
+   "detected": true
+  },
+  {
+   "review_id": "1c9b5fca-94a1-4c1b-9c1d-16208fd534dd",
+   "planted_field": "topic",
+   "original": "usability",
+   "planted": "playback",
+   "detected": true
+  },
+  {
+   "review_id": "1c4586e1-a987-4819-aa2e-770bbca20c00",
+   "planted_field": "intent",
+   "original": "request",
+   "planted": "praise",
+   "detected": true
+  },
+  {
+   "review_id": "70f4b9e2-b83c-4f77-901c-1949d5952258",
+   "planted_field": "severity",
+   "original": 4,
+   "planted": 2,
+   "detected": true
+  },
+  {
+   "review_id": "9d1095db-ef0b-468a-99fb-f60f1d35d6b7",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "6e2aff9b-d7d4-420f-949b-575c1b44351a",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "e62cd319-b450-4b22-b042-4807658604c4",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "db2c09d6-bd12-4499-a2f1-7c2148b45d59",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "22f32a11-d186-4045-ae2a-5be399ee20f7",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "5846a4d0-ac2e-4fb7-956b-e929439f2064",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "887fabd4-6d3e-4522-ba6e-d2d5f45c79a6",
+   "planted_field": "topic",
+   "original": "billing",
+   "planted": "support",
+   "detected": true
+  },
+  {
+   "review_id": "5c5623d4-6f51-49e2-9458-457af18c7c3a",
+   "planted_field": "intent",
+   "original": "complaint",
+   "planted": "request",
+   "detected": true
+  },
+  {
+   "review_id": "f9191b5c-e875-44ac-919e-0e3774d11cf6",
+   "planted_field": "severity",
+   "original": 2,
+   "planted": 4,
+   "detected": true
+  },
+  {
+   "review_id": "f82c91d3-12e4-457a-98eb-ba122c11df41",
+   "planted_field": "topic",
+   "original": "other",
+   "planted": "access",
+   "detected": true
+  },
+  {
+   "review_id": "da578ceb-080a-4199-8150-f6c79678bed0",
+   "planted_field": "intent",
+   "original": "praise",
+   "planted": "unclear",
+   "detected": true
+  },
+  {
+   "review_id": "164c5f1c-d4fc-4b7a-83db-c380846fe1c8",
+   "planted_field": "severity",
+   "original": 3,
+   "planted": 5,
+   "detected": true
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": "taxonomy-v2",
+  "note": "Deterministic internal issue codes (custom subtopics) for complaint/cancellation records. Within the record's primary topic (chosen by the model), the code whose pattern matches earliest in the review text wins; no match gives '<topic>.other'. Case-insensitive regular expressions. These never replace the primary labels.",
+  "rules": {
+    "access": [
+      ["login_failure", "\\b(?:can'?t|cannot|unable to|won'?t let me|not able to) (?:log ?in|sign ?in)|\\blog ?in (?:fail|error|problem|issue)|\\blogin\\b"],
+      ["logged_out", "\\blogged (?:me )?out|\\bkeeps? logging (?:me )?out|\\bsigned out"],
+      ["account_hacked_or_lost", "\\bhack\\w*|\\bstolen\\b|\\bsomeone (?:else )?(?:used|changed|logged)|\\blost (?:my )?account|\\baccount (?:was )?(?:deleted|disabled|suspended|banned)"],
+      ["password_reset", "\\bpassword|\\breset (?:link|email)"],
+      ["signup", "\\bsign ?up|\\bregist\\w*|\\bcreate (?:an |a new )?account"]
+    ],
+    "usability": [
+      ["ads", "\\bads?\\b|\\badvert\\w*|\\bcommercials?\\b"],
+      ["shuffle", "\\bshuffl\\w*"],
+      ["queue_playlist", "\\bqueue\\w*|\\bplay ?lists?\\b|\\blibrary\\b|\\bliked songs\\b"],
+      ["ui_change", "\\bnew (?:ui|design|layout|update|interface|look)|\\bredesign\\w*|\\binterface\\b|\\blayout\\b|\\bui\\b"],
+      ["controls_widget", "\\bwidget\\w*|\\block ?screen\\b|\\bbuttons?\\b|\\bcontrols?\\b|\\bnotification\\w*"],
+      ["podcast_ui", "\\bpodcasts?\\b|\\baudio ?books?\\b|\\bvideo\\w*"],
+      ["navigation", "\\bnavigat\\w*|\\bconfus\\w*|\\bhard to (?:find|use)|\\bmenu\\w*|\\btabs?\\b"]
+    ],
+    "playback": [
+      ["crash_or_wont_open", "\\bcrash\\w*|\\bwon'?t (?:open|load|start)|\\bnot (?:opening|loading)|\\bfreez\\w*|\\bblack screen|\\bstuck\\b"],
+      ["stops_or_pauses", "\\bstops?\\b|\\bstopp\\w*|\\bpaus\\w*|\\bcuts? (?:out|off)"],
+      ["lag_or_skips", "\\blag\\w*|\\bskip\\w*|\\bslow\\w*|\\bbuffer\\w*|\\bglitch\\w*"],
+      ["connection_error", "\\bconnect\\w*|\\binternet\\b|\\bwi-?fi\\b|\\boffline (?:error|message)|\\bnetwork\\b"],
+      ["audio_quality", "\\bsound\\b|\\baudio\\b|\\bquality\\b|\\bvolume\\b|\\bequali[sz]er\\b"],
+      ["device_bluetooth_car", "\\bbluetooth\\b|\\bcar\\b|\\bandroid auto\\b|\\bspeaker\\w*|\\bheadphone\\w*|\\bwatch\\b|\\bchromecast\\b|\\bconnect to (?:tv|device)"],
+      ["battery_data_storage", "\\bbattery\\b|\\bstorage\\b|\\bdata usage\\b|\\bmemory\\b|\\bcache\\b|\\bspace\\b"]
+    ],
+    "downloads": [
+      ["downloads_disappear", "\\bdisappear\\w*|\\bdeleted\\b|\\bgone\\b|\\bremoved\\b|\\bvanish\\w*|\\bre-?download"],
+      ["cannot_download", "\\b(?:can'?t|cannot|won'?t|unable to|doesn'?t|not) (?:let me )?download|\\bdownload\\w* (?:fail|stuck|error|pending)"],
+      ["offline_mode", "\\boffline\\b|\\bno internet\\b|\\bwithout internet\\b"]
+    ],
+    "catalog": [
+      ["lyrics", "\\blyrics?\\b"],
+      ["search", "\\bsearch\\w*|\\bcan'?t find\\b"],
+      ["recommendations", "\\brecommend\\w*|\\bdiscover weekly\\b|\\bdaily mix\\w*|\\balgorithm\\w*|\\bsuggest\\w*|\\bradio\\b|\\bsmart shuffle\\b|\\bdj\\b"],
+      ["missing_content", "\\bmissing\\b|\\bnot available\\b|\\bunavailable\\b|\\bgreyed\\b|\\bremoved\\b|\\bnot on spotify\\b"]
+    ],
+    "billing": [
+      ["charges_refunds", "\\bcharg\\w*|\\brefund\\w*|\\bbilled\\b|\\bbilling\\b|\\bpayment\\w*|\\bcard\\b|\\bscam\\w*|\\bmoney\\b"],
+      ["subscription_activation", "\\bnot (?:activ|work)\\w*|\\bstill (?:shows?|says?|on) free\\b|\\bpremium (?:isn'?t|not|doesn'?t) work|\\bactivat\\w*"],
+      ["premium_only_feature", "\\bskips?\\b|\\bskipping\\b|\\bpick (?:a |the |which )?song|\\bchoose (?:a |the )?song|\\bonly (?:with|for) premium|\\bpay (?:to|for) (?:skip|choose|play)|\\bshuffle only"],
+      ["price", "\\bprice\\w*|\\bpricing\\b|\\bexpensive\\b|\\bcost\\w*|\\bafford\\w*|\\bincreas\\w*|\\braise\\w*"]
+    ],
+    "support": [
+      ["unresponsive", "\\bno (?:reply|response|answer)|\\bnever (?:answer|reply|respond)\\w*|\\bcan'?t (?:contact|reach)|\\bno way to contact"],
+      ["unhelpful", "\\bunhelpful\\b|\\buseless\\b|\\bbot\\b|\\bdidn'?t help\\b|\\brude\\b"]
+    ],
+    "other": [
+      ["general_negative", "."]
+    ]
+  }
+}

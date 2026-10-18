@@ -1,0 +1,63 @@
+rank,issue_id,category,title,complaint_count,severity_sum,mean_severity,priority_score,cancellations,cancellation_share
+1,other.general_negative,other,Generic dislike with no specific problem,69605,141878,2.038331,141878,2540,0.0365
+2,usability.ads,usability,Too many interrupting ads on free tier,40864,107170,2.622602,107170,3097,0.0758
+3,billing.premium_only_feature,billing/support,Basic features locked behind Premium,15676,47680,3.041592,47680,3281,0.2093
+4,billing.other,billing/support,Frustration with paying for Premium or free limits,15506,45788,2.952921,45788,2674,0.1724
+5,other.update_made_worse,other,Recent update made the app worse,16663,37381,2.243354,37381,2378,0.1427
+6,playback.other,playback,Assorted playback misbehaviour after updates,9000,30589,3.398778,30589,734,0.0816
+7,access.login_failure,access,Unable to log in to the account,6390,25453,3.983255,25453,315,0.0493
+8,playback.stops_or_pauses,playback,Music stops or pauses unexpectedly,7320,25216,3.444809,25216,802,0.1096
+9,playback.not_playing,playback,Songs fail to play at all,6353,23639,3.720919,23639,576,0.0907
+10,playback.crash_or_wont_open,playback,"App crashes, freezes or fails to open",5942,22468,3.781218,22468,396,0.0666
+11,usability.other,usability,Miscellaneous confusing or awkward usability,8014,22464,2.803095,22464,792,0.0988
+12,usability.removed_features_update,usability,Features removed or hidden by update,7430,22257,2.995559,22257,1666,0.2242
+13,usability.shuffle_order,usability,"Forced shuffle, no way to pick songs",6040,17625,2.918046,17625,742,0.1228
+14,catalog.other,catalog,Songs and podcasts missing from catalog,5189,14703,2.833494,14703,392,0.0755
+15,usability.queue_playlist,usability,Difficulty managing queues and playlists,4845,14474,2.987410,14474,419,0.0865
+16,other.boycott_political,other,Boycott or political protest against Spotify,6937,13214,1.904858,13214,3336,0.4809
+17,catalog.lyrics,catalog,"Lyrics missing, wrong or locked",4286,12399,2.892907,12399,218,0.0509
+18,billing.monetization_greed,billing/support,Perception that Spotify is money-focused,3571,9877,2.765892,9877,642,0.1798
+19,playback.bugs_glitches,playback,General bugs and unstable behaviour,2966,9853,3.321982,9853,214,0.0722
+20,access.other,access,Other sign-in and account access problems,2542,9849,3.874508,9849,209,0.0822
+21,downloads.other,downloads,Downloads limited or unreliable,2865,9425,3.289703,9425,163,0.0569
+22,usability.ui_change,usability,Disliked redesign and layout changes,3174,8213,2.587587,8213,524,0.1651
+23,playback.lag_or_skips,playback,"Lag, buffering and slowness",2303,7019,3.047764,7019,130,0.0564
+24,billing.charges_refunds,billing/support,Payment failures and unexpected charges,1782,6835,3.835578,6835,265,0.1487
+25,usability.controls_widget,usability,Player controls and widget not working,2347,6832,2.910950,6832,317,0.1351
+26,downloads.offline_mode,downloads,Offline mode does not work properly,1948,6764,3.472279,6764,106,0.0544
+27,playback.connection_error,playback,Connection errors during playback,1893,6728,3.554147,6728,97,0.0512
+28,catalog.missing_content,catalog,Songs and artists missing or removed,2229,6687,3.000000,6687,187,0.0839
+29,playback.plays_wrong_song,playback,Plays a different song than chosen,1966,6664,3.389624,6664,183,0.0931
+30,usability.skip_limits,usability,Skip limits block normal listening,1772,5459,3.080700,5459,330,0.1862
+31,other.uninstalling_switching,other,Users uninstalling and switching to rivals,2196,4888,2.225865,4888,1661,0.7564
+32,billing.price,billing/support,Premium seen as too expensive,1554,3930,2.528958,3930,235,0.1512
+33,other.bugs_not_working,other,App simply does not work,1166,3376,2.895369,3376,27,0.0232
+34,downloads.cannot_download,downloads,Cannot download songs,910,3290,3.615385,3290,30,0.0330
+35,catalog.search,catalog,Search fails to find wanted content,991,3195,3.224016,3195,57,0.0575
+36,playback.audio_quality,playback,Poor sound quality and volume,1081,3029,2.802035,3029,78,0.0722
+37,catalog.recommendations,catalog,Poor or repetitive recommendations,1166,3025,2.594340,3025,89,0.0763
+38,downloads.downloads_disappear,downloads,Downloaded music vanishes or re-downloads,799,2677,3.350438,2677,83,0.1039
+39,billing.ads_for_paying_users,billing/support,Ads still shown to Premium users,697,2118,3.038737,2118,126,0.1808
+40,access.logged_out,access,Unexpectedly logged out of account,494,1955,3.957490,1955,35,0.0709
+41,billing.promotion_trial,billing/support,"Trial, student and family plan problems",562,1738,3.092527,1738,131,0.2331
+42,other.premium_paywall,other,General objection to the Premium paywall,691,1640,2.373372,1640,157,0.2272
+43,usability.podcast_ui,usability,Podcast and video experience problems,598,1640,2.742475,1640,49,0.0819
+44,playback.battery_data_storage,playback,Battery drain and data use,498,1563,3.138554,1563,43,0.0863
+45,catalog.ads,catalog,Ads and free-tier experience in catalog,532,1531,2.877820,1531,63,0.1184
+46,usability.autoplay_cant_stop,usability,Autoplay cannot be stopped,535,1528,2.856075,1528,141,0.2636
+47,support.other,billing/support,Frustration with customer support access,494,1473,2.981781,1473,47,0.0951
+48,playback.device_bluetooth_car,playback,"Problems on Bluetooth, car and casting devices",404,1343,3.324257,1343,38,0.0941
+49,catalog.liked_library,catalog,Liked songs and saved playlists lost,369,1173,3.178862,1173,30,0.0813
+50,access.password_reset,access,Password and password-reset problems,286,1130,3.951049,1130,39,0.1364
+51,other.money_value,other,Not worth the money,516,1098,2.127907,1098,16,0.0310
+52,usability.navigation,usability,Confusing navigation and menus,361,935,2.590028,935,18,0.0499
+53,access.phone_email_verification,access,Phone or email verification failures,230,916,3.982609,916,13,0.0565
+54,access.signup,access,Unable to create an account,221,861,3.895928,861,15,0.0679
+55,access.account_hacked_or_lost,access,Account hacked or lost,183,849,4.639344,849,30,0.1639
+56,access.connection_offline,access,Access blocked by offline or connection errors,157,621,3.955414,621,19,0.1210
+57,other.ads,other,General complaints about ads,244,520,2.131148,520,30,0.1230
+58,catalog.wrapped,catalog,Spotify Wrapped not appearing,180,508,2.822222,508,2,0.0111
+59,billing.subscription_activation,billing/support,Premium not activating after payment,142,500,3.521127,500,21,0.1479
+60,catalog.content_controversy,catalog,Objections to content and host controversies,92,263,2.858696,263,18,0.1957
+61,support.unresponsive,billing/support,Support does not respond,55,183,3.327273,183,13,0.2364
+62,support.unhelpful,billing/support,Support replies do not resolve problems,33,103,3.121212,103,8,0.2424

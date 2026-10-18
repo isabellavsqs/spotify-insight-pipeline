@@ -1,0 +1,83 @@
+{
+  "memo_markdown": "## Summary\nThe highest-ranked issue is generic dislike with no specific problem, with 69,605 complaints [C001] and a priority_score of 141,878 [C004]. Among concrete problems, interrupting ads on the free tier ranks highest, with 40,864 complaints [C005] and a priority_score of 107,170 [C008]. Premium gating of basic features is the top billing-related concern, with 15,676 complaints [C009] and a priority_score of 47,680 [C012].\n\n## Top issues\n- **Generic dislike (rank 1):** Short expressions of dislike without a named problem. 69,605 complaints [C001]; severity_sum 141,878 [C002]; mean_severity 2.038331 [C003]; priority_score 141,878 [C004].\n- **Interrupting ads on free tier (rank 2):** Frequent, long or repeated ads. 40,864 complaints [C005]; severity_sum 107,170 [C006]; mean_severity 2.622602 [C007]; priority_score 107,170 [C008].\n- **Basic features locked behind Premium (rank 3):** Skipping, song choice and seeking now require Premium. 15,676 complaints [C009]; severity_sum 47,680 [C010]; mean_severity 3.041592 [C011]; priority_score 47,680 [C012].\n- **Frustration with paying or free limits (rank 4):** 15,506 complaints [C013]; severity_sum 45,788 [C014]; mean_severity 2.952921 [C015]; priority_score 45,788 [C016].\n- **Recent update made the app worse (rank 5):** 16,663 complaints [C017]; severity_sum 37,381 [C018]; mean_severity 2.243354 [C019]; priority_score 37,381 [C020].\n\n## Recommendations\n1. **Review free-tier ad frequency and length.** Investigate ad pacing and back-to-back ads for free users. Supported by 40,864 complaints [C005] and priority_score 107,170 [C008].\n2. **Audit which controls moved behind Premium in the latest update.** Confirm whether skip, song choice and seeking gating is intended and communicated. Supported by 15,676 complaints [C009] and priority_score 47,680 [C012].\n3. **Investigate playback stopping and not-playing reports after the latest update.** Tie reproduction to build and device data. Supported by playback.stops_or_pauses at 7,320 complaints [C029] and playback.not_playing at 6,353 complaints [C033].\n4. **Triage login failures, especially Facebook and phone-number sign-in.** Supported by 6,390 complaints [C025] and mean_severity 3.983255 [C027], the highest mean severity among the top issues.\n\n## Limits\n- These are self-selected public reviews, so they do not represent all users.\n- There is no revenue, plan tier or confirmed churn data, and cancellation intent is not proof of cancellation. Cancellation-intent records total 31,087 [F07].\n- Labels come from models. Topic agreement on the random sample is 0.847536 [F10]; intent agreement is 0.88338 [F11]; topic agreement on flagged cases is 0.737571 [F13]. 5,003 disagreements remain for review [F15].\n- priority_score equals severity_sum by definition [C004][C002].\n- Coverage: 660,609 of 660,622 records completed [F02][F01].",
+  "recommendations": [
+    {
+      "title": "Review free-tier ad frequency and length",
+      "issue_ids": [
+        "usability.ads"
+      ],
+      "rationale": "Interrupting ads are a high-volume, high-severity complaint for free users.",
+      "claim_ids": [
+        "C005",
+        "C008"
+      ]
+    },
+    {
+      "title": "Audit which controls moved behind Premium in the latest update",
+      "issue_ids": [
+        "billing.premium_only_feature"
+      ],
+      "rationale": "Customers report core controls now require Premium, which is a clear product-policy question to verify.",
+      "claim_ids": [
+        "C009",
+        "C012"
+      ]
+    },
+    {
+      "title": "Investigate playback stopping and not-playing reports after the latest update",
+      "issue_ids": [
+        "playback.stops_or_pauses",
+        "playback.not_playing"
+      ],
+      "rationale": "Playback interruptions are concentrated and tied by reviewers to recent updates.",
+      "claim_ids": [
+        "C029",
+        "C033"
+      ]
+    },
+    {
+      "title": "Triage login failures for Facebook and phone-number sign-in",
+      "issue_ids": [
+        "access.login_failure"
+      ],
+      "rationale": "Login failures have the highest mean severity among the top issues.",
+      "claim_ids": [
+        "C025",
+        "C027"
+      ]
+    }
+  ],
+  "cited_ids": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "C025",
+    "C027",
+    "C029",
+    "C033",
+    "F01",
+    "F02",
+    "F07",
+    "F10",
+    "F11",
+    "F13",
+    "F15"
+  ]
+}

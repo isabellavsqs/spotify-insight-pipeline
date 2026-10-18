@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+
+# Local pipeline state (large SQLite files) and checker outputs kept outside grading/
+work/
+local-reference.json
+self-check.json
+
+# Working copy of the golden labels (the published copy is evals/golden/)
+golden_private/
+
+__pycache__/
+*.pyc
+env.txt
+
+# Raw dataset (97.4 MB): not committed; see README "Setup" for the source link and checksum
+spotify_reviews_18months.csv

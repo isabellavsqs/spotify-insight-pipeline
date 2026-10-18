@@ -1,0 +1,11 @@
+rate_id,provider,model,tier,billing_unit,price_usd,per_units,checked_date,source_url,notes
+jev-in,typesafe,jev-1.13.0,standard,uncached_input_token,0.042,1000000,2026-10-12,https://docs.typesafe.ai/models,Charged per input token
+jev-out,typesafe,jev-1.13.0,standard,output_token,0,1000000,2026-10-12,https://docs.typesafe.ai/models,Output tokens are free
+haiku55-std-in,anthropic,claude-haiku-5-5,standard,uncached_input_token,0.10,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Base input (prompts up to 100k tokens)
+haiku55-std-cw,anthropic,claude-haiku-5-5,standard,cache_write_input_token,0.125,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,5-minute cache write
+haiku55-std-cr,anthropic,claude-haiku-5-5,standard,cached_input_token,0.01,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Cache hits and refreshes
+haiku55-std-out,anthropic,claude-haiku-5-5,standard,output_token,0.50,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Output; thinking tokens are billed inside output_tokens and not added again
+haiku55-batch-in,anthropic,claude-haiku-5-5,batch,uncached_input_token,0.05,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Batch API input (50% off)
+haiku55-batch-cw,anthropic,claude-haiku-5-5,batch,cache_write_input_token,0.0625,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Cache write with Batch discount (multipliers stack)
+haiku55-batch-cr,anthropic,claude-haiku-5-5,batch,cached_input_token,0.005,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Cache read with Batch discount (multipliers stack)
+haiku55-batch-out,anthropic,claude-haiku-5-5,batch,output_token,0.25,1000000,2026-10-12,https://platform.claude.com/docs/en/about-claude/pricing,Batch API output (50% off)

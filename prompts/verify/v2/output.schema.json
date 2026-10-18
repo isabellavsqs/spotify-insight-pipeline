@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verify-v2/output",
+  "description": "Structured output (output_config.format). The code then checks each row against the pattern, that the set of ids equals the ids sent (no missing, extra or duplicate rows), and that quote is within that review's sentence count. Invalid rows are rejected, never guessed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rows"],
+  "properties": {
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^r(0[1-9]|[1-4][0-9]|50)\\|(access|usability|playback|downloads|catalog|billing|support|other)\\|(cancellation|complaint|request|praise|unclear)\\|(-1\\.0|-0\\.5|0\\.0|0\\.5|1\\.0)\\|[1-5]\\|([1-9]|[1-3][0-9]|40)\\|[01]$"
+      }
+    }
+  },
+  "x-row-fields": ["id", "topic", "intent", "sentiment", "severity", "quote", "needs_review"]
+}

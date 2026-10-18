@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "memo-v1/input",
+  "description": "Saved aggregate artifacts only. claims are the rows written to grading/claims.csv for the issues included (top 10 by rank); facts are run-level numbers with IDs, explained in the README. Logged with an empty review_ids list; the input pack's hash and source artifact paths are recorded in the run log.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "issues", "claims", "facts"],
+  "properties": {
+    "pack_id": {"type": "string"},
+    "issues": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rank", "issue_id", "title", "description", "quotes"],
+        "properties": {
+          "rank": {"type": "integer", "minimum": 1},
+          "issue_id": {"type": "string"},
+          "title": {"type": "string"},
+          "description": {"type": "string"},
+          "quotes": {"type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 200}}
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "issue_id", "metric", "value"],
+        "properties": {
+          "claim_id": {"type": "string", "pattern": "^C[0-9]{3}$"},
+          "issue_id": {"type": "string"},
+          "metric": {"enum": ["complaint_count", "severity_sum", "mean_severity", "priority_score"]},
+          "value": {"type": "string"}
+        }
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fact_id", "name", "value"],
+        "properties": {
+          "fact_id": {"type": "string", "pattern": "^F[0-9]{2}$"},
+          "name": {"type": "string", "description": "e.g. completed_records, quarantined_records, topic_agreement_rate"},
+          "value": {"type": "string"}
+        }
+      }
+    }
+  }
+}

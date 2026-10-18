@@ -1,0 +1,52 @@
+{
+ "input": "cost_100.csv",
+ "distinct_texts": 100,
+ "jev_visible_tokens": 24238,
+ "rows": [
+  {
+   "stage": "enrich",
+   "model": "typesafe jev-1.13.0, 20 reviews/request, up to 8 in flight",
+   "calls": 5,
+   "input_tokens_est": 37678,
+   "output_tokens_est": 0,
+   "expected_usd": "0.001582476",
+   "worst_case_usd": "0.00224374500"
+  },
+  {
+   "stage": "verify",
+   "model": "anthropic claude-haiku-5-5 effort=low thinking=off, batch (100 texts)",
+   "calls": 2,
+   "input_tokens_est": 6567,
+   "output_tokens_est": 1928,
+   "expected_usd": "0.00081035",
+   "worst_case_usd": "0.001295046875"
+  },
+  {
+   "stage": "fallback",
+   "model": "anthropic claude-haiku-5-5 effort=medium thinking=adaptive, batch (cap 2% = 2 texts)",
+   "calls": 1,
+   "input_tokens_est": 1460,
+   "output_tokens_est": 3100,
+   "expected_usd": "0.00084800",
+   "worst_case_usd": "0.004145062500"
+  },
+  {
+   "stage": "group",
+   "model": "anthropic claude-haiku-5-5 effort=low thinking=off, standard (25 issues)",
+   "calls": 1,
+   "input_tokens_est": 12551,
+   "output_tokens_est": 2750,
+   "expected_usd": "0.0026301",
+   "worst_case_usd": "0.00493609375"
+  },
+  {
+   "stage": "memo",
+   "model": "anthropic claude-haiku-5-5 effort=low thinking=off, standard",
+   "calls": 1,
+   "input_tokens_est": 5269,
+   "output_tokens_est": 1200,
+   "expected_usd": "0.0011269",
+   "worst_case_usd": "0.00382328125"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+rank,issue_id,complaint_count,severity_sum,mean_severity,priority_score
+1,billing.charges_refunds,1,5,5.000000,5
+2,access.login_failure,1,4,4.000000,4
+3,playback.crash_or_wont_open,1,4,4.000000,4
+4,downloads.downloads_disappear,1,3,3.000000,3
+5,usability.ads,1,3,3.000000,3

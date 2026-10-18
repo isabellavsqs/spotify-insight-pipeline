@@ -1,0 +1,32 @@
+State already prepared for this exact input: synthetic_injection/state.sqlite (use --force to rebuild)
+DRY RUN (offline estimate, no calls): synthetic_injection.csv - 6 distinct texts, 6 not yet labeled (cached results are free)
+
+stage     calls  in tok (est)  out tok (est)   expected $   worst-case $  model
+enrich        1         2,639              0     0.000111       0.000153  typesafe jev-1.13.0, 20 reviews/request, up to 8 in flight
+verify        1         1,694            172     0.000128       0.000193  anthropic claude-haiku-5-5 effort=low thinking=off, batch (6 texts)
+fallback      0             0              0     0.000000       0.000000  anthropic claude-haiku-5-5 effort=medium thinking=adaptive, batch (cap 1%; 0 texts not yet adjudicated)
+group         1         1,181            110     0.000173       0.001360  anthropic claude-haiku-5-5 effort=low thinking=off, standard (1 issues)
+memo          1         2,227          1,200     0.000823       0.003348  anthropic claude-haiku-5-5 effort=low thinking=off, standard
+TOTAL                                            0.001234       0.005054
+
+Jev expected billed tokens per review: 440 (visible 242 + overhead model calibrated on the pilots)
+run budget cap: $0.0500 -> OK: worst case fits
+Estimates only; the paid run measures real usage.
+project spend so far: $7.783645 (open reservations $0.000000); cap $10.0; remaining $2.216355
+
+PAID run approved in advance with --yes (hard cap $0.05).
+State already prepared for this exact input: synthetic_injection/state.sqlite (use --force to rebuild)
+[run] synthetic_injection-20261018T012349Z kind=synthetic_injection phase=initial rows=6 distinct=6
+[enrich] round 1: 6 texts to label in 1 Jev requests (phase=initial; 0 already labeled, not resent)
+[enrich] 1/1 requests | 6 texts saved | Jev $0.0001 | 2.1 req/s | ~0 min left
+[verify] submitted synthetic_injection-20261018T012349Z-verify-job2353bd9d0986: 1 request(s), 6 review(s), reserved $0.000193
+[verify] synthetic_injection-20261018T012349Z-verify-job2353bd9d0986 ended after 193s: cost $0.000158
+[run] synthetic_injection-20261018T012349Z completed in 242.189s; cost this run $0.0017656050
+
+status: completed
+wall: 242.189 s | rows 6 | completed 6 | failed 0 | calls 4 (failed 0) | cost this run $0.0017656050
+cost by stage: {'enrich': '0.000106680', 'verify': '0.0001582250', 'fallback': '0', 'group': '0.0004329', 'memo': '0.0010678'}
+agreement on 6 verified: topic 1.0 intent 1.0 severity±1 1.0 sentiment±0.5 1.0
+outputs: evals\injection\outputs
+project spend so far: $7.785411 (open reservations $0.000000); cap $10.0; remaining $2.214589
+exit 0

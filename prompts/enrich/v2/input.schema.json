@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "enrich-v2/input",
+  "description": "Jev request body for one review. 'questions' is the 'questions' object of questions.json, plus a 'quote' Choice question (options s1..sN = exact sentences) when the review has two or more sentences. The state is only the exact review text.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["model", "state", "questions"],
+  "properties": {
+    "model": {"const": "jev-1.13.0"},
+    "state": {"type": "string", "minLength": 1},
+    "questions": {"type": "object", "required": ["topic", "intent", "severity", "sentiment"]}
+  }
+}

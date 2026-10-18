@@ -1,0 +1,117 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "actual": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+      "check": "file_sha256 matches manifest.json",
+      "expected": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+      "ok": true
+    },
+    {
+      "actual": 76170,
+      "check": "file bytes match manifest.json",
+      "expected": 76170,
+      "ok": true
+    },
+    {
+      "actual": 500,
+      "check": "parsed rows == profile records",
+      "expected": 500,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "duplicate review IDs",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "empty texts == quarantined",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 500,
+      "check": "nonempty + quarantined == records",
+      "expected": 500,
+      "ok": true
+    }
+  ],
+  "meta": {
+    "input_bytes": 76170,
+    "input_file": "checkpoint_500.csv",
+    "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+    "model_calls": 0,
+    "prepared_at_utc": "2026-10-12T21:47:05Z",
+    "seconds": {
+      "hash_and_profile": 0.01,
+      "parse_dedupe_store": 0.05,
+      "total": 0.08
+    },
+    "state_db": "work/checkpoint_500/state.sqlite"
+  },
+  "summary": {
+    "distinct_nonempty_texts": 479,
+    "distinct_text_chars": {
+      "max": 499,
+      "mean": 81.67,
+      "median": 38,
+      "p90": 208,
+      "p99": 468,
+      "total": 39122
+    },
+    "distinct_texts_40_chars_or_less": 244,
+    "distinct_texts_with_non_ascii": 71,
+    "empty_review_text": 0,
+    "multiline_review_rows": 0,
+    "nonempty": 500,
+    "physical_file_lines": 501,
+    "quarantined_ids": [],
+    "records": 500,
+    "rows_reusable_from_exact_duplicates": 21,
+    "texts_with_exact_duplicates": 11,
+    "top_duplicate_texts": [
+      {
+        "rows": 7,
+        "text": "Good"
+      },
+      {
+        "rows": 4,
+        "text": "Great"
+      },
+      {
+        "rows": 3,
+        "text": "Excellent"
+      },
+      {
+        "rows": 3,
+        "text": "Worst app"
+      },
+      {
+        "rows": 3,
+        "text": "Nice"
+      },
+      {
+        "rows": 2,
+        "text": "Very good"
+      },
+      {
+        "rows": 2,
+        "text": "Op"
+      },
+      {
+        "rows": 2,
+        "text": "Awesome"
+      },
+      {
+        "rows": 2,
+        "text": "Superb"
+      },
+      {
+        "rows": 2,
+        "text": "Hate this application"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "fact_id": "F01",
+    "name": "records_total",
+    "value": "100"
+  },
+  {
+    "fact_id": "F02",
+    "name": "completed_records",
+    "value": "100"
+  },
+  {
+    "fact_id": "F03",
+    "name": "quarantined_empty_text",
+    "value": "0"
+  },
+  {
+    "fact_id": "F04",
+    "name": "failed_records",
+    "value": "0"
+  },
+  {
+    "fact_id": "F05",
+    "name": "distinct_texts",
+    "value": "100"
+  },
+  {
+    "fact_id": "F06",
+    "name": "complaint_or_cancellation_records",
+    "value": "47"
+  },
+  {
+    "fact_id": "F07",
+    "name": "cancellation_intent_records",
+    "value": "9"
+  },
+  {
+    "fact_id": "F08",
+    "name": "verified_texts",
+    "value": "100"
+  },
+  {
+    "fact_id": "F09",
+    "name": "topic_agreement_rate",
+    "value": "0.88"
+  },
+  {
+    "fact_id": "F10",
+    "name": "intent_agreement_rate",
+    "value": "0.89"
+  },
+  {
+    "fact_id": "F11",
+    "name": "severity_within_one_rate",
+    "value": "0.98"
+  },
+  {
+    "fact_id": "F12",
+    "name": "fallback_adjudicated_texts",
+    "value": "2"
+  },
+  {
+    "fact_id": "F13",
+    "name": "disagreements_left_for_review",
+    "value": "20"
+  }
+]

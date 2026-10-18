@@ -1,0 +1,158 @@
+[
+ {
+  "run_id": "analysis_10000-20261013T041316Z",
+  "kind": "analysis_10000",
+  "input_file": "analysis_10000.csv",
+  "input_sha256": "eaa62ca6d44d717302904a9c922e99b0b4584d174309cb45295ecbc2ba2a91b5",
+  "settings": {
+   "claude_job_max_requests": 500,
+   "enrich": {
+    "label_config": "jev-1.13.0+enrich-v5+bb9c108b+batch=20+sentiment=lexicon|fallback=claude-haiku-5-5+effort=medium+thinking=adaptive+verify-v2+40ec0611",
+    "max_attempts": 3,
+    "max_in_flight": 8,
+    "model": "jev-1.13.0",
+    "prompt_id": "enrich-v5",
+    "prompt_sha256": "bb9c108b731ea1c8f92589ca407ca5719387edf969175b5a8ff80b82155e4fb3",
+    "provider": "typesafe",
+    "rate_limit_per_s": 10,
+    "reviews_per_request": 20,
+    "tier": "standard",
+    "token_rate_limit_per_s": 80000,
+    "worker_limit": 1
+   },
+   "fallback": {
+    "effort": "medium",
+    "job_max_requests": 500,
+    "label_config": "jev-1.13.0+enrich-v5+bb9c108b+batch=20+sentiment=lexicon|fallback=claude-haiku-5-5+effort=medium+thinking=adaptive+verify-v2+40ec0611",
+    "max_attempts": 2,
+    "model": "claude-haiku-5-5",
+    "prompt_id": "verify-v2",
+    "prompt_sha256": "40ec0611109e0dd3b649653ee6c41a3a14da0c302673fae8a07f7feec8a1d061",
+    "provider": "anthropic",
+    "reviews_per_request": 50,
+    "stage": "fallback",
+    "thinking": "adaptive (allowance 16000)",
+    "tier": "batch",
+    "worker_limit": 1
+   },
+   "fallback_fraction": 0.01,
+   "group_effort": "low",
+   "memo_effort": "low",
+   "verify_cap_fraction": 0.05,
+   "verify_effort": "low",
+   "verify_fraction": 0.02
+  },
+  "status": "completed",
+  "phase": "initial",
+  "started_at": 1791864796.3812194,
+  "ended_at": 1791865805.1200829,
+  "wall_seconds": 1008.948,
+  "stage_seconds": {
+   "prepare": 0.01,
+   "enrich": 39.435,
+   "verify": 568.555,
+   "fallback": 374.477,
+   "rank": 0.037,
+   "group": 18.786,
+   "memo": 6.894,
+   "export": 0.307
+  },
+  "counters": {
+   "calls_this_run": 412,
+   "completed": 10000,
+   "cost_by_stage_usd": {
+    "enrich": "0.118970586",
+    "fallback": "0.0042025225",
+    "group": "0.0038728",
+    "memo": "0.0013050",
+    "verify": "0.0033282650"
+   },
+   "cost_this_run_usd": "0.1316791735",
+   "distinct_texts": 8448,
+   "duplicate_rows_reused": 1552,
+   "enrich": {
+    "accepted": 7969,
+    "calls": 399,
+    "cost_usd": "0.118970586",
+    "failed_calls": 0,
+    "gave_up": 0,
+    "pending_at_start": 7969,
+    "rejected": 0,
+    "result_cache_hits": 479,
+    "rounds": 1
+   },
+   "failed_calls_this_run": 0,
+   "failed_records": 0,
+   "fallback": {
+    "accepted": 80,
+    "adjudicated": 84,
+    "cap": 84,
+    "cost_usd": "0.0042025225",
+    "disagreements": 172,
+    "failed_requests": 0,
+    "gave_up": 0,
+    "jobs": 1,
+    "pending_at_start": 80,
+    "reconciled_jobs": 0,
+    "rejected": 0,
+    "requests": 2,
+    "result_cache_hits": 4
+   },
+   "group": {
+    "cache_hit": false,
+    "config": "claude-haiku-5-5+effort=low+group-v1+51dd444e+thinking=off",
+    "request_id": "analysis_10000-20261013T041316Z-group-a79b3606bf44-a1"
+   },
+   "issues": 39,
+   "memo": {
+    "cache_hit": false,
+    "config": "claude-haiku-5-5+effort=low+memo-v1+45b3a36b+thinking=off",
+    "request_id": "analysis_10000-20261013T041316Z-memo-4799e421a1db-a1"
+   },
+   "memo_ok": true,
+   "quarantined_empty": 0,
+   "result_cache_hits_texts": 479,
+   "rows": 10000,
+   "verify": {
+    "accepted": 392,
+    "cost_usd": "0.0033282650",
+    "disagreements": 172,
+    "failed_requests": 0,
+    "flagged": {
+     "disagreements": 132,
+     "intent_agreement": 0.74,
+     "quote_agreement_multi_sentence": 0.529412,
+     "quote_compared": 102,
+     "sentiment_within_0_5": 0.92,
+     "severity_within_1": 0.944,
+     "topic_agreement": 0.7,
+     "verified": 250
+    },
+    "gave_up": 6,
+    "intent_agreement": 0.795673,
+    "jobs": 2,
+    "pending_at_start": 398,
+    "quote_agreement_multi_sentence": 0.540541,
+    "quote_compared": 148,
+    "reconciled_jobs": 0,
+    "rejected": 16,
+    "requests": 9,
+    "result_cache_hits": 24,
+    "sentiment_within_0_5": 0.932692,
+    "severity_within_1": 0.961538,
+    "stratified_sample": {
+     "disagreements": 40,
+     "intent_agreement": 0.879518,
+     "quote_agreement_multi_sentence": 0.565217,
+     "quote_compared": 46,
+     "sentiment_within_0_5": 0.951807,
+     "severity_within_1": 0.987952,
+     "topic_agreement": 0.873494,
+     "verified": 166
+    },
+    "topic_agreement": 0.769231,
+    "verified": 416
+   }
+  }
+ }
+]

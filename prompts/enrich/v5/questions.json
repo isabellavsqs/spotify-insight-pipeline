@@ -1,0 +1,11 @@
+{
+  "version": "enrich-v5",
+  "model": "jev-1.13.0",
+  "reviews_per_request": 20,
+  "needs_review_if_confidence_below": 0.5,
+  "question_template": {
+    "topic": {"instructions": "{id} topic", "criteria": {"access": "account", "usability": "UI, ads", "playback": "playing", "downloads": "offline", "catalog": "content", "billing": "payment", "support": "support", "other": "general"}},
+    "intent": {"instructions": "{id} intent", "criteria": {"cancellation": "leaving", "complaint": "negative", "request": "wants change", "praise": "positive", "unclear": "unclear"}},
+    "severity": {"instructions": "{id} severity", "criteria": {"1": "none", "2": "minor", "3": "degraded", "4": "blocked", "5": "serious harm"}}
+  }
+}

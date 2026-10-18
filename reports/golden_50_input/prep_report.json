@@ -1,0 +1,105 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "actual": 50,
+      "check": "parsed rows == profile records",
+      "expected": 50,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "duplicate review IDs",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 0,
+      "check": "empty texts == quarantined",
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "actual": 50,
+      "check": "nonempty + quarantined == records",
+      "expected": 50,
+      "ok": true
+    }
+  ],
+  "meta": {
+    "input_bytes": 7486,
+    "input_file": "golden_50_input.csv",
+    "input_sha256": "3370aec3cf585951d98998d09ee92609fcffd51a83f4193b43aeef3c66646086",
+    "model_calls": 0,
+    "prepared_at_utc": "2026-10-13T04:49:29Z",
+    "seconds": {
+      "hash_and_profile": 0.0,
+      "parse_dedupe_store": 0.02,
+      "total": 0.03
+    },
+    "state_db": "work/golden_50_input/state.sqlite"
+  },
+  "summary": {
+    "distinct_nonempty_texts": 49,
+    "distinct_text_chars": {
+      "max": 329,
+      "mean": 76.94,
+      "median": 40,
+      "p90": 199,
+      "p99": 329,
+      "total": 3770
+    },
+    "distinct_texts_40_chars_or_less": 25,
+    "distinct_texts_with_non_ascii": 8,
+    "empty_review_text": 0,
+    "multiline_review_rows": 1,
+    "nonempty": 50,
+    "physical_file_lines": 53,
+    "quarantined_ids": [],
+    "records": 50,
+    "rows_reusable_from_exact_duplicates": 1,
+    "texts_with_exact_duplicates": 1,
+    "top_duplicate_texts": [
+      {
+        "rows": 2,
+        "text": "Good"
+      },
+      {
+        "rows": 1,
+        "text": "I LOVE that I was able to put in only a few songs I like and Spotify gave me recommendations for an AWESOME Playlist...!!!"
+      },
+      {
+        "rows": 1,
+        "text": "Excellent"
+      },
+      {
+        "rows": 1,
+        "text": "This app is bad work"
+      },
+      {
+        "rows": 1,
+        "text": "Please ye ads ko thoda kumm Karo harr ek song ke baad ad 🙏🙄"
+      },
+      {
+        "rows": 1,
+        "text": "Worst app ever too much ad"
+      },
+      {
+        "rows": 1,
+        "text": "Bheekhmangon"
+      },
+      {
+        "rows": 1,
+        "text": "It's really an amazing experience with Spotify...I love it🥰"
+      },
+      {
+        "rows": 1,
+        "text": "Unconditional love, Stoli Canales"
+      },
+      {
+        "rows": 1,
+        "text": "Ads were okay, but limited functionality..it's just too much"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verify-v2/input",
+  "description": "User message for one Claude request (verification or capped fallback). IDs are request-local (r01..r50) and mapped back to original review IDs by code. Sentences are exact substrings of review_text from the deterministic splitter. The model never sees Jev's labels.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reviews"],
+  "properties": {
+    "reviews": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "sentences"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^r(0[1-9]|[1-4][0-9]|50)$"},
+          "sentences": {"type": "array", "minItems": 1, "maxItems": 40, "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    }
+  }
+}

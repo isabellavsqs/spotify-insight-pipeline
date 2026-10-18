@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "group-v1/output",
+  "description": "Structured output (strict response_format). After schema validation the code checks: the issue_ids equal the input's, in the same order; every representative_quote_id belongs to that issue; title and description contain no digits. On failure the call is retried once, then the code falls back to the issue code as the title and records the failure.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["issues"],
+  "properties": {
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["issue_id", "title", "description", "representative_quote_ids", "coherence", "note"],
+        "properties": {
+          "issue_id": {"type": "string"},
+          "title": {"type": "string", "maxLength": 80},
+          "description": {"type": "string", "maxLength": 400},
+          "representative_quote_ids": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"type": "string", "pattern": "^q[0-9]{4}$"}},
+          "coherence": {"enum": ["coherent", "mixed"]},
+          "note": {"type": "string", "maxLength": 200}
+        }
+      }
+    }
+  }
+}

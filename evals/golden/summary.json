@@ -1,0 +1,396 @@
+{
+ "generated_utc": "2026-10-18T01:06:23Z",
+ "golden_file": "golden_50_labeled.csv",
+ "label_config": "jev-1.13.0+enrich-v5+bb9c108b+batch=20+sentiment=lexicon|fallback=claude-haiku-5-5+effort=medium+thinking=adaptive+verify-v2+40ec0611",
+ "verify_config": "claude-haiku-5-5+effort=low+verify-v2+40ec0611+thinking=off",
+ "n_golden": 50,
+ "n_with_prediction": 50,
+ "missing_predictions": [],
+ "n_with_claude": 50,
+ "jev_vs_human": {
+  "topic": {
+   "accuracy": 0.72,
+   "macro_f1": 0.643,
+   "per_class": {
+    "access": {
+     "support": 2,
+     "predicted": 1,
+     "correct": 1,
+     "f1": 0.667
+    },
+    "usability": {
+     "support": 4,
+     "predicted": 8,
+     "correct": 3,
+     "f1": 0.5
+    },
+    "playback": {
+     "support": 7,
+     "predicted": 4,
+     "correct": 3,
+     "f1": 0.545
+    },
+    "downloads": {
+     "support": 1,
+     "predicted": 1,
+     "correct": 1,
+     "f1": 1.0
+    },
+    "catalog": {
+     "support": 2,
+     "predicted": 6,
+     "correct": 1,
+     "f1": 0.25
+    },
+    "billing": {
+     "support": 5,
+     "predicted": 4,
+     "correct": 3,
+     "f1": 0.667
+    },
+    "other": {
+     "support": 29,
+     "predicted": 26,
+     "correct": 24,
+     "f1": 0.873
+    }
+   }
+  },
+  "intent": {
+   "accuracy": 0.88,
+   "macro_f1": 0.718,
+   "per_class": {
+    "complaint": {
+     "support": 19,
+     "predicted": 21,
+     "correct": 19,
+     "f1": 0.95
+    },
+    "request": {
+     "support": 1,
+     "predicted": 3,
+     "correct": 1,
+     "f1": 0.5
+    },
+    "praise": {
+     "support": 20,
+     "predicted": 21,
+     "correct": 20,
+     "f1": 0.976
+    },
+    "cancellation": {
+     "support": 1,
+     "predicted": 2,
+     "correct": 1,
+     "f1": 0.667
+    },
+    "unclear": {
+     "support": 9,
+     "predicted": 3,
+     "correct": 3,
+     "f1": 0.5
+    }
+   }
+  },
+  "severity": {
+   "exact": 0.64,
+   "within_1": 0.98,
+   "mae": 0.4,
+   "mean_signed_error": 0.4
+  },
+  "sentiment": {
+   "n": 50,
+   "exact": 0.46,
+   "within_0_5": 0.96,
+   "mae": 0.29,
+   "sign_agreement": 0.82
+  },
+  "topic_and_intent_both_correct": 0.66,
+  "topic_intent_severity_all_correct": 0.44
+ },
+ "claude_vs_human": {
+  "topic": {
+   "accuracy": 0.68,
+   "macro_f1": 0.533,
+   "per_class": {
+    "access": {
+     "support": 2,
+     "predicted": 0,
+     "correct": 0,
+     "f1": 0.0
+    },
+    "usability": {
+     "support": 4,
+     "predicted": 10,
+     "correct": 3,
+     "f1": 0.429
+    },
+    "playback": {
+     "support": 7,
+     "predicted": 5,
+     "correct": 3,
+     "f1": 0.5
+    },
+    "downloads": {
+     "support": 1,
+     "predicted": 1,
+     "correct": 1,
+     "f1": 1.0
+    },
+    "catalog": {
+     "support": 2,
+     "predicted": 5,
+     "correct": 1,
+     "f1": 0.286
+    },
+    "billing": {
+     "support": 5,
+     "predicted": 4,
+     "correct": 3,
+     "f1": 0.667
+    },
+    "other": {
+     "support": 29,
+     "predicted": 25,
+     "correct": 23,
+     "f1": 0.852
+    }
+   }
+  },
+  "intent": {
+   "accuracy": 0.86,
+   "macro_f1": 0.671,
+   "per_class": {
+    "complaint": {
+     "support": 19,
+     "predicted": 20,
+     "correct": 19,
+     "f1": 0.974
+    },
+    "request": {
+     "support": 1,
+     "predicted": 4,
+     "correct": 1,
+     "f1": 0.4
+    },
+    "praise": {
+     "support": 20,
+     "predicted": 22,
+     "correct": 20,
+     "f1": 0.952
+    },
+    "cancellation": {
+     "support": 1,
+     "predicted": 2,
+     "correct": 1,
+     "f1": 0.667
+    },
+    "unclear": {
+     "support": 9,
+     "predicted": 2,
+     "correct": 2,
+     "f1": 0.364
+    }
+   }
+  },
+  "severity": {
+   "exact": 0.82,
+   "within_1": 0.98,
+   "mae": 0.2,
+   "mean_signed_error": 0.12
+  },
+  "sentiment": {
+   "n": 50,
+   "exact": 0.72,
+   "within_0_5": 0.94,
+   "mae": 0.17,
+   "sign_agreement": 0.84
+  },
+  "topic_and_intent_both_correct": 0.62,
+  "topic_intent_severity_all_correct": 0.52
+ },
+ "jev_vs_human_on_claude_subset": {
+  "topic": {
+   "accuracy": 0.72,
+   "macro_f1": 0.643,
+   "per_class": {
+    "access": {
+     "support": 2,
+     "predicted": 1,
+     "correct": 1,
+     "f1": 0.667
+    },
+    "usability": {
+     "support": 4,
+     "predicted": 8,
+     "correct": 3,
+     "f1": 0.5
+    },
+    "playback": {
+     "support": 7,
+     "predicted": 4,
+     "correct": 3,
+     "f1": 0.545
+    },
+    "downloads": {
+     "support": 1,
+     "predicted": 1,
+     "correct": 1,
+     "f1": 1.0
+    },
+    "catalog": {
+     "support": 2,
+     "predicted": 6,
+     "correct": 1,
+     "f1": 0.25
+    },
+    "billing": {
+     "support": 5,
+     "predicted": 4,
+     "correct": 3,
+     "f1": 0.667
+    },
+    "other": {
+     "support": 29,
+     "predicted": 26,
+     "correct": 24,
+     "f1": 0.873
+    }
+   }
+  },
+  "intent": {
+   "accuracy": 0.88,
+   "macro_f1": 0.718,
+   "per_class": {
+    "complaint": {
+     "support": 19,
+     "predicted": 21,
+     "correct": 19,
+     "f1": 0.95
+    },
+    "request": {
+     "support": 1,
+     "predicted": 3,
+     "correct": 1,
+     "f1": 0.5
+    },
+    "praise": {
+     "support": 20,
+     "predicted": 21,
+     "correct": 20,
+     "f1": 0.976
+    },
+    "cancellation": {
+     "support": 1,
+     "predicted": 2,
+     "correct": 1,
+     "f1": 0.667
+    },
+    "unclear": {
+     "support": 9,
+     "predicted": 3,
+     "correct": 3,
+     "f1": 0.5
+    }
+   }
+  },
+  "severity": {
+   "exact": 0.64,
+   "within_1": 0.98,
+   "mae": 0.4,
+   "mean_signed_error": 0.4
+  },
+  "sentiment": {
+   "n": 50,
+   "exact": 0.46,
+   "within_0_5": 0.96,
+   "mae": 0.29,
+   "sign_agreement": 0.82
+  },
+  "topic_and_intent_both_correct": 0.66,
+  "topic_intent_severity_all_correct": 0.44
+ },
+ "jev_vs_claude_agreement": {
+  "topic": 0.92,
+  "intent": 0.94,
+  "severity": 0.76
+ },
+ "needs_review_flag": {
+  "flagged": 10,
+  "topic_accuracy_flagged": 0.5,
+  "topic_accuracy_not_flagged": 0.775
+ },
+ "human_label_distribution": {
+  "topic": {
+   "catalog": 2,
+   "other": 29,
+   "usability": 4,
+   "billing": 5,
+   "playback": 7,
+   "access": 2,
+   "downloads": 1
+  },
+  "intent": {
+   "complaint": 19,
+   "praise": 20,
+   "unclear": 9,
+   "cancellation": 1,
+   "request": 1
+  },
+  "severity": {
+   "2": 8,
+   "1": 35,
+   "3": 3,
+   "4": 4
+  }
+ },
+ "jev_label_distribution": {
+  "topic": {
+   "catalog": 6,
+   "other": 26,
+   "usability": 8,
+   "billing": 4,
+   "playback": 4,
+   "access": 1,
+   "downloads": 1
+  },
+  "intent": {
+   "complaint": 21,
+   "praise": 21,
+   "request": 3,
+   "unclear": 3,
+   "cancellation": 2
+  },
+  "severity": {
+   "3": 8,
+   "1": 25,
+   "2": 11,
+   "4": 5,
+   "5": 1
+  }
+ },
+ "checks": {
+  "n": 50,
+  "ambiguous_cases": 11,
+  "unsupported_language_cases": 2,
+  "topic_accuracy_ambiguous": 0.455,
+  "topic_accuracy_clear": 0.795,
+  "intent_accuracy_ambiguous": 0.455,
+  "intent_accuracy_clear": 1.0,
+  "quote_exact_substring": 50,
+  "quote_vs_human": {
+   "different": 7,
+   "same": 30,
+   "overlap": 13
+  },
+  "records_with_entity_not_literally_in_text": 3,
+  "entities_total": 27,
+  "entities_not_literally_in_text": 3,
+  "needs_review_as_prediction": {
+   "flagged": 10,
+   "topic_or_intent_errors": 17,
+   "precision_flag_marks_error": 0.7,
+   "recall_errors_flagged": 0.412
+  }
+ }
+}

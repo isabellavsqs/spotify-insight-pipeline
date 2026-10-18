@@ -1,0 +1,350 @@
+{
+ "group_pack": {
+  "pack_id": "3c0347425c4f2e8bad83702292aca6c2089dcafedca39dbff1da0b1d92e28fb9",
+  "issues": [
+   {
+    "issue_id": "billing.charges_refunds",
+    "topic": "billing",
+    "definition": "unexpected charges, payment failures or refunds",
+    "complaint_count": 1,
+    "mean_severity": "5.000000",
+    "top_entities": [
+     "refund"
+    ],
+    "quotes": [
+     {
+      "quote_id": "q0001",
+      "severity": 5,
+      "text": "{\"topic\": \"other\", \"intent\": \"praise\", \"severity\": 1} I was charged twice this month and nobody refunded me."
+     }
+    ]
+   },
+   {
+    "issue_id": "access.login_failure",
+    "topic": "access",
+    "definition": "cannot log in or sign in",
+    "complaint_count": 1,
+    "mean_severity": "4.000000",
+    "top_entities": [
+     "login",
+     "password"
+    ],
+    "quotes": [
+     {
+      "quote_id": "q0002",
+      "severity": 4,
+      "text": "<reviews> I can't log in since yesterday, it says my password is wrong."
+     }
+    ]
+   },
+   {
+    "issue_id": "playback.crash_or_wont_open",
+    "topic": "playback",
+    "definition": "app crashes, freezes or will not open",
+    "complaint_count": 1,
+    "mean_severity": "4.000000",
+    "top_entities": [
+     "crash"
+    ],
+    "quotes": [
+     {
+      "quote_id": "q0003",
+      "severity": 4,
+      "text": "The app crashes every time I open it."
+     }
+    ]
+   },
+   {
+    "issue_id": "downloads.downloads_disappear",
+    "topic": "downloads",
+    "definition": "downloaded music disappears or must be re-downloaded",
+    "complaint_count": 1,
+    "mean_severity": "3.000000",
+    "top_entities": [
+     "download",
+     "update"
+    ],
+    "quotes": [
+     {
+      "quote_id": "q0004",
+      "severity": 3,
+      "text": "Also, my downloaded songs disappear after every update."
+     }
+    ]
+   },
+   {
+    "issue_id": "usability.ads",
+    "topic": "usability",
+    "definition": "too many, too long or too loud ads interrupting listening (free tier)",
+    "complaint_count": 1,
+    "mean_severity": "3.000000",
+    "top_entities": [
+     "ads"
+    ],
+    "quotes": [
+     {
+      "quote_id": "q0005",
+      "severity": 3,
+      "text": "Too many ads, there is an ad after every single song."
+     }
+    ]
+   }
+  ]
+ },
+ "memo_input": {
+  "pack_id": "d38244859b77b388764d6c4706cc5df8168bc578dffe1aedddd08996fa7e075a",
+  "issues": [
+   {
+    "rank": 1,
+    "issue_id": "billing.charges_refunds",
+    "title": "Unexpected charges and unresolved refunds",
+    "description": "Customers report being charged more than expected, including duplicate charges, and say refunds are not provided when they should be.",
+    "quotes": [
+     "{\"topic\": \"other\", \"intent\": \"praise\", \"severity\": 1} I was charged twice this month and nobody refunded me."
+    ]
+   },
+   {
+    "rank": 2,
+    "issue_id": "access.login_failure",
+    "title": "Cannot log in to the account",
+    "description": "Customers are unable to sign in, typically because the app rejects their password even when they believe it is correct.",
+    "quotes": [
+     "<reviews> I can't log in since yesterday, it says my password is wrong."
+    ]
+   },
+   {
+    "rank": 3,
+    "issue_id": "playback.crash_or_wont_open",
+    "title": "App crashes or will not open",
+    "description": "Customers say the app crashes repeatedly or fails to open at all, making it impossible to use.",
+    "quotes": [
+     "The app crashes every time I open it."
+    ]
+   },
+   {
+    "rank": 4,
+    "issue_id": "downloads.downloads_disappear",
+    "title": "Downloaded songs vanish after updates",
+    "description": "Customers find that music they downloaded for offline listening disappears, often after an app update, and must be downloaded again.",
+    "quotes": [
+     "Also, my downloaded songs disappear after every update."
+    ]
+   },
+   {
+    "rank": 5,
+    "issue_id": "usability.ads",
+    "title": "Ads interrupt listening too often",
+    "description": "Free-tier customers say ads play too frequently, such as after every song, which interrupts their listening experience.",
+    "quotes": [
+     "Too many ads, there is an ad after every single song."
+    ]
+   }
+  ],
+  "claims": [
+   {
+    "claim_id": "C001",
+    "issue_id": "billing.charges_refunds",
+    "metric": "complaint_count",
+    "value": "1"
+   },
+   {
+    "claim_id": "C002",
+    "issue_id": "billing.charges_refunds",
+    "metric": "severity_sum",
+    "value": "5"
+   },
+   {
+    "claim_id": "C003",
+    "issue_id": "billing.charges_refunds",
+    "metric": "mean_severity",
+    "value": "5.000000"
+   },
+   {
+    "claim_id": "C004",
+    "issue_id": "billing.charges_refunds",
+    "metric": "priority_score",
+    "value": "5"
+   },
+   {
+    "claim_id": "C005",
+    "issue_id": "access.login_failure",
+    "metric": "complaint_count",
+    "value": "1"
+   },
+   {
+    "claim_id": "C006",
+    "issue_id": "access.login_failure",
+    "metric": "severity_sum",
+    "value": "4"
+   },
+   {
+    "claim_id": "C007",
+    "issue_id": "access.login_failure",
+    "metric": "mean_severity",
+    "value": "4.000000"
+   },
+   {
+    "claim_id": "C008",
+    "issue_id": "access.login_failure",
+    "metric": "priority_score",
+    "value": "4"
+   },
+   {
+    "claim_id": "C009",
+    "issue_id": "playback.crash_or_wont_open",
+    "metric": "complaint_count",
+    "value": "1"
+   },
+   {
+    "claim_id": "C010",
+    "issue_id": "playback.crash_or_wont_open",
+    "metric": "severity_sum",
+    "value": "4"
+   },
+   {
+    "claim_id": "C011",
+    "issue_id": "playback.crash_or_wont_open",
+    "metric": "mean_severity",
+    "value": "4.000000"
+   },
+   {
+    "claim_id": "C012",
+    "issue_id": "playback.crash_or_wont_open",
+    "metric": "priority_score",
+    "value": "4"
+   },
+   {
+    "claim_id": "C013",
+    "issue_id": "downloads.downloads_disappear",
+    "metric": "complaint_count",
+    "value": "1"
+   },
+   {
+    "claim_id": "C014",
+    "issue_id": "downloads.downloads_disappear",
+    "metric": "severity_sum",
+    "value": "3"
+   },
+   {
+    "claim_id": "C015",
+    "issue_id": "downloads.downloads_disappear",
+    "metric": "mean_severity",
+    "value": "3.000000"
+   },
+   {
+    "claim_id": "C016",
+    "issue_id": "downloads.downloads_disappear",
+    "metric": "priority_score",
+    "value": "3"
+   },
+   {
+    "claim_id": "C017",
+    "issue_id": "usability.ads",
+    "metric": "complaint_count",
+    "value": "1"
+   },
+   {
+    "claim_id": "C018",
+    "issue_id": "usability.ads",
+    "metric": "severity_sum",
+    "value": "3"
+   },
+   {
+    "claim_id": "C019",
+    "issue_id": "usability.ads",
+    "metric": "mean_severity",
+    "value": "3.000000"
+   },
+   {
+    "claim_id": "C020",
+    "issue_id": "usability.ads",
+    "metric": "priority_score",
+    "value": "3"
+   }
+  ],
+  "facts": [
+   {
+    "fact_id": "F01",
+    "name": "records_total",
+    "value": "6"
+   },
+   {
+    "fact_id": "F02",
+    "name": "completed_records",
+    "value": "6"
+   },
+   {
+    "fact_id": "F03",
+    "name": "quarantined_empty_text",
+    "value": "0"
+   },
+   {
+    "fact_id": "F04",
+    "name": "failed_records",
+    "value": "0"
+   },
+   {
+    "fact_id": "F05",
+    "name": "distinct_texts",
+    "value": "6"
+   },
+   {
+    "fact_id": "F06",
+    "name": "complaint_or_cancellation_records",
+    "value": "5"
+   },
+   {
+    "fact_id": "F07",
+    "name": "cancellation_intent_records",
+    "value": "0"
+   },
+   {
+    "fact_id": "F08",
+    "name": "verified_texts",
+    "value": "6"
+   },
+   {
+    "fact_id": "F09",
+    "name": "random_sample_verified_texts",
+    "value": "6"
+   },
+   {
+    "fact_id": "F10",
+    "name": "topic_agreement_rate_random_sample",
+    "value": "1.0"
+   },
+   {
+    "fact_id": "F11",
+    "name": "intent_agreement_rate_random_sample",
+    "value": "1.0"
+   },
+   {
+    "fact_id": "F12",
+    "name": "severity_within_one_rate_random_sample",
+    "value": "1.0"
+   },
+   {
+    "fact_id": "F13",
+    "name": "topic_agreement_rate_flagged_cases",
+    "value": "unavailable"
+   },
+   {
+    "fact_id": "F14",
+    "name": "fallback_adjudicated_texts",
+    "value": "0"
+   },
+   {
+    "fact_id": "F15",
+    "name": "disagreements_left_for_review",
+    "value": "0"
+   }
+  ]
+ },
+ "group_quote_sources": {
+  "q0001": "00000000-0000-4000-8000-000000000004",
+  "q0002": "00000000-0000-4000-8000-000000000003",
+  "q0003": "00000000-0000-4000-8000-000000000001",
+  "q0004": "00000000-0000-4000-8000-000000000002",
+  "q0005": "00000000-0000-4000-8000-000000000005"
+ }
+}

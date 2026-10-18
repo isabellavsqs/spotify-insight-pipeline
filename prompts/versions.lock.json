@@ -1,0 +1,12 @@
+{
+  "note": "SHA-256 of every prompt version used in a paid run. These versions are frozen: any edit changes label_config and would silently re-bill cached work. tests/test_prompts.py fails if a hash changes. Add a new version instead.",
+  "versions": {
+    "enrich-v2": "f5f0713b2391872a856f55979fc17dbe087dea93267c5eff6db91b4d0c0103f3",
+    "enrich-v4": "a3cfb5c04393969acb9a98b4557250e99d6a38f4de663d7bd90200f0c5150557",
+    "enrich-v5": "bb9c108b731ea1c8f92589ca407ca5719387edf969175b5a8ff80b82155e4fb3",
+    "verify-v2": "40ec0611109e0dd3b649653ee6c41a3a14da0c302673fae8a07f7feec8a1d061",
+    "group-v1": "51dd444e0a1bf2b3e5a3409bfd10bc04836bc0f7760c3cb09ca374ff96159499",
+    "memo-v1": "45b3a36b27e4baadbb05c3d5939a2fbce48fe35b5f2659ea88efc8f8ad194df8",
+    "group-v2": "7a8ada44d11a5691fc1495d461216dcb77c7d6b1ab956d89203f10159b220cf7"
+  }
+}

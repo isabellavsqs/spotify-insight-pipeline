@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "enrich-v4/input",
+  "description": "Jev request body for up to 20 reviews. The state holds the rules (rules.md) and the exact review texts keyed by request-local IDs; questions holds four Choice questions per review built from questions.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["model", "state", "questions"],
+  "properties": {
+    "model": {"const": "jev-1.13.0"},
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rules", "reviews"],
+      "properties": {
+        "rules": {"type": "string"},
+        "reviews": {"type": "object", "minProperties": 1, "maxProperties": 20,
+                    "patternProperties": {"^r(0[1-9]|1[0-9]|20)$": {"type": "string", "minLength": 1}}, "additionalProperties": false}
+      }
+    },
+    "questions": {"type": "object", "patternProperties": {"^r(0[1-9]|1[0-9]|20)_(topic|intent|severity|sentiment)$": {"type": "object"}},
+                  "additionalProperties": false}
+  }
+}

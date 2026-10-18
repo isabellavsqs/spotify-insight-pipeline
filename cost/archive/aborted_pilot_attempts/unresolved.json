@@ -1,0 +1,16 @@
+{
+ "note": "Batches submitted but never collected (attempt abandoned before results were downloaded). Their real usage is unknown; the ledger counts each at its worst-case reservation (upper bound).",
+ "batches": [
+  {
+   "run_id": "pilot-cold-20261013T002639Z",
+   "role": "fallback",
+   "batch_id": "msgbatch_01DqfxYUDa5vzQBcnthLiLB1"
+  },
+  {
+   "run_id": "pilot-cold-20261013T003304Z",
+   "role": "verify",
+   "batch_id": "msgbatch_01MeDxD2YGXaSFuiJ3YP83XT"
+  }
+ ],
+ "upper_bound_usd": "0.005440"
+}

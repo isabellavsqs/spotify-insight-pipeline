@@ -1,0 +1,80 @@
+{
+  "memo_markdown": "## Summary\nThe highest-ranked issue is unexpected charges and unresolved refunds, with 1 complaint [C001] and a priority score of 5 [C004]. Login failures, app crashes, disappearing downloads and ad frequency follow. This run covers only 6 records [F01] and 5 complaint or cancellation records [F06], so the ranking is directional rather than definitive.\n\n## Top issues\n1. **Unexpected charges and unresolved refunds** (highest-ranked): customers report duplicate or higher-than-expected charges and missing refunds. 1 complaint [C001], severity sum 5 [C002], mean severity 5.000000 [C003], priority score 5 [C004].\n2. **Cannot log in to the account**: the app rejects correct passwords. 1 complaint [C005], severity sum 4 [C006], mean severity 4.000000 [C007], priority score 4 [C008].\n3. **App crashes or will not open**: 1 complaint [C009], severity sum 4 [C010], mean severity 4.000000 [C011], priority score 4 [C012].\n4. **Downloaded songs vanish after updates**: 1 complaint [C013], severity sum 3 [C014], mean severity 3.000000 [C015], priority score 3 [C016].\n5. **Ads interrupt listening too often**: 1 complaint [C017], severity sum 3 [C018], mean severity 3.000000 [C019], priority score 3 [C020].\n\n## Recommendations\n1. Investigate duplicate charges and refund handling for the billing issue, starting with a review of the one reported case, because it is the highest-ranked issue [C004] and carries the highest severity [C003]. Confirm whether the duplicate charge pattern reproduces before committing to a fix.\n2. Check the login flow for password rejection, since it is the second-ranked issue [C008] and blocks account access entirely.\n3. Triage crash-on-open reports against recent builds, as the crash issue has priority score 4 [C012] and prevents use altogether.\n4. Verify whether downloads are cleared during update migration; the evidence is a single complaint [C013], so reproduce before prioritizing.\n\n## Limits\n- These are self-selected public reviews and are not a representative sample of customers.\n- There is no revenue, plan tier or confirmed churn data. Cancellation intent is not proof of cancellation; cancellation intent records number 0 [F07].\n- Labels come from models. Random-sample topic agreement is 1.0 [F10], intent agreement is 1.0 [F11], and severity-within-one agreement is 1.0 [F12]. Topic agreement for flagged cases is unavailable [F13], and 0 disagreements were left for review [F15].\n- priority_score equals severity_sum by definition, so the ranking reflects summed severity rather than independent evidence of impact.\n- Each issue has a single complaint in this run, so counts cannot distinguish a trend from an isolated case.",
+  "recommendations": [
+    {
+      "title": "Investigate duplicate charges and refund handling",
+      "issue_ids": [
+        "billing.charges_refunds"
+      ],
+      "rationale": "This is the highest-ranked issue with priority score 5 [C004] and mean severity 5.000000 [C003]; the evidence is one complaint [C001] and should be confirmed before fixing.",
+      "claim_ids": [
+        "C001",
+        "C003",
+        "C004"
+      ]
+    },
+    {
+      "title": "Check the login password validation flow",
+      "issue_ids": [
+        "access.login_failure"
+      ],
+      "rationale": "Second-ranked, priority score 4 [C008], blocks account access; based on one complaint [C005].",
+      "claim_ids": [
+        "C005",
+        "C008"
+      ]
+    },
+    {
+      "title": "Triage crash-on-open reports against recent builds",
+      "issue_ids": [
+        "playback.crash_or_wont_open"
+      ],
+      "rationale": "Priority score 4 [C012] and prevents app use; based on one complaint [C009].",
+      "claim_ids": [
+        "C009",
+        "C012"
+      ]
+    },
+    {
+      "title": "Verify download loss during updates",
+      "issue_ids": [
+        "downloads.downloads_disappear"
+      ],
+      "rationale": "Priority score 3 [C016]; based on one complaint [C013], so reproduce first.",
+      "claim_ids": [
+        "C013",
+        "C016"
+      ]
+    }
+  ],
+  "cited_ids": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015",
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "F01",
+    "F06",
+    "F07",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F15"
+  ]
+}
